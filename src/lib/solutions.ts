@@ -268,7 +268,7 @@ const avesSuinosProducts: Product[] = [
   },
 ];
 
-const allProteinCategoryProducts: Product[] = [
+const industriaCleaningProducts: Product[] = [
   {
     slug: "lavadora-de-bacias-1",
     name: "Lavadora de Bacias 1",
