@@ -682,7 +682,6 @@ export const solutions: Solution[] = [
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
-      ...allProteinCategoryProducts.map(cloneProduct),
     ],
   },
   {
@@ -692,7 +691,7 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...allProteinCategoryProducts.map(cloneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct)],
   },
   {
     slug: "suinos",
@@ -701,7 +700,7 @@ export const solutions: Solution[] = [
     description:
       "Linhas completas para o processamento suíno, do abate à sala de cortes, com foco em rendimento e biossegurança.",
     image: catSuinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesSuinosProducts.map(cloneProduct), ...allProteinCategoryProducts.map(cloneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesSuinosProducts.map(cloneProduct)],
   },
   {
     slug: "pisceos",
@@ -710,7 +709,7 @@ export const solutions: Solution[] = [
     description:
       "Soluções que preservam a qualidade e integridade do pescado do recebimento à expedição.",
     image: catPisceos.url,
-    products: allProteinCategoryProducts.map(cloneProduct),
+    products: [],
   },
   {
     slug: "industrializados",
