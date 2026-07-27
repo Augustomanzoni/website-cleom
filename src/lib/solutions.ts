@@ -773,7 +773,9 @@ export const solutions: Solution[] = [
     description:
       "Infraestrutura completa: esteiras transportadoras, plataformas, tanques e sistemas de higienização industrial.",
     image: industrialImg("photo-1581093588401-fbb62a02f120"),
-    products: industriaProducts.map(cloneProduct),
+    products: [...industriaProducts, ...industriaCleaningProducts]
+      .map(cloneProduct)
+      .sort((a, b) => a.name.localeCompare(b.name, "pt-BR")),
   },
 ];
 
