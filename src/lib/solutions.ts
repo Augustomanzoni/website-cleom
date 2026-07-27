@@ -758,17 +758,8 @@ export const solutions: Solution[] = [
     products: [],
   },
   {
-    slug: "industrializados",
-    title: "Industrializados",
-    tagline: "Soluções\u00a0para a linha de\u00a0industrializados como\u00a0embutidos e defumados.",
-    description:
-      "Linha completa para produção de embutidos, defumados, cozidos e demais industrializados de carne.",
-    image: catIndustrializados.url,
-    products: [],
-  },
-  {
     slug: "industria",
-    title: "Indústria",
+    title: "Utilidades",
     tagline: "Equipamentos, máquinas e componentes para plantas industriais.",
     description:
       "Infraestrutura completa: esteiras transportadoras, plataformas, tanques e sistemas de higienização industrial.",
