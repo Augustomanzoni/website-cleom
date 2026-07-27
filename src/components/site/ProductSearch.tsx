@@ -62,6 +62,12 @@ const searchEntries: SearchEntry[] = solutions.flatMap((solution) => {
 export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps) {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    setQuery("");
+  }, [pathname]);
+
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
