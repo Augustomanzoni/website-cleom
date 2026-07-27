@@ -512,7 +512,53 @@ const industriaProducts: Product[] = [
       "Plantas que exigem mobiliário robusto em inox",
     ],
   },
+  {
+    slug: "lavador-de-aventais",
+    name: "Lavador de Aventais",
+    description: "Lavador industrial de aventais em inox com bicos aspersores e operação sanitária.",
+    image: lavadorAventais.url,
+    longDescription:
+      "Equipamento em aço inox desenvolvido para higienização de aventais utilizados em rotinas industriais, com bicos aspersores, dispensadores integrados e estrutura inclinada para escoamento eficiente. Contribui para a padronização da limpeza de EPIs e o reforço da biossegurança na planta.",
+    applications: [
+      "Higienização de aventais reutilizáveis",
+      "Apoio a rotinas de limpeza de EPIs",
+      "Reforço de barreiras sanitárias",
+      "Redução de contaminação cruzada por vestimentas",
+      "Uso em vestiários e áreas de higienização",
+    ],
+  },
+  {
+    slug: "carrinho-para-congelamento",
+    name: "Carrinho para Congelamento",
+    description: "Carrinho em inox com múltiplas prateleiras vazadas para congelamento e movimentação de produtos.",
+    image: carrinhoCongelamento.url,
+    longDescription:
+      "Carrinho industrial em aço inox com prateleiras gradeadas que favorecem a circulação de ar frio, ideal para operações de congelamento, resfriamento e movimentação interna. Estrutura robusta, rodagem estável e desenho sanitário para uso em túneis e câmaras frigoríficas.",
+    applications: [
+      "Congelamento em túneis e câmaras frigoríficas",
+      "Movimentação interna de produtos em bandejas",
+      "Apoio logístico entre áreas de processo",
+      "Aproveitamento vertical do espaço de câmara",
+      "Rotinas com alta rotatividade de cargas",
+    ],
+  },
+  {
+    slug: "mesa-para-miudos",
+    name: "Mesa para Miúdos",
+    description: "Mesa sanitária em inox para inspeção, seleção e escoamento de miúdos com bandeja perfurada.",
+    image: mesaMiudos.url,
+    longDescription:
+      "Mesa em aço inox projetada para operações de inspeção e seleção de miúdos, com área perfurada para escoamento e apoio auxiliar lateral. Sua construção sanitária favorece organização do fluxo, ergonomia do operador e integração com linhas de processamento de subprodutos.",
+    applications: [
+      "Inspeção e seleção manual de miúdos",
+      "Escoamento sanitário durante o preparo",
+      "Apoio a postos de trabalho ergonômicos",
+      "Integração com linhas de aproveitamento",
+      "Rotinas com foco em higiene e produtividade",
+    ],
+  },
 ];
+
 
 export const solutions: Solution[] = [
   {
