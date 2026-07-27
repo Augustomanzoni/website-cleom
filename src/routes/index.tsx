@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
       { title: "CLEOM — Soluções Frigoríficas Industriais" },
       { name: "description", content: "Equipamentos frigoríficos industriais de alta performance: aves, suínos, evisceração e higienização." },
       { property: "og:title", content: "CLEOM — Soluções Frigoríficas Industriais" },
-      { property: "og:description", content: "Tecnologia industrial para equipamentos de alta performance." },
+      { property: "og:description", content: "Equipamentos frigoríficos industriais de alta performance: aves, suínos, evisceração e higienização." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
