@@ -69,7 +69,7 @@ function CategoriaPage() {
               <div className="max-h-[720px] overflow-y-auto pr-2 -mr-2">
                 {sol.products.length > 0 ? (
                   <div className="grid sm:grid-cols-2 gap-5">
-                    {sol.products.map((p: Product) => (
+                    {[...sol.products].sort((a, b) => a.name.localeCompare(b.name, "pt-BR")).map((p: Product) => (
                       <div
                         key={p.slug}
                         className="group bg-card border border-border rounded-2xl overflow-hidden flex flex-col hover:border-navy-deep transition-colors"
