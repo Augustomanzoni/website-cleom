@@ -73,7 +73,10 @@ import carrinhoFacasChairas from "@/assets/carrinho-facas-chairas.png";
 import carrinhoBacia from "@/assets/carrinho-bacia.png";
 import esterilizadorFacas from "@/assets/esterilizador-facas.png";
 import esterilizadorMaos from "@/assets/esterilizador-maos.png";
-import lavadorLuvas from "@/assets/lavador-luvas.png";
+import lavadorLuvasNovo from "@/assets/lavador-luvas-novo.png.asset.json";
+import lavadorAventais from "@/assets/lavador-aventais.png.asset.json";
+import carrinhoCongelamento from "@/assets/carrinho-congelamento.png.asset.json";
+import mesaMiudos from "@/assets/mesa-miudos.png.asset.json";
 import abaco from "@/assets/abaco.png";
 import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
@@ -265,7 +268,7 @@ const avesSuinosProducts: Product[] = [
   },
 ];
 
-const allProteinCategoryProducts: Product[] = [
+const industriaCleaningProducts: Product[] = [
   {
     slug: "lavadora-de-bacias-1",
     name: "Lavadora de Bacias 1",
@@ -468,7 +471,7 @@ const industriaProducts: Product[] = [
     slug: "lavador-de-luvas",
     name: "Lavador de Luvas",
     description: "Lavador industrial de luvas com estrutura sanitária, lavagem uniforme e operação robusta.",
-    image: lavadorLuvas,
+    image: lavadorLuvasNovo.url,
     longDescription:
       "Equipamento voltado à higienização de luvas e acessórios de proteção utilizados em rotina industrial, com estrutura em inox e componentes preparados para uso contínuo. A solução melhora o padrão de limpeza e reduz o retrabalho em processos sanitários.",
     applications: [
@@ -509,7 +512,53 @@ const industriaProducts: Product[] = [
       "Plantas que exigem mobiliário robusto em inox",
     ],
   },
+  {
+    slug: "lavador-de-aventais",
+    name: "Lavador de Aventais",
+    description: "Lavador industrial de aventais em inox com bicos aspersores e operação sanitária.",
+    image: lavadorAventais.url,
+    longDescription:
+      "Equipamento em aço inox desenvolvido para higienização de aventais utilizados em rotinas industriais, com bicos aspersores, dispensadores integrados e estrutura inclinada para escoamento eficiente. Contribui para a padronização da limpeza de EPIs e o reforço da biossegurança na planta.",
+    applications: [
+      "Higienização de aventais reutilizáveis",
+      "Apoio a rotinas de limpeza de EPIs",
+      "Reforço de barreiras sanitárias",
+      "Redução de contaminação cruzada por vestimentas",
+      "Uso em vestiários e áreas de higienização",
+    ],
+  },
+  {
+    slug: "carrinho-para-congelamento",
+    name: "Carrinho para Congelamento",
+    description: "Carrinho em inox com múltiplas prateleiras vazadas para congelamento e movimentação de produtos.",
+    image: carrinhoCongelamento.url,
+    longDescription:
+      "Carrinho industrial em aço inox com prateleiras gradeadas que favorecem a circulação de ar frio, ideal para operações de congelamento, resfriamento e movimentação interna. Estrutura robusta, rodagem estável e desenho sanitário para uso em túneis e câmaras frigoríficas.",
+    applications: [
+      "Congelamento em túneis e câmaras frigoríficas",
+      "Movimentação interna de produtos em bandejas",
+      "Apoio logístico entre áreas de processo",
+      "Aproveitamento vertical do espaço de câmara",
+      "Rotinas com alta rotatividade de cargas",
+    ],
+  },
+  {
+    slug: "mesa-para-miudos",
+    name: "Mesa para Miúdos",
+    description: "Mesa sanitária em inox para inspeção, seleção e escoamento de miúdos com bandeja perfurada.",
+    image: mesaMiudos.url,
+    longDescription:
+      "Mesa em aço inox projetada para operações de inspeção e seleção de miúdos, com área perfurada para escoamento e apoio auxiliar lateral. Sua construção sanitária favorece organização do fluxo, ergonomia do operador e integração com linhas de processamento de subprodutos.",
+    applications: [
+      "Inspeção e seleção manual de miúdos",
+      "Escoamento sanitário durante o preparo",
+      "Apoio a postos de trabalho ergonômicos",
+      "Integração com linhas de aproveitamento",
+      "Rotinas com foco em higiene e produtividade",
+    ],
+  },
 ];
+
 
 export const solutions: Solution[] = [
   {
@@ -679,7 +728,6 @@ export const solutions: Solution[] = [
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
-      ...allProteinCategoryProducts.map(cloneProduct),
     ],
   },
   {
@@ -689,7 +737,7 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...allProteinCategoryProducts.map(cloneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct)],
   },
   {
     slug: "suinos",
@@ -698,7 +746,7 @@ export const solutions: Solution[] = [
     description:
       "Linhas completas para o processamento suíno, do abate à sala de cortes, com foco em rendimento e biossegurança.",
     image: catSuinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesSuinosProducts.map(cloneProduct), ...allProteinCategoryProducts.map(cloneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesSuinosProducts.map(cloneProduct)],
   },
   {
     slug: "pisceos",
@@ -707,7 +755,7 @@ export const solutions: Solution[] = [
     description:
       "Soluções que preservam a qualidade e integridade do pescado do recebimento à expedição.",
     image: catPisceos.url,
-    products: allProteinCategoryProducts.map(cloneProduct),
+    products: [],
   },
   {
     slug: "industrializados",
@@ -725,7 +773,9 @@ export const solutions: Solution[] = [
     description:
       "Infraestrutura completa: esteiras transportadoras, plataformas, tanques e sistemas de higienização industrial.",
     image: industrialImg("photo-1581093588401-fbb62a02f120"),
-    products: industriaProducts.map(cloneProduct),
+    products: [...industriaProducts, ...industriaCleaningProducts]
+      .map(cloneProduct)
+      .sort((a, b) => a.name.localeCompare(b.name, "pt-BR")),
   },
 ];
 

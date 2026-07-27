@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Search } from "lucide-react";
-import { useNavigate } from "@tanstack/react-router";
+import { useNavigate, useRouterState } from "@tanstack/react-router";
 import {
   Command,
   CommandEmpty,
@@ -62,6 +62,12 @@ const searchEntries: SearchEntry[] = solutions.flatMap((solution) => {
 export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps) {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    setQuery("");
+  }, [pathname]);
+
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -92,7 +98,7 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
           className="placeholder:text-chrome/45"
         />
         {(query.trim().length > 0 || mobile) && (
-          <CommandList className="mt-1 max-h-72 rounded-2xl bg-card text-card-foreground shadow-2xl">
+          <CommandList className="max-h-72 rounded-2xl bg-card text-card-foreground shadow-2xl">
             <CommandEmpty className="text-muted-foreground">Nenhum resultado encontrado.</CommandEmpty>
             <CommandGroup heading="Resultados" className="text-card-foreground [&_[cmdk-group-heading]]:text-muted-foreground">
               {results.map((entry) => (
