@@ -1,0 +1,130 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-steel: var(--steel);
+  --color-chrome: var(--chrome);
+  --color-cyan-accent: var(--cyan-accent);
+  --font-display: "Oswald", "Inter", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* CLEOM brand */
+  --navy-deep: #062039;      /* azul principal */
+  --navy: #0a2d4f;
+  --steel: #556573;          /* tom de azul de destaque */
+  --chrome: #D9D9D9;         /* cinza claro */
+  --chrome-dark: #A1A3A6;    /* cinza escuro */
+  --cyan-accent: #556573;    /* destaque agora usa steel */
+  --black-deep: #0D0D0D;
+
+  --background: #ffffff;
+  --foreground: #062039;
+
+  --card: #ffffff;
+  --card-foreground: #062039;
+  --popover: #ffffff;
+  --popover-foreground: #062039;
+
+  --primary: #062039;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f1f3f5;
+  --secondary-foreground: #062039;
+
+  --muted: #f1f3f5;
+  --muted-foreground: #556573;
+
+  --accent: #556573;
+  --accent-foreground: #ffffff;
+
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --border: #D9D9D9;
+  --input: #D9D9D9;
+  --ring: #556573;
+}
+
+.dark {
+  --background: #0D0D0D;
+  --foreground: #D9D9D9;
+  --card: #062039;
+  --card-foreground: #D9D9D9;
+  --popover: #062039;
+  --popover-foreground: #D9D9D9;
+  --primary: #D9D9D9;
+  --primary-foreground: #062039;
+  --secondary: #0a2d4f;
+  --secondary-foreground: #D9D9D9;
+  --muted: #0a2d4f;
+  --muted-foreground: #A1A3A6;
+  --accent: #556573;
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.7 0.19 22);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: rgba(255,255,255,0.12);
+  --input: rgba(255,255,255,0.15);
+  --ring: #556573;
+}
+
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility chrome-text {
+  background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 45%, #8794a8 55%, #e6ebf2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-block: 0.15em;
+  line-height: 1.25;
+}
+
+@utility navy-gradient {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, oklch(0.32 0.06 260) 100%);
+}
