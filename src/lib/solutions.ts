@@ -83,7 +83,7 @@ import catAves from "@/assets/cat-aves.jpg.asset.json";
 import catBovinos from "@/assets/cat-bovinos.jpg.asset.json";
 import catSuinos from "@/assets/cat-suinos.jpg.asset.json";
 import catPisceos from "@/assets/cat-pisceos.jpg.asset.json";
-import catIndustrializados from "@/assets/cat-industrializados.jpg.asset.json";
+
 
 export type Product = {
   slug: string;
