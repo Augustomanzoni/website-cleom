@@ -471,7 +471,7 @@ const industriaProducts: Product[] = [
     slug: "lavador-de-luvas",
     name: "Lavador de Luvas",
     description: "Lavador industrial de luvas com estrutura sanitária, lavagem uniforme e operação robusta.",
-    image: lavadorLuvas,
+    image: lavadorLuvasNovo.url,
     longDescription:
       "Equipamento voltado à higienização de luvas e acessórios de proteção utilizados em rotina industrial, com estrutura em inox e componentes preparados para uso contínuo. A solução melhora o padrão de limpeza e reduz o retrabalho em processos sanitários.",
     applications: [
