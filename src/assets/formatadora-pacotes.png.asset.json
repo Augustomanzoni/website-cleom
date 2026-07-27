@@ -1,11 +1,11 @@
 {
-  "asset_id": "53a7e3e3-1a34-4076-804c-14a14255f22a",
-  "content_type": "image/png",
-  "created_at": "2026-07-24T11:58:36Z",
-  "original_filename": "formatadora-pacotes.png",
+  "version": 1,
+  "asset_id": "2a520342-12ca-490c-bae7-016bad5dcec9",
   "project_id": "8a1f4356-e5c5-432b-aaec-e29974e615b0",
-  "r2_key": "a/v1/8a1f4356-e5c5-432b-aaec-e29974e615b0/53a7e3e3-1a34-4076-804c-14a14255f22a/formatadora-pacotes.png",
-  "size": 4416903,
-  "url": "/__l5e/assets-v1/53a7e3e3-1a34-4076-804c-14a14255f22a/formatadora-pacotes.png",
-  "version": 1
+  "url": "/__l5e/assets-v1/2a520342-12ca-490c-bae7-016bad5dcec9/formatadora-pacotes.png",
+  "r2_key": "a/v1/8a1f4356-e5c5-432b-aaec-e29974e615b0/2a520342-12ca-490c-bae7-016bad5dcec9/formatadora-pacotes.png",
+  "original_filename": "formatadora-pacotes.png",
+  "size": 1000213,
+  "content_type": "image/png",
+  "created_at": "2026-07-27T18:25:30Z"
 }
