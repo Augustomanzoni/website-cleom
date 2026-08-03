@@ -14,7 +14,13 @@ import avesSangradorAutomatico from "@/assets/aves-sangrador-automatico.png.asse
 import avesTanqueEscaldagem3p from "@/assets/aves-tanque-escaldagem-3p.png.asset.json";
 import avesTanqueEscaldagem4p from "@/assets/aves-tanque-escaldagem-4p.png.asset.json";
 import avesDepenadeiraDesbaste from "@/assets/aves-depenadeira-desbaste.png.asset.json";
-import avesDepenadeiraAcabamento from "@/assets/aves-depenadeira-acabamento.png.asset.json";
+import avesDepenadeiraAcabamento from "@/assets/depenadeira-acabamento-nofundo.png.asset.json";
+import plataformaSerraCarcaca from "@/assets/plataforma-serra-carcaca.png.asset.json";
+import roscaTransportadora from "@/assets/rosca-transportadora.png.asset.json";
+import sistemaHigienizacaoCarretilhas from "@/assets/sistema-higienizacao-carretilhas.png.asset.json";
+import sistemaRejeito from "@/assets/sistema-rejeito.png.asset.json";
+import tanqueLavagemCarretilha from "@/assets/tanque-lavagem-carretilha.png.asset.json";
+import transferidorHidraulicoPallet from "@/assets/transferidor-hidraulico-pallet.png.asset.json";
 import avesDepiladorCanelinha from "@/assets/aves-depilador-canelinha.png.asset.json";
 import avesBatedorSambiquira from "@/assets/aves-batedor-sambiquira.png.asset.json";
 import avesArrancadorPenaSambiquira from "@/assets/aves-arrancador-pena-sambiquira.png.asset.json";
@@ -403,6 +409,51 @@ const industriaCleaningProducts: Product[] = [
 
 const industriaProducts: Product[] = [
   {
+    slug: "transferidor-hidraulico-horizontal-para-pallet",
+    name: "Transferidor Hidráulico Horizontal para Pallet",
+    description: "Transferidor hidráulico para troca horizontal de pallets sem desmontar a carga paletizada.",
+    image: transferidorHidraulicoPallet.url,
+    longDescription:
+      "Equipamento hidráulico que transfere a carga paletizada de um pallet para outro no sentido horizontal, sem necessidade de remontar caixas ou volumes. Muito utilizado na troca de pallet de madeira por pallet plástico ou higienizado na entrada de áreas limpas, o conjunto conta com prensa de contenção lateral, mesa de apoio e unidade hidráulica com comando elétrico. O ciclo rápido elimina esforço manual, reduz avarias na carga e protege a área de processamento contra contaminantes trazidos por pallets externos.",
+    applications: [
+      "Troca de pallet de madeira por pallet plástico",
+      "Barreira sanitária na entrada de áreas limpas",
+      "Movimentação de cargas paletizadas sem remontagem",
+      "Redução de avarias e de esforço manual",
+      "Expedição, recebimento e câmaras frias",
+    ],
+  },
+  {
+    slug: "sistema-de-higienizacao-de-carretilhas",
+    name: "Sistema de Higienização de Carretilhas",
+    description: "Linha completa em inox para lavagem, escovação e sanitização de carretilhas da nória aérea.",
+    image: sistemaHigienizacaoCarretilhas.url,
+    longDescription:
+      "Sistema modular em aço inox para higienização automática das carretilhas e roldanas do transportador aéreo. As carretilhas percorrem trilho dedicado passando por estágios de pré-lavagem, escovação, aspersão com detergente e enxágue final, com bandeja coletora contínua e reaproveitamento de água. O acionamento por motoredutor mantém cadência constante, e a estrutura com pés reguláveis e guarda-corpo facilita manutenção e limpeza.",
+    applications: [
+      "Higienização automática de carretilhas da nória",
+      "Remoção de gordura e resíduos dos trilhos aéreos",
+      "Prevenção de contaminação cruzada na produção",
+      "Aumento da vida útil de rolamentos e roldanas",
+      "Programas de autocontrole e biosseguridade",
+    ],
+  },
+  {
+    slug: "tanque-de-lavagem-para-carretilha",
+    name: "Tanque de Lavagem para Carretilha",
+    description: "Tanque de imersão em inox para lavagem de carretilhas, com pés reguláveis e alça de manuseio.",
+    image: tanqueLavagemCarretilha.url,
+    longDescription:
+      "Tanque de imersão em aço inox para lavagem e desengraxe de carretilhas, roldanas e pequenos componentes da nória aérea. Acomoda cestos de peças submersos em solução detergente, com tampa de fechamento, respiro superior, alça lateral de manuseio e dreno para descarte do banho. Cantos internos arredondados e pés reguláveis garantem escoamento total e higienização simples.",
+    applications: [
+      "Imersão e desengraxe de carretilhas e roldanas",
+      "Apoio às rotinas de manutenção do transportador aéreo",
+      "Lavagem de pequenas peças e componentes em inox",
+      "Setores de higienização e apoio industrial",
+      "Complemento ao sistema de higienização de carretilhas",
+    ],
+  },
+  {
     slug: "plataformas",
     name: "Plataformas",
     description: "Plataformas de operação em aço inox com guarda-corpo, escada de acesso e base fixa ao piso.",
@@ -707,6 +758,81 @@ const bovinosProducts: Product[] = [
       "Aproveitamento industrial de subprodutos",
       "Redução de volume para transporte interno",
       "Operação contínua em plantas de grande porte",
+    ],
+  },
+  {
+    slug: "plataforma-serra-carcaca-com-esterilizador",
+    name: "Plataforma Serra Carcaça com Esterilizador",
+    description: "Plataforma pantográfica em inox para operação da serra de carcaça, com esterilizador de facas e serras integrado.",
+    image: plataformaSerraCarcaca.url,
+    longDescription:
+      "Plataforma de trabalho pantográfica em aço inox desenvolvida para o posto de serra de carcaça bovina. O piso perfurado antiderrapante sobe e desce por acionamento hidráulico, acompanhando a altura da carcaça na nória e mantendo o operador em posição ergonômica. Conta com guarda-corpo, escada de acesso, botoeira de comando ao alcance da mão e esterilizador acoplado para higienização da serra e das facas a 82 °C entre carcaças, evitando contaminação cruzada.",
+    applications: [
+      "Posto de serragem longitudinal de carcaças bovinas",
+      "Higienização de serras e facas entre carcaças",
+      "Ajuste ergonômico de altura conforme a nória",
+      "Redução de esforço e afastamentos do operador",
+      "Atendimento a exigências sanitárias de inspeção",
+    ],
+  },
+  {
+    slug: "rosca-transportadora",
+    name: "Rosca Transportadora",
+    description: "Rosca transportadora inclinada em inox com funil de alimentação, plataforma de acesso e rodízios.",
+    image: roscaTransportadora.url,
+    longDescription:
+      "Transportador helicoidal (rosca sem-fim) em aço inox destinado à movimentação de miúdos, aparas, resíduos e subprodutos entre postos de trabalho. O funil de alimentação amplo recebe o produto no nível do piso e o eleva por tubo fechado até a calha de descarga superior, evitando respingos e contaminação. Monta-se sobre base com rodízios para reposicionamento, e inclui plataforma de acesso com guarda-corpo, painel elétrico e motoredutor de acionamento direto.",
+    applications: [
+      "Transporte de miúdos, aparas e subprodutos",
+      "Elevação de produto para caçambas, combos e tanques",
+      "Alimentação de moedores, chillers e graxaria",
+      "Movimentação fechada com contenção de resíduos",
+      "Layouts flexíveis graças à base com rodízios",
+    ],
+  },
+  {
+    slug: "sistema-de-higienizacao-de-carretilhas",
+    name: "Sistema de Higienização de Carretilhas",
+    description: "Linha completa em inox para lavagem, escovação e sanitização de carretilhas da nória aérea.",
+    image: sistemaHigienizacaoCarretilhas.url,
+    longDescription:
+      "Sistema modular em aço inox para higienização automática das carretilhas e roldanas do transportador aéreo. As carretilhas percorrem trilho dedicado passando por estágios de pré-lavagem, escovação, aspersão com detergente e enxágue final, com bandeja coletora contínua e retorno de água para reaproveitamento. O acionamento por motoredutor mantém cadência constante, e a estrutura com pés reguláveis e guarda-corpo facilita a manutenção e a limpeza do conjunto.",
+    applications: [
+      "Higienização automática de carretilhas da nória",
+      "Remoção de gordura e resíduos dos trilhos aéreos",
+      "Prevenção de contaminação cruzada entre carcaças",
+      "Aumento da vida útil de rolamentos e roldanas",
+      "Atendimento aos programas de autocontrole sanitário",
+    ],
+  },
+  {
+    slug: "sistema-de-rejeito",
+    name: "Sistema de Rejeito",
+    description: "Transportador de rejeitos em inox com gaiolas teladas, calha superior e painel de comando integrado.",
+    image: sistemaRejeito.url,
+    longDescription:
+      "Sistema dedicado à coleta e ao encaminhamento de rejeitos e produtos condenados pela inspeção, mantendo-os totalmente segregados do fluxo comestível. As esteiras em gaiola telada com taliscas conduzem o material do posto de inspeção até o ponto de descarga, com calha superior de recebimento, portas de acesso para limpeza e gabinete de acionamento fechado. Fabricado integralmente em aço inox, com pés reguláveis e estrutura projetada para higienização completa.",
+    applications: [
+      "Segregação de produtos condenados pela inspeção",
+      "Transporte de rejeitos até a área de resíduos",
+      "Prevenção de contaminação cruzada na linha",
+      "Apoio a postos de inspeção final (DIF/SIF)",
+      "Integração com graxaria e destinação de subprodutos",
+    ],
+  },
+  {
+    slug: "tanque-de-lavagem-para-carretilha",
+    name: "Tanque de Lavagem para Carretilha",
+    description: "Tanque de imersão em inox para lavagem de carretilhas, com pés reguláveis e alça de manuseio.",
+    image: tanqueLavagemCarretilha.url,
+    longDescription:
+      "Tanque de imersão em aço inox utilizado na lavagem e desengraxe de carretilhas, roldanas e pequenos componentes da nória aérea. O volume interno acomoda cestos de peças submersos em solução detergente, com tampa de fechamento, respiro superior, alça lateral para manuseio e dreno para descarte do banho. Cantos internos arredondados e pés reguláveis garantem escoamento total e higienização simples ao final do turno.",
+    applications: [
+      "Imersão e desengraxe de carretilhas e roldanas",
+      "Complemento ao sistema de higienização da nória",
+      "Lavagem de pequenas peças e componentes em inox",
+      "Rotinas de manutenção preventiva do transportador",
+      "Setores de higienização e apoio de frigoríficos",
     ],
   },
 ];
