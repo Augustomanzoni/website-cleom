@@ -14,7 +14,13 @@ import avesSangradorAutomatico from "@/assets/aves-sangrador-automatico.png.asse
 import avesTanqueEscaldagem3p from "@/assets/aves-tanque-escaldagem-3p.png.asset.json";
 import avesTanqueEscaldagem4p from "@/assets/aves-tanque-escaldagem-4p.png.asset.json";
 import avesDepenadeiraDesbaste from "@/assets/aves-depenadeira-desbaste.png.asset.json";
-import avesDepenadeiraAcabamento from "@/assets/aves-depenadeira-acabamento.png.asset.json";
+import avesDepenadeiraAcabamento from "@/assets/depenadeira-acabamento-nofundo.png.asset.json";
+import plataformaSerraCarcaca from "@/assets/plataforma-serra-carcaca.png.asset.json";
+import roscaTransportadora from "@/assets/rosca-transportadora.png.asset.json";
+import sistemaHigienizacaoCarretilhas from "@/assets/sistema-higienizacao-carretilhas.png.asset.json";
+import sistemaRejeito from "@/assets/sistema-rejeito.png.asset.json";
+import tanqueLavagemCarretilha from "@/assets/tanque-lavagem-carretilha.png.asset.json";
+import transferidorHidraulicoPallet from "@/assets/transferidor-hidraulico-pallet.png.asset.json";
 import avesDepiladorCanelinha from "@/assets/aves-depilador-canelinha.png.asset.json";
 import avesBatedorSambiquira from "@/assets/aves-batedor-sambiquira.png.asset.json";
 import avesArrancadorPenaSambiquira from "@/assets/aves-arrancador-pena-sambiquira.png.asset.json";
