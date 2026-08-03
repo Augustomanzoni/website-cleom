@@ -879,6 +879,7 @@ export const solutions: Solution[] = [
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
+      ...avesBovinosProducts.map(cloneProduct),
     ],
   },
   {
@@ -888,7 +889,7 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesBovinosProducts.map(cloneProduct), ...bovinosProducts.map(cloneProduct)],
   },
   {
     slug: "suinos",
