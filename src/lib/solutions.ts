@@ -409,6 +409,51 @@ const industriaCleaningProducts: Product[] = [
 
 const industriaProducts: Product[] = [
   {
+    slug: "transferidor-hidraulico-horizontal-para-pallet",
+    name: "Transferidor Hidráulico Horizontal para Pallet",
+    description: "Transferidor hidráulico para troca horizontal de pallets sem desmontar a carga paletizada.",
+    image: transferidorHidraulicoPallet.url,
+    longDescription:
+      "Equipamento hidráulico que transfere a carga paletizada de um pallet para outro no sentido horizontal, sem necessidade de remontar caixas ou volumes. Muito utilizado na troca de pallet de madeira por pallet plástico ou higienizado na entrada de áreas limpas, o conjunto conta com prensa de contenção lateral, mesa de apoio e unidade hidráulica com comando elétrico. O ciclo rápido elimina esforço manual, reduz avarias na carga e protege a área de processamento contra contaminantes trazidos por pallets externos.",
+    applications: [
+      "Troca de pallet de madeira por pallet plástico",
+      "Barreira sanitária na entrada de áreas limpas",
+      "Movimentação de cargas paletizadas sem remontagem",
+      "Redução de avarias e de esforço manual",
+      "Expedição, recebimento e câmaras frias",
+    ],
+  },
+  {
+    slug: "sistema-de-higienizacao-de-carretilhas",
+    name: "Sistema de Higienização de Carretilhas",
+    description: "Linha completa em inox para lavagem, escovação e sanitização de carretilhas da nória aérea.",
+    image: sistemaHigienizacaoCarretilhas.url,
+    longDescription:
+      "Sistema modular em aço inox para higienização automática das carretilhas e roldanas do transportador aéreo. As carretilhas percorrem trilho dedicado passando por estágios de pré-lavagem, escovação, aspersão com detergente e enxágue final, com bandeja coletora contínua e reaproveitamento de água. O acionamento por motoredutor mantém cadência constante, e a estrutura com pés reguláveis e guarda-corpo facilita manutenção e limpeza.",
+    applications: [
+      "Higienização automática de carretilhas da nória",
+      "Remoção de gordura e resíduos dos trilhos aéreos",
+      "Prevenção de contaminação cruzada na produção",
+      "Aumento da vida útil de rolamentos e roldanas",
+      "Programas de autocontrole e biosseguridade",
+    ],
+  },
+  {
+    slug: "tanque-de-lavagem-para-carretilha",
+    name: "Tanque de Lavagem para Carretilha",
+    description: "Tanque de imersão em inox para lavagem de carretilhas, com pés reguláveis e alça de manuseio.",
+    image: tanqueLavagemCarretilha.url,
+    longDescription:
+      "Tanque de imersão em aço inox para lavagem e desengraxe de carretilhas, roldanas e pequenos componentes da nória aérea. Acomoda cestos de peças submersos em solução detergente, com tampa de fechamento, respiro superior, alça lateral de manuseio e dreno para descarte do banho. Cantos internos arredondados e pés reguláveis garantem escoamento total e higienização simples.",
+    applications: [
+      "Imersão e desengraxe de carretilhas e roldanas",
+      "Apoio às rotinas de manutenção do transportador aéreo",
+      "Lavagem de pequenas peças e componentes em inox",
+      "Setores de higienização e apoio industrial",
+      "Complemento ao sistema de higienização de carretilhas",
+    ],
+  },
+  {
     slug: "plataformas",
     name: "Plataformas",
     description: "Plataformas de operação em aço inox com guarda-corpo, escada de acesso e base fixa ao piso.",
