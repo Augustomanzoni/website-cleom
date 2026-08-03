@@ -77,6 +77,16 @@ import lavadorLuvasNovo from "@/assets/lavador-luvas-novo.png.asset.json";
 import lavadorAventais from "@/assets/lavador-aventais.png.asset.json";
 import carrinhoCongelamento from "@/assets/carrinho-congelamento.png.asset.json";
 import mesaMiudos from "@/assets/mesa-miudos.png.asset.json";
+import plataformas from "@/assets/plataformas.png.asset.json";
+import lavadorLuvasInox from "@/assets/lavador-luvas-inox.png.asset.json";
+import plataformaPantografica from "@/assets/plataforma-pantografica.png.asset.json";
+import boxAtordoamento from "@/assets/box-atordoamento.png.asset.json";
+import calhaSangria from "@/assets/calha-sangria.png.asset.json";
+import centrifugas from "@/assets/centrifugas.png.asset.json";
+import elevadorTombadorCombos from "@/assets/elevador-tombador-combos.png.asset.json";
+import esterilizadorVaras from "@/assets/esterilizador-varas.png.asset.json";
+import lavadorCarcaca from "@/assets/lavador-carcaca.png.asset.json";
+import moedorOssos from "@/assets/moedor-ossos.png.asset.json";
 import abaco from "@/assets/abaco.png";
 import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
@@ -393,6 +403,21 @@ const industriaCleaningProducts: Product[] = [
 
 const industriaProducts: Product[] = [
   {
+    slug: "plataformas",
+    name: "Plataformas",
+    description: "Plataformas de operação em aço inox com guarda-corpo, escada de acesso e base fixa ao piso.",
+    image: plataformas.url,
+    longDescription:
+      "Plataformas industriais fabricadas em aço inox para criar postos de trabalho elevados, seguros e ergonômicos ao longo da linha de produção. O conjunto reúne piso antiderrapante, guarda-corpo com travessas, escada de acesso com corrimão e coluna central chumbada ao piso, permitindo diferentes alturas e configurações conforme o layout da planta. A construção sanitária facilita a limpeza sob e ao redor da estrutura, mantendo o padrão exigido em áreas de processamento.",
+    applications: [
+      "Postos de trabalho elevados em linhas de abate",
+      "Acesso seguro a equipamentos e nórias aéreas",
+      "Adequação ergonômica de operadores por altura de linha",
+      "Áreas de inspeção, pendura e transferência",
+      "Plantas que exigem estrutura sanitária em inox",
+    ],
+  },
+  {
     slug: "cadeira-ergonomica",
     name: "Cadeira Ergonômica",
     description: "Assento ergonômico industrial em inox para postos operacionais com conforto, ajuste e durabilidade.",
@@ -471,7 +496,7 @@ const industriaProducts: Product[] = [
     slug: "lavador-de-luvas",
     name: "Lavador de Luvas",
     description: "Lavador industrial de luvas com estrutura sanitária, lavagem uniforme e operação robusta.",
-    image: lavadorLuvasNovo.url,
+    image: lavadorLuvasInox.url,
     longDescription:
       "Equipamento voltado à higienização de luvas e acessórios de proteção utilizados em rotina industrial, com estrutura em inox e componentes preparados para uso contínuo. A solução melhora o padrão de limpeza e reduz o retrabalho em processos sanitários.",
     applications: [
@@ -559,6 +584,132 @@ const industriaProducts: Product[] = [
   },
 ];
 
+
+const avesBovinosProducts: Product[] = [
+  {
+    slug: "plataforma-pantografica-extra-baixa",
+    name: "Plataforma Pantográfica Extra Baixa",
+    description: "Plataforma elevatória pantográfica de perfil extra baixo com colunas guia e fole de proteção.",
+    image: plataformaPantografica.url,
+    longDescription:
+      "Plataforma elevatória pantográfica de perfil extra baixo, desenvolvida para ajustar a altura do posto de trabalho sem exigir rebaixo no piso. Recolhida, ocupa altura mínima; elevada, mantém estabilidade por meio de colunas guia laterais e fole sanfonado que protege o mecanismo contra respingos e resíduos. A solução melhora a ergonomia do operador, reduz esforço repetitivo e mantém o padrão sanitário exigido em áreas de abate e desossa.",
+    applications: [
+      "Ajuste ergonômico de altura em postos de trabalho",
+      "Linhas de abate e desossa de aves e bovinos",
+      "Áreas sem possibilidade de rebaixo no piso",
+      "Redução de esforço repetitivo e afastamentos",
+      "Ambientes úmidos com exigência sanitária",
+    ],
+  },
+];
+
+const bovinosProducts: Product[] = [
+  {
+    slug: "box-de-atordoamento",
+    name: "Box de Atordoamento",
+    description: "Box de contenção e atordoamento em inox com acionamento pneumático e piso de descarga lateral.",
+    image: boxAtordoamento.url,
+    longDescription:
+      "Box de atordoamento em aço inox projetado para conter o animal com segurança durante a etapa de insensibilização, atendendo aos requisitos de bem-estar animal e às normas de inspeção. Portas e laterais são acionadas por cilindros pneumáticos, com contenção de cabeça ajustável e piso basculante para descarga lateral controlada. A estrutura reforçada e chumbada ao piso garante rigidez, operação repetitiva e fácil higienização.",
+    applications: [
+      "Contenção e insensibilização de bovinos",
+      "Atendimento a requisitos de bem-estar animal",
+      "Descarga lateral controlada para a linha de sangria",
+      "Operação pneumática com comandos de segurança",
+      "Frigoríficos bovinos de médio e grande porte",
+    ],
+  },
+  {
+    slug: "calha-de-sangria-e-vomito",
+    name: "Calha de Sangria e Vômito",
+    description: "Calha sanitária em inox para coleta de sangue e vômito com fundo inclinado e saída canalizada.",
+    image: calhaSangria.url,
+    longDescription:
+      "Conjunto de calhas em aço inox instalado sob a linha de sangria para coletar sangue e conteúdo gástrico de forma organizada e higiênica. O fundo inclinado conduz o material até funis com saída canalizada, evitando acúmulo, respingos e contaminação do piso. Fabricada em módulos, adapta-se ao comprimento e ao traçado da nória, com pés reguláveis e cantos arredondados que facilitam a limpeza.",
+    applications: [
+      "Coleta de sangue na linha de sangria bovina",
+      "Captação de conteúdo gástrico e vômito",
+      "Encaminhamento para tanques e graxaria",
+      "Redução de contaminação e respingos no piso",
+      "Layouts modulares conforme o traçado da nória",
+    ],
+  },
+  {
+    slug: "centrifugas-lavadora-e-polidora",
+    name: "Centrífugas — Lavadora e Polidora",
+    description: "Conjunto de centrífugas em inox para lavagem e polimento de miúdos e subprodutos.",
+    image: centrifugas.url,
+    longDescription:
+      "Par de centrífugas sanitárias destinado às etapas de lavagem e polimento de miúdos, mocotós e subprodutos do abate bovino. A lavadora promove limpeza por rotação com entrada de água controlada e calha de descarga; a polidora finaliza o acabamento superficial do produto. Ambas contam com botoeiras de emergência, tampas com intertravamento e estrutura em inox com pés reguláveis para higienização completa.",
+    applications: [
+      "Lavagem de miúdos e subprodutos comestíveis",
+      "Polimento e acabamento superficial do produto",
+      "Preparação para resfriamento e embalagem",
+      "Redução de manuseio manual na área de miúdos",
+      "Operações com alto rigor sanitário",
+    ],
+  },
+  {
+    slug: "elevador-e-tombador-de-combos",
+    name: "Elevador e Tombador de Combos",
+    description: "Elevador com tombamento automático de combos e calha de descarga integrada em inox.",
+    image: elevadorTombadorCombos.url,
+    longDescription:
+      "Equipamento para elevação e tombamento automático de combos e contentores, descarregando o produto diretamente em calha ou esteira de alimentação. A coluna guia em inox, o berço de fixação e o acionamento controlado garantem movimento suave, segurança do operador e repetibilidade do ciclo. Acompanha plataforma de acesso com escada e guarda-corpo, dispensando esforço manual em cargas pesadas.",
+    applications: [
+      "Descarga automática de combos e contentores",
+      "Alimentação de esteiras e linhas de processo",
+      "Eliminação de esforço manual em cargas pesadas",
+      "Integração com salas de corte e desossa",
+      "Plantas com alta rotatividade logística interna",
+    ],
+  },
+  {
+    slug: "esterilizador-de-varas",
+    name: "Esterilizador de Varas",
+    description: "Esterilizador em inox para varas e ganchos com tampa articulada e aquecimento de água controlado.",
+    image: esterilizadorVaras.url,
+    longDescription:
+      "Equipamento sanitário destinado à esterilização de varas, ganchos e utensílios da linha de abate por meio de água aquecida em temperatura controlada. A tampa articulada com puxadores facilita a carga e descarga, enquanto o corpo interno cilíndrico com fechos rápidos permite acesso completo para limpeza. Painel lateral, conexões sanitárias e pés reguláveis completam o conjunto.",
+    applications: [
+      "Esterilização de varas, ganchos e utensílios",
+      "Cumprimento de rotinas de higienização obrigatórias",
+      "Apoio a programas de biossegurança da planta",
+      "Uso contínuo em áreas de abate e desossa",
+      "Redução de contaminação cruzada entre etapas",
+    ],
+  },
+  {
+    slug: "lavador-de-carcaca",
+    name: "Lavador de Carcaça",
+    description: "Cabine lavadora de carcaças bovinas com escovas verticais e aspersão controlada.",
+    image: lavadorCarcaca.url,
+    longDescription:
+      "Cabine em aço inox instalada sob a nória aérea para lavagem final das carcaças bovinas, combinando escovas verticais acionadas por motoredutor e barras de aspersão com bicos distribuídos em altura. O desenho fechado com defletores contém respingos, e o fundo em funil direciona a água ao dreno sanitário. Contribui para o padrão visual e microbiológico exigido antes da entrada na câmara fria.",
+    applications: [
+      "Lavagem final de carcaças bovinas em nória",
+      "Redução de contaminação superficial pré-câmara",
+      "Padronização do acabamento visual da carcaça",
+      "Contenção de respingos e escoamento sanitário",
+      "Linhas contínuas de abate bovino",
+    ],
+  },
+  {
+    slug: "moedor-de-ossos",
+    name: "Moedor de Ossos",
+    description: "Moedor industrial de ossos com rosca transportadora, motoredutor robusto e base em inox.",
+    image: moedorOssos.url,
+    longDescription:
+      "Moedor industrial projetado para trituração de ossos e resíduos rígidos do abate, com funil de alimentação amplo, rosca transportadora e câmara de moagem de alta resistência. O conjunto motoredutor com acoplamento protegido entrega torque elevado para operação contínua, e a base estrutural em inox chumbada ao piso reduz vibração. Solução voltada ao aproveitamento de subprodutos e à alimentação de graxaria.",
+    applications: [
+      "Trituração de ossos e resíduos rígidos",
+      "Alimentação de linhas de graxaria",
+      "Aproveitamento industrial de subprodutos",
+      "Redução de volume para transporte interno",
+      "Operação contínua em plantas de grande porte",
+    ],
+  },
+];
 
 export const solutions: Solution[] = [
   {
@@ -728,6 +879,7 @@ export const solutions: Solution[] = [
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
+      ...avesBovinosProducts.map(cloneProduct),
     ],
   },
   {
@@ -737,7 +889,7 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesBovinosProducts.map(cloneProduct), ...bovinosProducts.map(cloneProduct)],
   },
   {
     slug: "suinos",
