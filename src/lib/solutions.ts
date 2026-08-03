@@ -403,6 +403,21 @@ const industriaCleaningProducts: Product[] = [
 
 const industriaProducts: Product[] = [
   {
+    slug: "plataformas",
+    name: "Plataformas",
+    description: "Plataformas de operação em aço inox com guarda-corpo, escada de acesso e base fixa ao piso.",
+    image: plataformas.url,
+    longDescription:
+      "Plataformas industriais fabricadas em aço inox para criar postos de trabalho elevados, seguros e ergonômicos ao longo da linha de produção. O conjunto reúne piso antiderrapante, guarda-corpo com travessas, escada de acesso com corrimão e coluna central chumbada ao piso, permitindo diferentes alturas e configurações conforme o layout da planta. A construção sanitária facilita a limpeza sob e ao redor da estrutura, mantendo o padrão exigido em áreas de processamento.",
+    applications: [
+      "Postos de trabalho elevados em linhas de abate",
+      "Acesso seguro a equipamentos e nórias aéreas",
+      "Adequação ergonômica de operadores por altura de linha",
+      "Áreas de inspeção, pendura e transferência",
+      "Plantas que exigem estrutura sanitária em inox",
+    ],
+  },
+  {
     slug: "cadeira-ergonomica",
     name: "Cadeira Ergonômica",
     description: "Assento ergonômico industrial em inox para postos operacionais com conforto, ajuste e durabilidade.",
@@ -481,7 +496,7 @@ const industriaProducts: Product[] = [
     slug: "lavador-de-luvas",
     name: "Lavador de Luvas",
     description: "Lavador industrial de luvas com estrutura sanitária, lavagem uniforme e operação robusta.",
-    image: lavadorLuvasNovo.url,
+    image: lavadorLuvasInox.url,
     longDescription:
       "Equipamento voltado à higienização de luvas e acessórios de proteção utilizados em rotina industrial, com estrutura em inox e componentes preparados para uso contínuo. A solução melhora o padrão de limpeza e reduz o retrabalho em processos sanitários.",
     applications: [
