@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "ceb0016d-2b92-4b83-bcb5-b7147759255c",
-  "project_id": "8a1f4356-e5c5-432b-aaec-e29974e615b0",
-  "url": "/__l5e/assets-v1/ceb0016d-2b92-4b83-bcb5-b7147759255c/carrinho-congelamento.png",
-  "r2_key": "a/v1/8a1f4356-e5c5-432b-aaec-e29974e615b0/ceb0016d-2b92-4b83-bcb5-b7147759255c/carrinho-congelamento.png",
-  "original_filename": "carrinho-congelamento.png",
-  "size": 1564648,
   "content_type": "image/png",
-  "created_at": "2026-07-27T18:25:41Z"
+  "created_at": "2026-07-27T18:25:41Z",
+  "original_filename": "carrinho-congelamento.png",
+  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
+  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/ceb0016d-2b92-4b83-bcb5-b7147759255c/carrinho-congelamento.png",
+  "size": 1564648,
+  "url": "/__l5e/assets-v1/ceb0016d-2b92-4b83-bcb5-b7147759255c/carrinho-congelamento.png",
+  "version": 1
 }

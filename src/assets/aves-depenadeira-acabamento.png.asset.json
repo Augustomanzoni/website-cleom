@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "1dab9558-19c0-4a65-9781-056d0669ec2b",
-  "project_id": "8a1f4356-e5c5-432b-aaec-e29974e615b0",
-  "url": "/__l5e/assets-v1/1dab9558-19c0-4a65-9781-056d0669ec2b/aves-depenadeira-acabamento.png",
-  "r2_key": "a/v1/8a1f4356-e5c5-432b-aaec-e29974e615b0/1dab9558-19c0-4a65-9781-056d0669ec2b/aves-depenadeira-acabamento.png",
-  "original_filename": "aves-depenadeira-acabamento.png",
-  "size": 1781511,
   "content_type": "image/png",
-  "created_at": "2026-08-03T18:27:55Z"
+  "created_at": "2026-08-03T18:27:55Z",
+  "original_filename": "aves-depenadeira-acabamento.png",
+  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
+  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/1dab9558-19c0-4a65-9781-056d0669ec2b/aves-depenadeira-acabamento.png",
+  "size": 1781511,
+  "url": "/__l5e/assets-v1/1dab9558-19c0-4a65-9781-056d0669ec2b/aves-depenadeira-acabamento.png",
+  "version": 1
 }
