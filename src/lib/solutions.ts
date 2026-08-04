@@ -43,11 +43,11 @@ import avesTensorPneumatico from "@/assets/aves-tensor-pneumatico.png.asset.json
 import avesSistemaTravamento from "@/assets/aves-sistema-travamento.png.asset.json";
 import avesTracao from "@/assets/aves-tracao.png.asset.json";
 import avesBaseAjustes from "@/assets/aves-base-ajustes.png.asset.json";
-import avesArrancadorCabecas from "@/assets/aves-arrancador-cabecas.png.asset.json";
+import avesArrancadorCabecas from "@/assets/aves-arrancador-cabecas-nofundo.png.asset.json";
 import avesLavadorFrangos from "@/assets/aves-lavador-frangos.png.asset.json";
 import avesLavadorFrangosBomba from "@/assets/aves-lavador-frangos-bomba.png.asset.json";
 import avesCortadoraPelePescoco from "@/assets/aves-cortadora-pele-pescoco.png.asset.json";
-import avesLavadorGanchos from "@/assets/aves-lavador-ganchos.png.asset.json";
+import avesLavadorGanchos from "@/assets/aves-lavador-ganchos-nofundo.png.asset.json";
 import avesBombaMiudos from "@/assets/aves-bomba-miudos.png.asset.json";
 import avesBombaProdutos from "@/assets/aves-bomba-produtos.png.asset.json";
 import avesBombaTransporteProduto from "@/assets/aves-bomba-transporte-produto.png.asset.json";
@@ -93,6 +93,14 @@ import elevadorTombadorCombos from "@/assets/elevador-tombador-combos.png.asset.
 import esterilizadorVaras from "@/assets/esterilizador-varas.png.asset.json";
 import lavadorCarcaca from "@/assets/lavador-carcaca.png.asset.json";
 import moedorOssos from "@/assets/moedor-ossos.png.asset.json";
+import barreiraSanitaria from "@/assets/barreira-sanitaria.png.asset.json";
+import carroTransportePantografico from "@/assets/carro-transporte-pantografico.png.asset.json";
+import avesDesenganchadorPatas from "@/assets/aves-desenganchador-patas.png.asset.json";
+import avesDesenganchadorPatasLinha from "@/assets/aves-desenganchador-patas-linha.png.asset.json";
+import avesEsteiraAcumuladoraGaiolas from "@/assets/aves-esteira-acumuladora-gaiolas.png.asset.json";
+import avesCalhaPlataformaEvisceracao from "@/assets/aves-calha-plataforma-evisceracao.png.asset.json";
+import avesCalhaMiudosDif from "@/assets/aves-calha-miudos-dif.png.asset.json";
+import avesEsteiraAscendenteDescendente from "@/assets/aves-esteira-ascendente-descendente.png.asset.json";
 import abaco from "@/assets/abaco.png";
 import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
@@ -408,6 +416,36 @@ const industriaCleaningProducts: Product[] = [
 ];
 
 const industriaProducts: Product[] = [
+  {
+    slug: "barreira-sanitaria",
+    name: "Barreira Sanitária",
+    description: "Barreira sanitária em inox com catraca, lavador de mãos automático e escovas para higienização de solados.",
+    image: barreiraSanitaria.url,
+    longDescription:
+      "Conjunto completo de barreira sanitária construído em aço inox para controlar o acesso às áreas de produção. Reúne catraca de giro com liberação eletrônica, lavador de mãos com sensores infravermelhos, dosagem automática de sabonete e sanitizante e lavador de solados com escovas rotativas, plataforma antiderrapante e guarda-corpo. O acesso só é liberado após o operador completar todas as etapas de higienização, garantindo padronização do procedimento, registro do fluxo de pessoas e conformidade com os programas de autocontrole.",
+    applications: [
+      "Controle de acesso às áreas de processamento",
+      "Higienização obrigatória de mãos e solados",
+      "Prevenção de contaminação cruzada entre setores",
+      "Atendimento aos programas de autocontrole e MAPA",
+      "Entradas de vestiários, salas limpas e áreas frias",
+    ],
+  },
+  {
+    slug: "carro-transporte-pantografico",
+    name: "Carro de Transporte Pantográfico",
+    description: "Carro móvel em inox com elevação pantográfica para movimentação ergonômica de caixas e bandejas.",
+    image: carroTransportePantografico.url,
+    longDescription:
+      "Carro de transporte em aço inox equipado com mecanismo pantográfico protegido por fole sanitário, que mantém a caixa superior sempre na altura ideal de trabalho conforme a carga aumenta ou diminui. Rodízios com trava, alça ergonômica e estrutura totalmente lavável tornam o equipamento ideal para movimentação interna de caixas plásticas, bandejas e insumos entre setores, reduzindo esforço físico, riscos ergonômicos e tempo de manuseio.",
+    applications: [
+      "Movimentação interna de caixas e bandejas",
+      "Redução de esforço ergonômico no carregamento",
+      "Abastecimento de linhas de corte e embalagem",
+      "Transporte entre câmaras frias e áreas de produção",
+      "Operações com carga variável e alto giro",
+    ],
+  },
   {
     slug: "transferidor-hidraulico-horizontal-para-pallet",
     name: "Transferidor Hidráulico Horizontal para Pallet",
@@ -1002,6 +1040,24 @@ export const solutions: Solution[] = [
       { slug: "arrancador-de-pele", name: "Arrancador de Pele", description: "Equipamento para remoção controlada de pele com operação sanitária e acabamento uniforme do produto.", image: arrancadorPele.url,
         longDescription: "Solução projetada para remover pele de forma precisa e contínua, mantendo controle operacional, segurança e regularidade do acabamento. A estrutura em inox e o desenho funcional permitem higienização facilitada e adaptação a diferentes pontos da linha de processamento.",
         applications: ["Remoção controlada de pele em linha", "Padronização de acabamento do produto", "Redução de retrabalho manual em etapas específicas", "Integração com processos de corte e preparo", "Operações que exigem higiene e repetibilidade"] },
+      { slug: "desenganchador-de-patas", name: "Desenganchador de Patas", description: "Desenganchador rotativo em inox para retirada automática das patas dos ganchos da nória.", image: avesDesenganchadorPatas.url,
+        longDescription: "Equipamento rotativo em aço inox que retira automaticamente as patas dos ganchos da nória após o corte, direcionando-as à calha coletora inferior. O prato giratório sincronizado com a velocidade da linha, as guias reguláveis e o acionamento pneumático garantem desengate suave, sem danificar os ganchos nem o produto, mantendo o fluxo contínuo mesmo em altas cadências.",
+        applications: ["Desengate automático de patas na nória", "Recuperação de ganchos em linhas de alta cadência", "Direcionamento das patas para calha ou esteira", "Redução de intervenção manual e riscos ergonômicos", "Integração com cortadores e depiladores de patas"] },
+      { slug: "desenganchador-de-patas-em-linha", name: "Desenganchador de Patas em Linha", description: "Desenganchador linear com guias reguláveis para retirada das patas durante o trânsito na nória.", image: avesDesenganchadorPatasLinha.url,
+        longDescription: "Versão linear do desenganchador, instalada diretamente sobre o trecho reto do transportador aéreo. As guias e came de desengate são reguláveis em altura e profundidade, permitindo ajuste fino conforme o tipo de gancho e o calibre das aves. Construção em aço inox com fixação por suportes ajustáveis, ideal para plantas que precisam de solução compacta e sem acionamento motorizado.",
+        applications: ["Desengate de patas em trecho reto da nória", "Instalação em layouts com espaço reduzido", "Ajuste fino para diferentes calibres de aves", "Operação sem motorização adicional", "Modernização de linhas existentes"] },
+      { slug: "esteira-acumuladora-de-gaiolas", name: "Esteira Acumuladora de Gaiolas", description: "Esteira acumuladora reforçada em inox com guarda-corpo e proteções em tela para gaiolas vazias e cheias.", image: avesEsteiraAcumuladoraGaiolas.url,
+        longDescription: "Esteira acumuladora em aço inox com tapete modular de alta resistência, guarda-corpo lateral e proteções em tela sobre os componentes motorizados. Funciona como pulmão entre o descarregamento e a lavagem, acumulando gaiolas sem pressionar a linha principal. Pés reguláveis, motoredutor de velocidade variável e desenho sanitário facilitam a limpeza e a manutenção diária.",
+        applications: ["Acúmulo de gaiolas na plataforma de recepção", "Buffer entre descarregamento e lavadora", "Regulagem de ritmo entre setores", "Redução de paradas na linha principal", "Operação segura com proteções e guarda-corpo"] },
+      { slug: "calha-com-plataforma-para-evisceracao", name: "Calha com Plataforma para Evisceração", description: "Calha de evisceração integrada a plataformas operacionais elevadas com escadas e guarda-corpo.", image: avesCalhaPlataformaEvisceracao.url,
+        longDescription: "Conjunto completo de calha de evisceração com plataformas operacionais elevadas, piso antiderrapante, escadas de acesso e guarda-corpo em toda a extensão. Projetado sob medida conforme o layout da planta, o sistema conduz vísceras e subprodutos de forma sanitária enquanto posiciona os operadores na altura ergonômica correta ao longo da linha aérea, com pés reguláveis e drenagem contínua.",
+        applications: ["Linhas completas de evisceração de aves", "Postos ergonômicos ao longo da nória", "Condução sanitária de vísceras e subprodutos", "Áreas de inspeção sanitária do MAPA", "Projetos sob medida para layouts em L ou U"] },
+      { slug: "calha-de-miudos-e-dif", name: "Calha de Miúdos e DIF", description: "Conjunto de calhas, mesas e transportadores para separação de miúdos e Departamento de Inspeção Final.", image: avesCalhaMiudosDif.url,
+        longDescription: "Layout completo em aço inox reunindo calhas de miúdos, mesas de inspeção, transportadores e pontos de coleta destinados à separação de fígado, moela e coração e ao Departamento de Inspeção Final (DIF). O sistema organiza o fluxo entre a evisceração e as áreas de resfriamento, com registros de água, bandejas coletoras, guarda-corpo e estrutura com pés reguláveis para higienização completa.",
+        applications: ["Separação e condução de miúdos comestíveis", "Estruturação do Departamento de Inspeção Final", "Organização do fluxo pós-evisceração", "Atendimento às exigências sanitárias do MAPA", "Projetos completos para plantas avícolas"] },
+      { slug: "esteira-ascendente-descendente", name: "Esteira Ascendente-Descendente", description: "Esteira em cavalete com tela sanitária e inclinação ajustável para transferência vertical de produtos.", image: avesEsteiraAscendenteDescendente.url,
+        longDescription: "Esteira com estrutura em cavalete (A-frame) e tapete de tela metálica sanitária, projetada para elevar ou baixar produtos entre diferentes níveis da planta. A inclinação é ajustável, o acionamento por motoredutor permite velocidade variável e o painel de comando local facilita a operação. A construção em aço inox com pés reguláveis e proteções laterais garante drenagem, higiene e segurança.",
+        applications: ["Transferência de produtos entre níveis", "Alimentação de chillers, mesas e embaladoras", "Layouts com desnível entre setores", "Transporte de miúdos, cortes e subprodutos", "Integração com linhas contínuas de processamento"] },
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
