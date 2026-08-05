@@ -66,7 +66,7 @@ function CategoriaPage() {
               <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">Produtos</p>
               <h2 className="text-3xl text-navy-deep mb-8">Conheça toda a linha</h2>
 
-              <div className="max-h-[720px] overflow-y-auto pr-2 -mr-2">
+              <div className="max-h-[1180px] overflow-y-auto pr-2 -mr-2">
                 {sol.products.length > 0 ? (
                   <div className="grid sm:grid-cols-2 gap-5">
                     {[...sol.products].sort((a, b) => a.name.localeCompare(b.name, "pt-BR")).map((p: Product) => (
