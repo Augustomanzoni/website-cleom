@@ -426,6 +426,42 @@ const industriaCleaningProducts: Product[] = [
 
 const industriaProducts: Product[] = [
   {
+    slug: "funil-para-embalar",
+    name: "Funil para Embalar",
+    description: "Funil sanitário em aço inox para direcionamento preciso de produtos durante o envase e a embalagem.",
+    image: funilEmbalar.url,
+    longDescription:
+      "Funil industrial fabricado em aço inox com formato cônico e suporte lateral para fixação segura em bancadas, esteiras ou equipamentos de embalagem. Sua geometria conduz o produto de maneira uniforme até a embalagem, reduzindo perdas, derramamentos e contato manual. A construção desmontável e as superfícies lisas facilitam a higienização entre lotes.",
+    applications: ["Envase manual ou semiautomático de cortes e miúdos", "Direcionamento de produtos para sacos e embalagens", "Redução de perdas e derramamentos no posto", "Integração com bancadas e linhas de embalagem", "Áreas alimentícias com exigência sanitária"],
+  },
+  {
+    slug: "plataforma-pantografica-duplo-x",
+    name: "Plataforma Pantográfica Duplo X",
+    description: "Mesa elevatória pantográfica de duplo X com unidade hidráulica independente e proteção sanfonada.",
+    image: plataformaDuploX.url,
+    longDescription:
+      "Plataforma elevatória em aço inox com mecanismo pantográfico duplo X para vencer maiores cursos de elevação com estabilidade e precisão. Possui tampo com contenção lateral, fole de proteção do mecanismo, base de fixação e central hidráulica independente com motor, bomba, reservatório e manômetro. O conjunto permite posicionar cargas na altura ergonômica ideal e integrar níveis distintos da produção.",
+    applications: ["Elevação de cargas entre diferentes níveis", "Abastecimento ergonômico de linhas e equipamentos", "Posicionamento de caixas, pallets e recipientes", "Integração com esteiras e mesas de processo", "Operações industriais com grande curso vertical"],
+  },
+  {
+    slug: "plataforma-pantografica-giratoria",
+    name: "Plataforma Pantográfica Giratória",
+    description: "Plataforma elevatória e giratória enclausurada para movimentação segura e ergonômica de cargas paletizadas.",
+    image: plataformaGiratoria.url,
+    longDescription:
+      "Sistema automatizado em aço inox que combina elevação pantográfica e mesa giratória para posicionar pallets e cargas na altura e no ângulo adequados ao operador ou ao equipamento seguinte. O enclausuramento em tela, portas intertravadas e acesso controlado protegem a zona de movimento, enquanto o giro reduz deslocamentos e esforço físico durante carga, descarga e despaletização.",
+    applications: ["Despaletização e paletização ergonômica", "Giro controlado de cargas em células automatizadas", "Alimentação de linhas de embalagem", "Movimentação de caixas em pallets", "Células com proteção perimetral e acesso controlado"],
+  },
+  {
+    slug: "ralos-e-canaletas",
+    name: "Ralos e Canaletas",
+    description: "Conjunto sanitário em inox para drenagem industrial, com cestos retentores e grelhas removíveis.",
+    image: ralosCanaletas.url,
+    longDescription:
+      "Linha de ralos e canaletas em aço inox projetada para coleta e escoamento eficiente de líquidos em áreas de processamento. Os conjuntos contam com grelhas perfuradas removíveis, cestos para retenção de sólidos, caixas sifonadas e saídas dimensionadas conforme a vazão. Cantos sanitários e superfícies acessíveis simplificam a limpeza e ajudam a evitar odores, obstruções e contaminação cruzada.",
+    applications: ["Drenagem de salas de abate, corte e higienização", "Retenção de sólidos antes da rede de efluentes", "Coleta de água em áreas de lavagem intensiva", "Adequação sanitária de pisos industriais", "Projetos sob medida conforme vazão e layout"],
+  },
+  {
     slug: "barreira-sanitaria",
     name: "Barreira Sanitária",
     description: "Barreira sanitária em inox com catraca, lavador de mãos automático e escovas para higienização de solados.",
@@ -1067,6 +1103,21 @@ export const solutions: Solution[] = [
       { slug: "esteira-ascendente-descendente", name: "Esteira Ascendente-Descendente", description: "Esteira em cavalete com tela sanitária e inclinação ajustável para transferência vertical de produtos.", image: avesEsteiraAscendenteDescendente.url,
         longDescription: "Esteira com estrutura em cavalete (A-frame) e tapete de tela metálica sanitária, projetada para elevar ou baixar produtos entre diferentes níveis da planta. A inclinação é ajustável, o acionamento por motoredutor permite velocidade variável e o painel de comando local facilita a operação. A construção em aço inox com pés reguláveis e proteções laterais garante drenagem, higiene e segurança.",
         applications: ["Transferência de produtos entre níveis", "Alimentação de chillers, mesas e embaladoras", "Layouts com desnível entre setores", "Transporte de miúdos, cortes e subprodutos", "Integração com linhas contínuas de processamento"] },
+      { slug: "misturador-a-vacuo", name: "Misturador a Vácuo", description: "Misturador industrial a vácuo em inox para homogeneização eficiente de carnes, temperos e ingredientes.", image: misturadorVacuo.url,
+        longDescription: "Misturador robusto com cuba fechada e sistema de vácuo que remove o ar durante a mistura, favorecendo absorção uniforme de temperos, melhor liga e padronização do produto. A tampa selada, o monitoramento de pressão, os comandos locais e as proteções mecânicas oferecem controle e segurança para ciclos repetitivos em ambiente industrial.",
+        applications: ["Mistura a vácuo de carnes e massas alimentícias", "Incorporação uniforme de salmoura e temperos", "Preparação de embutidos e produtos processados", "Redução de bolsas de ar na formulação", "Linhas avícolas de industrializados e cortes temperados"] },
+      { slug: "misturador-convencional", name: "Misturador Convencional", description: "Misturador horizontal em aço inox para homogeneização de carnes, condimentos e formulações industriais.", image: misturadorConvencional.url,
+        longDescription: "Misturador convencional de cuba horizontal com acionamento lateral protegido, desenvolvido para distribuir ingredientes de forma homogênea e preservar a textura do produto. A estrutura reforçada, as proteções de segurança e o desenho sanitário permitem operação confiável, descarga eficiente e higienização completa entre formulações.",
+        applications: ["Mistura de carnes de aves e ingredientes", "Preparação de hambúrgueres, empanados e embutidos", "Homogeneização de temperos e aditivos", "Produção em bateladas com descarga controlada", "Salas de industrializados e processamento"] },
+      { slug: "plataforma-e-esteiras-de-higienizacao", name: "Plataforma e Esteiras de Higienização", description: "Linha elevada em inox com plataformas e esteiras para processamento e higienização contínua.", image: plataformaEsteirasHigienizacao.url,
+        longDescription: "Conjunto projetado sob medida com plataformas elevadas, escadas, guarda-corpos e esteiras sanitárias integradas para organizar operações em diferentes níveis. A estrutura oferece acesso seguro aos postos, fluxo contínuo de produtos ou recipientes e ampla acessibilidade para lavagem e manutenção, adequando-se a layouts avícolas de alta capacidade.",
+        applications: ["Linhas elevadas de processamento avícola", "Higienização e transporte contínuo de recipientes", "Acesso ergonômico a postos e equipamentos", "Integração de setores em diferentes níveis", "Projetos completos para plantas de alta produção"] },
+      { slug: "quebrador-de-blocos", name: "Quebrador de Blocos", description: "Equipamento em inox para fragmentação controlada de blocos congelados antes do processamento.", image: quebradorBlocos.url,
+        longDescription: "Máquina industrial desenvolvida para quebrar blocos congelados de carnes e matérias-primas em porções menores, facilitando a alimentação de moedores, misturadores e demais equipamentos. A calha inclinada, o sistema mecânico protegido, os comandos de segurança e o recipiente móvel de coleta proporcionam operação contínua, menor esforço manual e controle do produto.",
+        applications: ["Fragmentação de blocos congelados de carne de aves", "Preparação de matéria-prima para moagem", "Alimentação de misturadores e processadores", "Redução de esforço e manuseio manual", "Linhas de industrializados e aproveitamento de cortes"] },
+      { slug: "sistema-automatico-entrada-saida-camara-estocagem", name: "Sistema Automático para Entrada e Saída de Câmara de Estocagem", description: "Sistema automatizado de transportadores e mesas giratórias para fluxo de produtos em câmaras de estocagem.", image: sistemaCamaraEstocagem.url,
+        longDescription: "Solução integrada de roletes, correntes, mesas giratórias e estações de transferência para automatizar a entrada, distribuição e saída de cargas em câmaras frias. O sistema direciona produtos entre corredores e posições de armazenagem com rastreabilidade, cadência controlada e menor intervenção humana, reduzindo tempo de porta aberta e melhorando a eficiência logística.",
+        applications: ["Entrada e saída automatizada de câmaras frias", "Transferência de cargas entre transportadores", "Organização do fluxo de armazenagem", "Redução do tempo de abertura das portas", "Integração com sistemas de controle e rastreabilidade"] },
       ...sharedCrossCategoryProducts.map(cloneProduct),
       cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
