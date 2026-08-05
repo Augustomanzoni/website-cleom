@@ -101,6 +101,15 @@ import avesEsteiraAcumuladoraGaiolas from "@/assets/aves-esteira-acumuladora-gai
 import avesCalhaPlataformaEvisceracao from "@/assets/aves-calha-plataforma-evisceracao.png.asset.json";
 import avesCalhaMiudosDif from "@/assets/aves-calha-miudos-dif.png.asset.json";
 import avesEsteiraAscendenteDescendente from "@/assets/aves-esteira-ascendente-descendente.png.asset.json";
+import funilEmbalar from "@/assets/funil-embalar.png.asset.json";
+import plataformaDuploX from "@/assets/plataforma-duplo-x.png.asset.json";
+import plataformaGiratoria from "@/assets/plataforma-giratoria.png.asset.json";
+import ralosCanaletas from "@/assets/ralos-canaletas.png.asset.json";
+import misturadorVacuo from "@/assets/misturador-vacuo.png.asset.json";
+import misturadorConvencional from "@/assets/misturador-convencional.png.asset.json";
+import plataformaEsteirasHigienizacao from "@/assets/plataforma-esteiras-higienizacao.png.asset.json";
+import quebradorBlocos from "@/assets/quebrador-blocos.png.asset.json";
+import sistemaCamaraEstocagem from "@/assets/sistema-camara-estocagem.png.asset.json";
 import abaco from "@/assets/abaco.png";
 import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
