@@ -80,6 +80,7 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
+            <LanguageSwitcher mobile />
             <div className="mt-2 pl-4 border-l border-white/10 flex flex-col">
               {solutions.map((s) => (
                 <Link
