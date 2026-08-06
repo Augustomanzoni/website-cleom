@@ -4,6 +4,7 @@ import { useState } from "react";
 import logo from "@/assets/cleom-logo.png.asset.json";
 import { ProductSearch } from "@/components/site/ProductSearch";
 import { solutions } from "@/lib/solutions";
+import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 
 type NavLink = { to: "/" | "/sobre" | "/nossas-solucoes" | "/servicos" | "/contato"; label: string; hasMenu?: boolean };
 const navLinks: NavLink[] = [
