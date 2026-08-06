@@ -58,6 +58,7 @@ export function Header() {
                 )}
               </div>
             ))}
+            <LanguageSwitcher />
             </nav>
           </div>
 
