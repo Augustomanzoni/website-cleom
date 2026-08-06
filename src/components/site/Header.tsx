@@ -4,6 +4,7 @@ import { useState } from "react";
 import logo from "@/assets/cleom-logo.png.asset.json";
 import { ProductSearch } from "@/components/site/ProductSearch";
 import { solutions } from "@/lib/solutions";
+import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 
 type NavLink = { to: "/" | "/sobre" | "/nossas-solucoes" | "/servicos" | "/contato"; label: string; hasMenu?: boolean };
 const navLinks: NavLink[] = [
@@ -57,6 +58,7 @@ export function Header() {
                 )}
               </div>
             ))}
+            <LanguageSwitcher />
             </nav>
           </div>
 
@@ -78,6 +80,7 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
+            <LanguageSwitcher mobile />
             <div className="mt-2 pl-4 border-l border-white/10 flex flex-col">
               {solutions.map((s) => (
                 <Link
