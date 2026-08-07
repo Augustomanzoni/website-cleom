@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { findProduct, type Product } from "@/lib/solutions";
+import { findProduct, type GalleryItem, type Product } from "@/lib/solutions";
 
 export const Route = createFileRoute("/nossas-solucoes/$categoria/$produto")({
   loader: ({ params }) => {
@@ -43,7 +43,7 @@ function ProdutoPage() {
       longDescription: product.longDescription,
       applications: product.applications,
     },
-    ...(product.gallery ?? []).map((g) => ({
+    ...(product.gallery ?? []).map((g: GalleryItem) => ({
       name: g.name,
       image: g.image,
       description: g.description,
