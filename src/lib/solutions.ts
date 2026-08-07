@@ -4,7 +4,6 @@ import avesTrilhoSigma from "@/assets/aves-trilho-sigma.png.asset.json";
 import avesTrilhoT from "@/assets/aves-trilho-t.png.asset.json";
 import avesTunelSangriaRaspador from "@/assets/aves-tunel-sangria-raspador.png.asset.json";
 import avesViradorCaixaGaiola from "@/assets/aves-virador-caixa-gaiola.png.asset.json";
-import avesBaseMotorizada from "@/assets/aves-base-motorizada.png.asset.json";
 import avesCurvas from "@/assets/aves-curva-45-90-180.png.asset.json";
 import avesTanqueEscaldagemBorbulho from "@/assets/aves-tanque-escaldagem-borbulho.png.asset.json";
 import avesTanquePulmao from "@/assets/aves-tanque-pulmao.png.asset.json";
@@ -44,7 +43,6 @@ import avesDepiladorPatas from "@/assets/aves-depilador-patas.png.asset.json";
 import avesDesviadorFluxo from "@/assets/aves-desviador-fluxo.png.asset.json";
 import avesAfiadorDiscos from "@/assets/aves-afiador-discos.png.asset.json";
 import avesRepassadora from "@/assets/aves-repassadora.png.asset.json";
-import avesTransportadorAereo from "@/assets/aves-transportador-aereo.png.asset.json";
 import avesGanchoDuplo from "@/assets/aves-gancho-duplo.png.asset.json";
 import avesGanchoEvisceracao from "@/assets/aves-gancho-evisceracao.png.asset.json";
 import avesGanchoPendura from "@/assets/aves-gancho-pendura.png.asset.json";
@@ -126,7 +124,23 @@ import catAves from "@/assets/cat-aves.jpg.asset.json";
 import catBovinos from "@/assets/cat-bovinos.jpg.asset.json";
 import catSuinos from "@/assets/cat-suinos.jpg.asset.json";
 import catPisceos from "@/assets/cat-pisceos.jpg.asset.json";
+import conjCapaAves from "@/assets/conj-capa-aves.png.asset.json";
+import conjCapaBovinos from "@/assets/conj-capa-bovinos.png.asset.json";
+import conjBaseMotorizadaBov from "@/assets/conj-base-motorizada-bov.png.asset.json";
+import conjCarretilhas from "@/assets/conj-carretilhas.png.asset.json";
+import conjChavesDesviadoras from "@/assets/conj-chaves-desviadoras.png.asset.json";
+import conjElevadorCarretilha from "@/assets/conj-elevador-carretilha.png.asset.json";
+import conjNoriaArraste from "@/assets/conj-noria-arraste.png.asset.json";
+import conjTrilhagem from "@/assets/conj-trilhagem.png.asset.json";
+import conjTrilhoNoria from "@/assets/conj-trilho-noria.png.asset.json";
 
+
+export type GalleryItem = {
+  name: string;
+  image: string;
+  description: string;
+  applications?: string[];
+};
 
 export type Product = {
   slug: string;
@@ -135,6 +149,7 @@ export type Product = {
   image: string;
   longDescription?: string;
   applications?: string[];
+  gallery?: GalleryItem[];
 };
 
 export type Solution = {
@@ -749,6 +764,30 @@ const avesBovinosProducts: Product[] = [
 
 const bovinosProducts: Product[] = [
   {
+    slug: "transportador-aereo-bovinos",
+    name: "Transportador Aéreo de Bovinos",
+    description: "Conjunto completo de transporte aéreo para bovinos: trilhagem, nória de arraste, carretilhas, balancins e acessórios.",
+    image: conjCapaBovinos.url,
+    longDescription:
+      "Conjunto completo de transporte aéreo para frigoríficos de bovinos, reunindo trilhagem estrutural, trilhos de nória, nória de arraste, base motorizada, chaves desviadoras, elevador de carretilha e a linha de carretilhas, balancins e maneias. Projetado sob medida para o layout da planta, garante fluxo contínuo das carcaças entre sangria, esfola, serra, inspeção e câmaras, com componentes em aço inox de alta resistência que podem ser fornecidos em conjunto ou separadamente para ampliações e reposição.",
+    applications: [
+      "Movimentação contínua de carcaças de bovinos",
+      "Interligação entre sangria, esfola, serra e câmaras",
+      "Projetos completos de nória aérea sob medida",
+      "Ampliação e modernização de linhas existentes",
+      "Reposição de componentes e manutenção preventiva",
+    ],
+    gallery: [
+      { name: "Carretilhas, Balancins e Maneia", image: conjCarretilhas.url, description: "Linha de carretilhas com roldana em aço inox, balancins de abertura para suspensão da carcaça e maneia com corrente e gancho para fixação do membro. Componentes usinados e polidos, com rolamentos vedados que garantem deslizamento suave no trilho e alta capacidade de carga.", applications: ["Suspensão e transporte de carcaças de bovinos", "Abertura e espaçamento da carcaça na linha", "Fixação segura do membro após a sangria", "Reposição padronizada em nórias de bovinos"] },
+      { name: "Elevador de Carretilha", image: conjElevadorCarretilha.url, description: "Mecanismo de elevação pneumática que transfere carretilhas entre trilhos em alturas distintas, com colunas guia, base estrutural e suportes reguláveis. Automatiza a subida da carcaça sem esforço manual e mantém o ritmo da linha.", applications: ["Transferência de carretilhas entre níveis", "Elevação de carcaças após a sangria", "Integração entre trechos de trilhagem", "Redução de esforço físico do operador"] },
+      { name: "Chaves Desviadoras", image: conjChavesDesviadoras.url, description: "Chaves e desviadores de trilho com acionamento pneumático ou manual, que direcionam as carretilhas para ramais de inspeção, desvio ou câmaras. Construção em inox com articulações precisas e retorno por mola.", applications: ["Desvio de carcaças para ramais específicos", "Separação de carcaças em inspeção (DIF)", "Distribuição entre câmaras de resfriamento", "Automação de rotas na nória aérea"] },
+      { name: "Base Motorizada", image: conjBaseMotorizadaBov.url, description: "Base motorizada com motorredutor acoplado e roda dentada em aço inox, montada sobre plataforma sanitária com suportes de fixação. Responsável pela tração da corrente da nória, com velocidade regulável por inversor de frequência.", applications: ["Tração da nória aérea de bovinos", "Controle de cadência por inversor", "Acionamento principal ou auxiliar da linha", "Modernização de transportadores existentes"] },
+      { name: "Trilho de Nória", image: conjTrilhoNoria.url, description: "Trilho de nória em aço inox com perfil fechado e suportes soldados para fixação na trilhagem, oferecendo superfície de rolamento uniforme para as carretilhas e proteção da corrente contra resíduos.", applications: ["Condução de carretilhas ao longo da linha", "Trechos retos de nória de bovinos", "Substituição de trilhos desgastados", "Ampliação de circuitos aéreos"] },
+      { name: "Nória de Arraste", image: conjNoriaArraste.url, description: "Nória de arraste com corrente e taliscas em aço inox, acionada por motorredutor, que empurra as carretilhas de forma sincronizada ao longo do trilho, garantindo espaçamento constante entre carcaças.", applications: ["Arraste sincronizado de carretilhas", "Manutenção de espaçamento entre carcaças", "Linhas de esfola e serra com ritmo controlado", "Trechos inclinados e de alta cadência"] },
+      { name: "Trilhagem", image: conjTrilhagem.url, description: "Estrutura completa de trilhagem em aço inox, formada por colunas, vigas, travessas e contraventamentos, que sustenta toda a rede de trilhos aéreos da planta com rigidez e alinhamento preciso.", applications: ["Sustentação estrutural da nória aérea", "Áreas de estocagem e câmaras de carcaças", "Projetos completos de layout frigorífico", "Ampliação de áreas de trilhagem existentes"] },
+    ],
+  },
+  {
     slug: "box-de-atordoamento",
     name: "Box de Atordoamento",
     description: "Box de contenção e atordoamento em inox com acionamento pneumático e piso de descarga lateral.",
@@ -1029,33 +1068,27 @@ export const solutions: Solution[] = [
       { slug: "repassadora", name: "Repassadora", description: "Mesa repassadora para inspeção e correções finas com comando integrado e desenho sanitário.", image: avesRepassadora.url,
         longDescription: "Estação de repasse em aço inox para inspeção final e pequenas correções de processo antes do encaminhamento do produto à etapa seguinte. A solução reúne ergonomia, comando integrado e construção sanitária para facilitar a rotina operacional.",
         applications: ["Inspeção final de peças e subprodutos", "Correções rápidas em linha", "Apoio à padronização visual do produto", "Posto auxiliar em processos avícolas", "Integração com mesas e esteiras de acabamento"] },
-      { slug: "transportador-aereo", name: "Transportador Aéreo", description: "Sistema aéreo de transporte para movimentação contínua de produtos e componentes ao longo da planta.", image: avesTransportadorAereo.url,
-        longDescription: "Estrutura aérea para movimentação contínua dentro da planta, desenhada para suportar operação estável, mudanças de direção e integração entre setores. Ideal para racionalizar fluxo interno, reduzir manuseio manual e ampliar eficiência logística.",
-        applications: ["Transporte contínuo entre setores produtivos", "Redução de movimentação manual na planta", "Integração com pendura, abate e evisceração", "Aproveitamento vertical do layout industrial", "Linhas com necessidade de fluxo constante"] },
-      { slug: "gancho-duplo", name: "Gancho Duplo", description: "Gancho duplo para transporte seguro e estável de produtos em linhas aéreas.", image: avesGanchoDuplo.url,
-        longDescription: "Componente desenvolvido para linhas aéreas que exigem apoio duplo e melhor estabilidade durante o transporte. Seu acabamento e geometria favorecem segurança operacional, durabilidade e bom desempenho mesmo em cadências elevadas.",
-        applications: ["Suspensão de produtos em linhas aéreas", "Melhora da estabilidade durante o transporte", "Uso em circuitos contínuos de processamento", "Reposição padronizada de componentes da nória", "Operações com foco em resistência e durabilidade"] },
-      { slug: "gancho-evisceracao", name: "Gancho de Evisceração", description: "Gancho técnico para linhas de evisceração com posicionamento adequado e alta durabilidade.", image: avesGanchoEvisceracao.url,
-        longDescription: "Gancho específico para etapas de evisceração, projetado para manter posicionamento adequado da carcaça e contribuir para a eficiência dos processos subsequentes. Fabricado com foco em resistência, limpeza sanitária e longa vida útil em operação contínua.",
-        applications: ["Suporte de carcaças em linhas de evisceração", "Padronização do posicionamento durante o processo", "Compatibilidade com circuitos aéreos contínuos", "Reposição técnica de componentes de linha", "Plantas que exigem robustez e higiene operacional"] },
+      { slug: "transportador-aereo", name: "Transportador Aéreo de Aves", description: "Conjunto completo de transporte aéreo para aves: trilhos, curvas, ganchos, tração e acessórios — vendidos juntos ou separadamente.", image: conjCapaAves.url,
+        longDescription: "Conjunto completo de transporte aéreo desenvolvido para linhas de abate e processamento de aves. Reúne trilhos em perfil T e sigma, curvas, módulos de sobe e desce, tração, tensionamento, sistemas de fixação e a família de ganchos, formando um circuito contínuo, estável e sanitário. Todos os itens do conjunto podem ser fornecidos em conjunto, em projeto completo, ou separadamente para ampliações, reformas e reposição.",
+        applications: ["Circuitos aéreos contínuos de abate de aves", "Integração entre pendura, sangria, escaldagem e evisceração", "Projetos completos de nória sob medida", "Ampliação e modernização de linhas existentes", "Reposição padronizada de componentes do conjunto"],
+        gallery: [
+          { name: "Gancho Duplo", image: avesGanchoDuplo.url, description: "Componente para linhas aéreas que exigem apoio duplo e melhor estabilidade durante o transporte. Geometria e acabamento voltados à segurança operacional, durabilidade e bom desempenho em cadências elevadas.", applications: ["Suspensão de produtos em linhas aéreas", "Melhora da estabilidade durante o transporte", "Uso em circuitos contínuos de processamento", "Reposição padronizada de componentes da nória"] },
+          { name: "Gancho de Evisceração", image: avesGanchoEvisceracao.url, description: "Gancho específico para etapas de evisceração, projetado para manter o posicionamento adequado da carcaça e contribuir para a eficiência dos processos subsequentes, com foco em resistência e higiene.", applications: ["Suporte de carcaças em linhas de evisceração", "Padronização do posicionamento durante o processo", "Compatibilidade com circuitos aéreos contínuos", "Plantas que exigem robustez e higiene operacional"] },
+          { name: "Gancho Gota", image: avesGanchoGota.url, description: "Gancho em formato gota, em aço inox com trolley integrado, para transporte fluido de carcaças em linhas aéreas. Geometria afilada favorece o encaixe correto e reduz o balanço no percurso.", applications: ["Transporte de carcaças em linhas contínuas", "Redução de balanço em curvas e desvios", "Padronização do posicionamento do produto", "Reposição técnica em nórias de alta cadência"] },
+          { name: "Base com Ajustes", image: avesBaseAjustes.url, description: "Base regulável para ancoragem segura de estruturas e equipamentos, com chapas reforçadas, colunas de fixação e regulagem fina que facilitam nivelamento e absorção de esforços.", applications: ["Fixação de colunas e suportes industriais", "Nivelamento fino de estruturas em inox", "Instalação de componentes em linhas aéreas", "Padronização de montagem em plantas frigoríficas"] },
+          { name: "Sistema de Travamento", image: avesSistemaTravamento.url, description: "Conjunto estrutural em aço inox com suportes e fixadores para travamento e alinhamento de trilhos aéreos, com geometria triangulada que confere rigidez e mantém o traçado do circuito.", applications: ["Fixação estrutural de trilhos aéreos", "Alinhamento e nivelamento de circuitos", "Absorção de esforços dinâmicos da nória", "Instalação em plantas novas ou em reforma"] },
+          { name: "Tirantes", image: avesSistemaTravamento.url, description: "Tirantes em aço inox para sustentação e estabilização dos trilhos aéreos, distribuindo a carga da nória para a estrutura do prédio e evitando flexões ao longo dos trechos suspensos.", applications: ["Sustentação de trechos suspensos de trilho", "Distribuição de carga para a estrutura predial", "Correção de flexão em vãos longos", "Montagem e reforço de circuitos aéreos"] },
+          { name: "Tensor Pneumático", image: avesTensorPneumatico.url, description: "Módulo tensor com acionamento pneumático para manter a tensão adequada de trilhos e correntes, com cilindro regulável, mola de compensação e painel graduado de pressão e força.", applications: ["Tensionamento automático de trilhos aéreos", "Compensação de dilatação e desgaste em linha", "Ajuste preciso de força por pressão pneumática", "Redução de paradas por perda de tensão"] },
+          { name: "Tração", image: avesTracao.url, description: "Estação de tração com motorredutor de alto torque, base estrutural em inox e guias de alinhamento, responsável pelo acionamento contínuo da corrente da nória aérea.", applications: ["Acionamento contínuo de nórias aéreas", "Movimentação de transportadores de longa extensão", "Sincronização com painéis de comando", "Instalação em curvas e trechos motorizados"] },
+          { name: "Trilho T", image: avesTrilhoT.url, description: "Trilho em perfil T de aço inox com suportes de fixação furados para ancoragem em estruturas metálicas. Superfície de rolamento retificada que reduz ruído, desgaste e travamentos.", applications: ["Condução de carretilhas em nórias aéreas", "Linhas de resfriamento, cortes e expedição", "Ancoragem em estruturas metálicas ou lajes", "Substituição de trechos desgastados"] },
+          { name: "Trilho de Sobe e Desce — Perfil T", image: avesTrilhoSobeDesceT.url, description: "Curvas de sobe e desce em perfil T com suporte soldado para fixação direta na estrutura, feitas sob medida conforme o desnível e o raio do projeto.", applications: ["Mudança de nível em linhas com trilho T", "Interligação de setores em alturas diferentes", "Passagem sobre portas e divisórias", "Adaptação de layouts existentes"] },
+          { name: "Curvas de 45°, 90° e 180°", image: avesCurvas.url, description: "Curvas com roda dentada em aço inox, mancal vedado e suportes furados, que realizam a mudança de direção da corrente aérea com mínimo atrito e desgaste.", applications: ["Mudança de direção da nória aérea", "Retorno de linha em 180° ao fim do percurso", "Layouts compactos com múltiplos setores", "Reposição em manutenção preventiva"] },
+          { name: "Trilho Sigma", image: avesTrilhoSigma.url, description: "Perfil de trilho sigma em aço inox sanitário, com rasgos laterais para passagem dos ganchos e geometria fechada que protege a corrente contra respingos e resíduos.", applications: ["Estrutura de nórias aéreas de abate de aves", "Trechos retos de pendura e evisceração", "Proteção da corrente contra resíduos", "Ambientes com higienização intensiva"] },
+          { name: "Trilho de Sobe e Desce — Perfil Sigma", image: avesTrilhoSobeDesceSigma.url, description: "Módulos curvos de sobe e desce em perfil sigma com raio calculado para transições suaves de altura, mantendo o alinhamento dos ganchos e evitando oscilação das carcaças.", applications: ["Transições de altura entre setores", "Passagem sobre equipamentos e circulação", "Conexão entre nórias de sangria e evisceração", "Redução de oscilação das carcaças"] },
+        ] },
       { slug: "gancho-pendura", name: "Gancho de Pendura", description: "Gancho de pendura com trolley e batente para suspensão estável de aves na nória aérea.", image: avesGanchoPendura.url,
         longDescription: "Gancho de pendura em aço inox equipado com trolley de rolamento e batente rebatível, projetado para suspensão segura das aves na nória aérea. Geometria otimizada para carga e descarga fluida, com acabamento sanitário que facilita higienização e prolonga a vida útil em operação contínua.",
         applications: ["Suspensão de aves na nória de abate", "Circuitos aéreos com trolley de rolamento", "Reposição padronizada em linhas contínuas", "Integração com esteira de pendura reta", "Operação de alta cadência com carga estável"] },
-      { slug: "gancho-gota", name: "Gancho Gota", description: "Gancho perfil gota com trolley integrado para linhas aéreas de alta cadência.", image: avesGanchoGota.url,
-        longDescription: "Gancho em formato gota fabricado em aço inox com trolley integrado, ideal para transporte fluido de carcaças em linhas aéreas de processamento. Geometria afilada favorece o encaixe correto, reduz balanço e mantém o posicionamento durante todo o percurso.",
-        applications: ["Transporte de carcaças em linhas aéreas contínuas", "Redução de balanço em curvas e desvios", "Padronização do posicionamento do produto", "Circuitos com múltiplos setores integrados", "Reposição técnica em nórias de alta cadência"] },
-      { slug: "tensor-pneumatico", name: "Tensor Pneumático", description: "Tensor pneumático para trilhos aéreos com ajuste de força e painel graduado.", image: avesTensorPneumatico.url,
-        longDescription: "Módulo tensor com acionamento pneumático desenvolvido para manter a tensão adequada de trilhos e correntes em linhas aéreas. Possui cilindro regulável, mola de compensação e painel graduado indicando a relação entre pressão e força aplicada, garantindo operação estável e previsível.",
-        applications: ["Tensionamento automático de trilhos aéreos", "Compensação de dilatação e desgaste em linha", "Ajuste preciso de força por pressão pneumática", "Redução de paradas por perda de tensão", "Operação contínua em circuitos de alta cadência"] },
-      { slug: "sistema-travamento", name: "Sistema de Travamento", description: "Sistema de travamento estrutural em inox para fixação e alinhamento de trilhos aéreos.", image: avesSistemaTravamento.url,
-        longDescription: "Conjunto estrutural em aço inox composto por suportes, tirantes e fixadores para travamento e alinhamento de trilhos aéreos. Geometria triangulada que confere rigidez, absorve esforços dinâmicos da linha e mantém o traçado do circuito mesmo em altas cadências.",
-        applications: ["Fixação estrutural de trilhos aéreos", "Alinhamento e nivelamento de circuitos", "Absorção de esforços dinâmicos da nória", "Instalação em plantas novas ou em reforma", "Padronização de sustentação em áreas produtivas"] },
-      { slug: "tracao", name: "Tração", description: "Unidade de tração motorizada para acionamento contínuo de nórias e transportadores aéreos.", image: avesTracao.url,
-        longDescription: "Estação de tração com motorredutor de alto torque, base estrutural em aço inox e guias de alinhamento, responsável pelo acionamento contínuo da corrente da nória aérea. Projetada para operação estável, baixa manutenção e integração com sistemas de comando da planta.",
-        applications: ["Acionamento contínuo de nórias aéreas", "Movimentação de transportadores de longa extensão", "Sincronização com painéis de comando da linha", "Instalação em curvas e trechos motorizados", "Frigoríficos de alta produção com fluxo constante"] },
-      { slug: "base-com-ajustes", name: "Base com Ajustes", description: "Base estrutural regulável em inox para fixação precisa de componentes e linhas aéreas.", image: avesBaseAjustes.url,
-        longDescription: "Base com ajustes desenvolvida para ancoragem segura de estruturas e equipamentos em ambientes frigoríficos. Seu conjunto com chapas reforçadas, colunas de fixação e regulagem fina facilita nivelamento, absorção de esforços e instalação estável em pisos industriais.",
-        applications: ["Fixação de colunas e suportes industriais", "Nivelamento fino de estruturas em inox", "Instalação de componentes em linhas aéreas", "Adequação de base em reformas e ampliações", "Padronização de montagem em plantas frigoríficas"] },
       { slug: "arrancador-de-cabecas-com-guias", name: "Arrancador de Cabeças com Guias", description: "Sistema automatizado para remoção de cabeças com guias ajustadas e operação contínua.", image: avesArrancadorCabecas.url,
         longDescription: "Equipamento projetado para realizar a remoção padronizada de cabeças em linhas avícolas, com conjunto de guias que estabiliza o produto durante a operação. Sua estrutura robusta em aço inox contribui para rendimento elevado, repetibilidade de processo e fácil higienização diária.",
         applications: ["Remoção automática de cabeças em linha", "Padronização da etapa pré-evisceração", "Redução de intervenção manual no processo", "Integração com nórias aéreas contínuas", "Plantas de aves com foco em rendimento e higiene"] },
@@ -1128,24 +1161,6 @@ export const solutions: Solution[] = [
       { slug: "sistema-automatico-entrada-saida-camara-estocagem", name: "Sistema Automático para Entrada e Saída de Câmara de Estocagem", description: "Sistema automatizado de transportadores e mesas giratórias para fluxo de produtos em câmaras de estocagem.", image: sistemaCamaraEstocagem.url,
         longDescription: "Solução integrada de roletes, correntes, mesas giratórias e estações de transferência para automatizar a entrada, distribuição e saída de cargas em câmaras frias. O sistema direciona produtos entre corredores e posições de armazenagem com rastreabilidade, cadência controlada e menor intervenção humana, reduzindo tempo de porta aberta e melhorando a eficiência logística.",
         applications: ["Entrada e saída automatizada de câmaras frias", "Transferência de cargas entre transportadores", "Organização do fluxo de armazenagem", "Redução do tempo de abertura das portas", "Integração com sistemas de controle e rastreabilidade"] },
-      { slug: "trilho-sigma", name: "Trilho Sigma", description: "Perfil de trilho sigma em aço inox com rasgos laterais para nória aérea de aves.", image: avesTrilhoSigma.url,
-        longDescription: "Perfil de trilho sigma fabricado em aço inox sanitário, com rasgos laterais para passagem dos ganchos e aba de fixação em toda a extensão. Geometria fechada que protege a corrente do transportador aéreo contra respingos e resíduos, garantindo deslizamento suave, baixo atrito e vida útil elevada mesmo em ambientes agressivos e de lavagem constante.",
-        applications: ["Estrutura de nórias aéreas de abate de aves", "Trechos retos de linhas de pendura e evisceração", "Proteção da corrente contra resíduos e respingos", "Ampliação e reforma de transportadores aéreos", "Ambientes com higienização intensiva"] },
-      { slug: "trilho-t", name: "Trilho T", description: "Trilho perfil T em aço inox com suportes de fixação para transportadores aéreos.", image: avesTrilhoT.url,
-        longDescription: "Trilho em perfil T de aço inox, fornecido com suportes de fixação furados para ancoragem em estruturas metálicas ou pendurais. Solução tradicional para condução de carretilhas e ganchos ao longo da linha, com superfície de rolamento retificada que reduz ruído, desgaste e travamentos durante a operação contínua.",
-        applications: ["Condução de carretilhas em nórias aéreas", "Linhas de resfriamento, cortes e expedição", "Ancoragem em estruturas metálicas ou lajes", "Substituição de trechos desgastados", "Layouts de abate de aves, suínos e bovinos"] },
-      { slug: "trilho-sobe-desce-sigma", name: "Trilho de Sobe e Desce — Perfil Sigma", description: "Módulo curvo de subida e descida em perfil sigma para transição de altura da nória.", image: avesTrilhoSobeDesceSigma.url,
-        longDescription: "Módulos curvos de sobe e desce em perfil sigma, produzidos em aço inox com raio calculado para transições suaves de altura da nória aérea. Permitem elevar ou baixar a linha entre setores sem impacto na corrente, mantendo o alinhamento dos ganchos e evitando oscilação das carcaças durante o percurso.",
-        applications: ["Transições de altura entre setores da linha", "Passagem sobre equipamentos e áreas de circulação", "Conexão entre nórias de sangria, escaldagem e evisceração", "Layouts com desníveis estruturais", "Redução de oscilação e balanço das carcaças"] },
-      { slug: "trilho-sobe-desce-t", name: "Trilho de Sobe e Desce — Perfil T", description: "Curva de subida e descida em perfil T com suporte de fixação para nória aérea.", image: avesTrilhoSobeDesceT.url,
-        longDescription: "Curvas de sobe e desce em perfil T fabricadas em aço inox, com suporte soldado para fixação direta na estrutura. Feitas sob medida conforme o desnível e o raio do projeto, garantem continuidade perfeita com os trechos retos e transporte estável das carretilhas em mudanças de nível.",
-        applications: ["Mudança de nível em linhas com trilho T", "Interligação de setores em alturas diferentes", "Adaptação de layouts existentes", "Passagem sobre portas e divisórias", "Manutenção e ampliação de nórias"] },
-      { slug: "curvas-45-90-180", name: "Curvas de 45°, 90° e 180°", description: "Conjunto de curvas com roda dentada em inox para mudança de direção da nória.", image: avesCurvas.url,
-        longDescription: "Conjunto de curvas de 45°, 90° e 180° com roda dentada (estrela) em aço inox, mancal vedado e suportes furados para fixação. Realizam a mudança de direção da corrente aérea com mínimo atrito, distribuindo a carga uniformemente e reduzindo desgaste da corrente e consumo de energia do sistema de tração.",
-        applications: ["Mudança de direção da nória aérea", "Retorno de linha em 180° ao fim do percurso", "Layouts compactos com múltiplos setores", "Redução do atrito e desgaste da corrente", "Reposição em manutenção preventiva"] },
-      { slug: "base-motorizada", name: "Base Motorizada", description: "Base motorizada com motorredutor e roda dentada para tração da nória aérea.", image: avesBaseMotorizada.url,
-        longDescription: "Base motorizada composta por motorredutor de alto torque acoplado à roda dentada em aço inox, montada sobre plataforma sanitária com suportes de fixação. Responsável pela tração da corrente do transportador aéreo, com velocidade regulável por inversor de frequência e proteção contra sobrecarga, assegurando cadência estável em toda a linha.",
-        applications: ["Tração de nórias aéreas de abate", "Controle de cadência da linha por inversor", "Acionamento principal ou auxiliar do transportador", "Linhas longas com múltiplos pontos de tração", "Modernização de transportadores existentes"] },
       { slug: "virador-caixa-gaiola", name: "Virador de Caixa/Gaiola", description: "Rampa viradora em inox para descarga controlada de caixas e gaiolas.", image: avesViradorCaixaGaiola.url,
         longDescription: "Rampa viradora em aço inox com laterais altas, guias tubulares e estrutura sobre pés reguláveis. Permite tombar caixas e gaiolas com segurança, direcionando o produto de forma suave para a esteira ou mesa seguinte, com inclinação calculada para evitar danos e reduzir o esforço físico do operador.",
         applications: ["Descarga de caixas e gaiolas na recepção", "Transferência de produto para esteiras e mesas", "Redução de esforço físico e risco ergonômico", "Manejo de aves vivas e produtos embalados", "Áreas de recepção e pré-processamento"] },
