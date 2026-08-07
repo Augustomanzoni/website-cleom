@@ -126,7 +126,23 @@ import catAves from "@/assets/cat-aves.jpg.asset.json";
 import catBovinos from "@/assets/cat-bovinos.jpg.asset.json";
 import catSuinos from "@/assets/cat-suinos.jpg.asset.json";
 import catPisceos from "@/assets/cat-pisceos.jpg.asset.json";
+import conjCapaAves from "@/assets/conj-capa-aves.png.asset.json";
+import conjCapaBovinos from "@/assets/conj-capa-bovinos.png.asset.json";
+import conjBaseMotorizadaBov from "@/assets/conj-base-motorizada-bov.png.asset.json";
+import conjCarretilhas from "@/assets/conj-carretilhas.png.asset.json";
+import conjChavesDesviadoras from "@/assets/conj-chaves-desviadoras.png.asset.json";
+import conjElevadorCarretilha from "@/assets/conj-elevador-carretilha.png.asset.json";
+import conjNoriaArraste from "@/assets/conj-noria-arraste.png.asset.json";
+import conjTrilhagem from "@/assets/conj-trilhagem.png.asset.json";
+import conjTrilhoNoria from "@/assets/conj-trilho-noria.png.asset.json";
 
+
+export type GalleryItem = {
+  name: string;
+  image: string;
+  description: string;
+  applications?: string[];
+};
 
 export type Product = {
   slug: string;
@@ -135,6 +151,7 @@ export type Product = {
   image: string;
   longDescription?: string;
   applications?: string[];
+  gallery?: GalleryItem[];
 };
 
 export type Solution = {
