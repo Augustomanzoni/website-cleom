@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { findProduct, type Product } from "@/lib/solutions";
 
 export const Route = createFileRoute("/nossas-solucoes/$categoria/$produto")({
@@ -34,6 +35,28 @@ function ProdutoPage() {
   const { solution, product } = Route.useLoaderData();
   const others = solution.products.filter((p: Product) => p.slug !== product.slug).slice(0, 3);
 
+  const slides = [
+    {
+      name: product.name,
+      image: product.image,
+      description: product.description,
+      longDescription: product.longDescription,
+      applications: product.applications,
+    },
+    ...(product.gallery ?? []).map((g) => ({
+      name: g.name,
+      image: g.image,
+      description: g.description,
+      longDescription: g.description,
+      applications: g.applications,
+    })),
+  ];
+
+  const [index, setIndex] = useState(0);
+  const active = slides[index] ?? slides[0];
+  const hasGallery = slides.length > 1;
+  const go = (dir: number) => setIndex((i) => (i + dir + slides.length) % slides.length);
+
   return (
     <section className="bg-background pt-12 pb-20">
       <div className="container mx-auto px-4">
@@ -48,25 +71,66 @@ function ProdutoPage() {
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Imagem grande */}
           <div className="lg:col-span-3">
-            <div className="bg-secondary rounded-3xl p-8 flex items-center justify-center aspect-square lg:aspect-[4/3] overflow-hidden">
+            <div className="relative bg-secondary rounded-3xl p-8 flex items-center justify-center aspect-square lg:aspect-[4/3] overflow-hidden">
               <img
-                src={product.image}
-                alt={product.name}
+                src={active.image}
+                alt={active.name}
                 className="w-full h-full object-contain"
               />
+              {hasGallery && (
+                <>
+                  <button
+                    type="button"
+                    aria-label="Imagem anterior"
+                    onClick={() => go(-1)}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy-deep text-white flex items-center justify-center hover:bg-cyan-accent transition-colors"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Próxima imagem"
+                    onClick={() => go(1)}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy-deep text-white flex items-center justify-center hover:bg-cyan-accent transition-colors"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                  <span className="absolute bottom-4 right-6 text-xs uppercase tracking-wider text-navy-deep/60">
+                    {index + 1} / {slides.length}
+                  </span>
+                </>
+              )}
             </div>
+
+            {hasGallery && (
+              <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
+                {slides.map((s, i) => (
+                  <button
+                    key={s.name + i}
+                    type="button"
+                    onClick={() => setIndex(i)}
+                    aria-label={s.name}
+                    className={`flex-shrink-0 w-20 h-20 rounded-xl bg-secondary p-2 border transition-colors ${
+                      i === index ? "border-cyan-accent" : "border-transparent hover:border-navy-deep/30"
+                    }`}
+                  >
+                    <img src={s.image} alt={s.name} className="w-full h-full object-contain" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Info principal */}
           <div className="lg:col-span-2 space-y-6">
             <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs">
-              {solution.title}
+              {index === 0 ? solution.title : `Conjunto · ${product.name}`}
             </p>
             <h1 className="text-4xl md:text-5xl text-navy-deep uppercase leading-tight">
-              {product.name}
+              {active.name}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {product.description}
+              {active.description}
             </p>
 
             <Link
@@ -81,24 +145,24 @@ function ProdutoPage() {
         {/* Espaço para mais informações */}
         <div className="mt-20 grid lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 space-y-10">
-            {product.longDescription && (
+            {active.longDescription && (
               <div>
                 <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs mb-3">
                   Sobre o equipamento
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {product.longDescription}
+                  {active.longDescription}
                 </p>
               </div>
             )}
 
-            {product.applications && product.applications.length > 0 && (
+            {active.applications && active.applications.length > 0 && (
               <div>
                 <h3 className="text-xl text-navy-deep uppercase mb-4">
                   Aplicações
                 </h3>
                 <ul className="space-y-3">
-                  {product.applications.map((app: string) => (
+                  {active.applications.map((app: string) => (
                     <li key={app} className="flex gap-3 text-muted-foreground">
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-accent flex-shrink-0" />
                       <span>{app}</span>
