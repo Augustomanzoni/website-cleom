@@ -766,6 +766,30 @@ const avesBovinosProducts: Product[] = [
 
 const bovinosProducts: Product[] = [
   {
+    slug: "transportador-aereo-bovinos",
+    name: "Transportador Aéreo de Bovinos",
+    description: "Conjunto completo de transporte aéreo para bovinos: trilhagem, nória de arraste, carretilhas, balancins e acessórios.",
+    image: conjCapaBovinos.url,
+    longDescription:
+      "Conjunto completo de transporte aéreo para frigoríficos de bovinos, reunindo trilhagem estrutural, trilhos de nória, nória de arraste, base motorizada, chaves desviadoras, elevador de carretilha e a linha de carretilhas, balancins e maneias. Projetado sob medida para o layout da planta, garante fluxo contínuo das carcaças entre sangria, esfola, serra, inspeção e câmaras, com componentes em aço inox de alta resistência que podem ser fornecidos em conjunto ou separadamente para ampliações e reposição.",
+    applications: [
+      "Movimentação contínua de carcaças de bovinos",
+      "Interligação entre sangria, esfola, serra e câmaras",
+      "Projetos completos de nória aérea sob medida",
+      "Ampliação e modernização de linhas existentes",
+      "Reposição de componentes e manutenção preventiva",
+    ],
+    gallery: [
+      { name: "Carretilhas, Balancins e Maneia", image: conjCarretilhas.url, description: "Linha de carretilhas com roldana em aço inox, balancins de abertura para suspensão da carcaça e maneia com corrente e gancho para fixação do membro. Componentes usinados e polidos, com rolamentos vedados que garantem deslizamento suave no trilho e alta capacidade de carga.", applications: ["Suspensão e transporte de carcaças de bovinos", "Abertura e espaçamento da carcaça na linha", "Fixação segura do membro após a sangria", "Reposição padronizada em nórias de bovinos"] },
+      { name: "Elevador de Carretilha", image: conjElevadorCarretilha.url, description: "Mecanismo de elevação pneumática que transfere carretilhas entre trilhos em alturas distintas, com colunas guia, base estrutural e suportes reguláveis. Automatiza a subida da carcaça sem esforço manual e mantém o ritmo da linha.", applications: ["Transferência de carretilhas entre níveis", "Elevação de carcaças após a sangria", "Integração entre trechos de trilhagem", "Redução de esforço físico do operador"] },
+      { name: "Chaves Desviadoras", image: conjChavesDesviadoras.url, description: "Chaves e desviadores de trilho com acionamento pneumático ou manual, que direcionam as carretilhas para ramais de inspeção, desvio ou câmaras. Construção em inox com articulações precisas e retorno por mola.", applications: ["Desvio de carcaças para ramais específicos", "Separação de carcaças em inspeção (DIF)", "Distribuição entre câmaras de resfriamento", "Automação de rotas na nória aérea"] },
+      { name: "Base Motorizada", image: conjBaseMotorizadaBov.url, description: "Base motorizada com motorredutor acoplado e roda dentada em aço inox, montada sobre plataforma sanitária com suportes de fixação. Responsável pela tração da corrente da nória, com velocidade regulável por inversor de frequência.", applications: ["Tração da nória aérea de bovinos", "Controle de cadência por inversor", "Acionamento principal ou auxiliar da linha", "Modernização de transportadores existentes"] },
+      { name: "Trilho de Nória", image: conjTrilhoNoria.url, description: "Trilho de nória em aço inox com perfil fechado e suportes soldados para fixação na trilhagem, oferecendo superfície de rolamento uniforme para as carretilhas e proteção da corrente contra resíduos.", applications: ["Condução de carretilhas ao longo da linha", "Trechos retos de nória de bovinos", "Substituição de trilhos desgastados", "Ampliação de circuitos aéreos"] },
+      { name: "Nória de Arraste", image: conjNoriaArraste.url, description: "Nória de arraste com corrente e taliscas em aço inox, acionada por motorredutor, que empurra as carretilhas de forma sincronizada ao longo do trilho, garantindo espaçamento constante entre carcaças.", applications: ["Arraste sincronizado de carretilhas", "Manutenção de espaçamento entre carcaças", "Linhas de esfola e serra com ritmo controlado", "Trechos inclinados e de alta cadência"] },
+      { name: "Trilhagem", image: conjTrilhagem.url, description: "Estrutura completa de trilhagem em aço inox, formada por colunas, vigas, travessas e contraventamentos, que sustenta toda a rede de trilhos aéreos da planta com rigidez e alinhamento preciso.", applications: ["Sustentação estrutural da nória aérea", "Áreas de estocagem e câmaras de carcaças", "Projetos completos de layout frigorífico", "Ampliação de áreas de trilhagem existentes"] },
+    ],
+  },
+  {
     slug: "box-de-atordoamento",
     name: "Box de Atordoamento",
     description: "Box de contenção e atordoamento em inox com acionamento pneumático e piso de descarga lateral.",
