@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { findProduct, type GalleryItem, type Product } from "@/lib/solutions";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/nossas-solucoes/$categoria/$produto")({
   loader: ({ params }) => {
@@ -23,15 +24,21 @@ export const Route = createFileRoute("/nossas-solucoes/$categoria/$produto")({
       : [],
   }),
   component: ProdutoPage,
-  notFoundComponent: () => (
-    <div className="container mx-auto px-4 py-32 text-center">
-      <h1 className="text-3xl text-navy-deep mb-4">Produto não encontrado</h1>
-      <Link to="/nossas-solucoes" className="text-cyan-accent uppercase tracking-wider">Ver todas as soluções</Link>
-    </div>
-  ),
+  notFoundComponent: () => <ProdutoNotFound />,
 });
 
+function ProdutoNotFound() {
+  const { t } = useI18n();
+  return (
+    <div className="container mx-auto px-4 py-32 text-center">
+      <h1 className="text-3xl text-navy-deep mb-4">{t("Produto não encontrado")}</h1>
+      <Link to="/nossas-solucoes" className="text-cyan-accent uppercase tracking-wider">{t("Ver todas as soluções")}</Link>
+    </div>
+  );
+}
+
 function ProdutoPage() {
+  const { t } = useI18n();
   const { solution, product } = Route.useLoaderData();
   const others = solution.products.filter((p: Product) => p.slug !== product.slug).slice(0, 3);
 
@@ -65,7 +72,7 @@ function ProdutoPage() {
           params={{ categoria: solution.slug }}
           className="inline-flex items-center gap-2 mb-8 text-navy-deep/70 hover:text-cyan-accent text-sm uppercase tracking-wider"
         >
-          <ArrowLeft className="w-4 h-4" /> Voltar para {solution.title}
+          <ArrowLeft className="w-4 h-4" /> {t("Voltar para")} {t(solution.title)}
         </Link>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
@@ -74,14 +81,14 @@ function ProdutoPage() {
             <div className="relative bg-secondary rounded-3xl p-8 flex items-center justify-center aspect-square lg:aspect-[4/3] overflow-hidden">
               <img
                 src={active.image}
-                alt={active.name}
+                alt={t(active.name)}
                 className="w-full h-full object-contain"
               />
               {hasGallery && (
                 <>
                   <button
                     type="button"
-                    aria-label="Imagem anterior"
+                    aria-label={t("Imagem anterior")}
                     onClick={() => go(-1)}
                     className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy-deep text-white flex items-center justify-center hover:bg-cyan-accent transition-colors"
                   >
@@ -89,7 +96,7 @@ function ProdutoPage() {
                   </button>
                   <button
                     type="button"
-                    aria-label="Próxima imagem"
+                    aria-label={t("Próxima imagem")}
                     onClick={() => go(1)}
                     className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-navy-deep text-white flex items-center justify-center hover:bg-cyan-accent transition-colors"
                   >
@@ -109,12 +116,12 @@ function ProdutoPage() {
                     key={s.name + i}
                     type="button"
                     onClick={() => setIndex(i)}
-                    aria-label={s.name}
+                    aria-label={t(s.name)}
                     className={`flex-shrink-0 w-20 h-20 rounded-xl bg-secondary p-2 border transition-colors ${
                       i === index ? "border-cyan-accent" : "border-transparent hover:border-navy-deep/30"
                     }`}
                   >
-                    <img src={s.image} alt={s.name} className="w-full h-full object-contain" />
+                    <img src={s.image} alt={t(s.name)} className="w-full h-full object-contain" />
                   </button>
                 ))}
               </div>
@@ -124,20 +131,20 @@ function ProdutoPage() {
           {/* Info principal */}
           <div className="lg:col-span-2 space-y-6">
             <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs">
-              {index === 0 ? solution.title : `Conjunto · ${product.name}`}
+              {index === 0 ? t(solution.title) : `${t("Conjunto")} · ${t(product.name)}`}
             </p>
             <h1 className="text-4xl md:text-5xl text-navy-deep uppercase leading-tight">
-              {active.name}
+              {t(active.name)}
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {active.description}
+              {t(active.description)}
             </p>
 
             <Link
               to="/contato"
               className="inline-flex bg-navy-deep text-white px-6 py-4 rounded-full uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-navy-deep border border-navy-deep transition-colors"
             >
-              Solicitar orçamento
+              {t("Solicitar orçamento")}
             </Link>
           </div>
         </div>
@@ -148,10 +155,10 @@ function ProdutoPage() {
             {active.longDescription && (
               <div>
                 <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs mb-3">
-                  Sobre o equipamento
+                  {t("Sobre o equipamento")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {active.longDescription}
+                  {t(active.longDescription)}
                 </p>
               </div>
             )}
@@ -159,13 +166,13 @@ function ProdutoPage() {
             {active.applications && active.applications.length > 0 && (
               <div>
                 <h3 className="text-xl text-navy-deep uppercase mb-4">
-                  Aplicações
+                  {t("Aplicações")}
                 </h3>
                 <ul className="space-y-3">
                   {active.applications.map((app: string) => (
                     <li key={app} className="flex gap-3 text-muted-foreground">
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan-accent flex-shrink-0" />
-                      <span>{app}</span>
+                      <span>{t(app)}</span>
                     </li>
                   ))}
                 </ul>
@@ -177,7 +184,7 @@ function ProdutoPage() {
             {others.length > 0 && (
               <div>
                 <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs mb-3">
-                  Outros produtos {solution.title}
+                  {t("Outros produtos")} {t(solution.title)}
                 </p>
                 <div className="space-y-3">
                   {others.map((o: Product) => (
@@ -189,15 +196,15 @@ function ProdutoPage() {
                     >
                       <img
                         src={o.image}
-                        alt={o.name}
+                        alt={t(o.name)}
                         className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
                       />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm uppercase tracking-wide text-navy-deep group-hover:text-white truncate">
-                          {o.name}
+                          {t(o.name)}
                         </p>
                         <span className="inline-flex items-center gap-1 text-xs text-cyan-accent mt-1">
-                          Ver mais <ArrowRight className="w-3 h-3" />
+                          {t("Ver mais")} <ArrowRight className="w-3 h-3" />
                         </span>
                       </div>
                     </Link>
@@ -208,7 +215,7 @@ function ProdutoPage() {
                   params={{ categoria: solution.slug }}
                   className="mt-4 inline-flex items-center gap-2 text-navy-deep hover:text-cyan-accent text-sm font-semibold uppercase tracking-wider"
                 >
-                  Ver mais produtos <ArrowRight className="w-4 h-4" />
+                  {t("Ver mais produtos")} <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             )}
