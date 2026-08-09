@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { findSolution, solutions, type Product } from "@/lib/solutions";
 import { PageHero } from "@/components/site/PageHero";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/nossas-solucoes/$categoria/")({
   loader: ({ params }) => {
@@ -23,15 +24,21 @@ export const Route = createFileRoute("/nossas-solucoes/$categoria/")({
       : [],
   }),
   component: CategoriaPage,
-  notFoundComponent: () => (
-    <div className="container mx-auto px-4 py-32 text-center">
-      <h1 className="text-3xl text-navy-deep mb-4">Categoria não encontrada</h1>
-      <Link to="/nossas-solucoes" className="text-cyan-accent uppercase tracking-wider">Ver todas as soluções</Link>
-    </div>
-  ),
+  notFoundComponent: () => <CategoriaNotFound />,
 });
 
+function CategoriaNotFound() {
+  const { t } = useI18n();
+  return (
+    <div className="container mx-auto px-4 py-32 text-center">
+      <h1 className="text-3xl text-navy-deep mb-4">{t("Categoria não encontrada")}</h1>
+      <Link to="/nossas-solucoes" className="text-cyan-accent uppercase tracking-wider">{t("Ver todas as soluções")}</Link>
+    </div>
+  );
+}
+
 function CategoriaPage() {
+  const { t } = useI18n();
   const { sol } = Route.useLoaderData();
   const others = solutions.filter((s) => s.slug !== sol.slug);
   const orderedOthers = [...others].sort((a, b) => {
@@ -44,9 +51,9 @@ function CategoriaPage() {
     <>
       {/* Hero grande com título da categoria */}
       <PageHero
-        eyebrow="Nossa Linha"
-        title={sol.title}
-        subtitle={sol.description}
+        eyebrow={t("Nossa Linha")}
+        title={t(sol.title)}
+        subtitle={t(sol.description)}
         image={sol.image}
         titleClassName="text-6xl md:text-8xl lg:text-9xl"
       >
@@ -54,7 +61,7 @@ function CategoriaPage() {
           to="/nossas-solucoes"
           className="inline-flex items-center gap-2 mt-6 text-chrome/70 hover:text-cyan-accent text-sm uppercase tracking-wider"
         >
-          <ArrowLeft className="w-4 h-4" /> Voltar para Nossas Soluções
+          <ArrowLeft className="w-4 h-4" /> {t("Voltar para Nossas Soluções")}
         </Link>
       </PageHero>
 
@@ -63,8 +70,8 @@ function CategoriaPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-10">
             <div className="flex-1">
-              <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">Produtos</p>
-              <h2 className="text-3xl text-navy-deep mb-8">Conheça toda a linha</h2>
+              <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">{t("Produtos")}</p>
+              <h2 className="text-3xl text-navy-deep mb-8">{t("Conheça toda a linha")}</h2>
 
               <div className="max-h-[1180px] overflow-y-auto pr-2 -mr-2">
                 {sol.products.length > 0 ? (
@@ -77,20 +84,20 @@ function CategoriaPage() {
                         <div className="aspect-[4/3] overflow-hidden bg-secondary flex items-center justify-center p-4">
                           <img
                             src={p.image}
-                            alt={p.name}
+                            alt={t(p.name)}
                             className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                           />
                         </div>
                         <div className="p-5 flex flex-col flex-1">
                           <h3 className="text-lg text-navy-deep uppercase tracking-wide mb-4 flex-1">
-                            {p.name}
+                            {t(p.name)}
                           </h3>
                           <Link
                             to="/nossas-solucoes/$categoria/$produto"
                             params={{ categoria: sol.slug, produto: p.slug }}
                             className="inline-flex items-center gap-1 text-navy-deep hover:text-cyan-accent text-sm font-semibold uppercase tracking-wider"
                           >
-                            Ver mais <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            {t("Ver mais")} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                           </Link>
                         </div>
                       </div>
@@ -110,11 +117,11 @@ function CategoriaPage() {
                 to="/contato"
                 className="inline-flex justify-center w-full bg-navy-deep text-white px-6 py-4 rounded-full uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-navy-deep border border-navy-deep transition-colors"
               >
-                Solicitar orçamento
+                {t("Solicitar orçamento")}
               </Link>
 
               <div>
-                <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs mb-3">Outras linhas</p>
+                <p className="text-cyan-accent uppercase tracking-[0.3em] text-xs mb-3">{t("Outras linhas")}</p>
                 <div className="space-y-2">
                   {orderedOthers.map((o) => (
                     <Link
@@ -123,7 +130,7 @@ function CategoriaPage() {
                       params={{ categoria: o.slug }}
                       className="block px-4 py-3 rounded-xl bg-secondary hover:bg-navy-deep hover:text-white text-navy-deep uppercase tracking-wider text-sm transition-colors"
                     >
-                      {o.title}
+                      {t(o.title)}
                     </Link>
                   ))}
                 </div>

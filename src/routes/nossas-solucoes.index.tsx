@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { SolutionsGrid } from "@/components/site/SolutionsGrid";
 import { CatalogDownloadSection } from "@/components/site/CatalogDownloadSection";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/nossas-solucoes/")({
   head: () => ({
@@ -18,12 +19,13 @@ export const Route = createFileRoute("/nossas-solucoes/")({
 });
 
 function SolucoesPage() {
+  const { t } = useI18n();
   return (
     <>
       <PageHero
-        eyebrow="Nossas Soluções"
-        title={<>Tecnologia industrial <br />para alta performance</>}
-        subtitle="Conheça as linhas de atuação e os produtos CLEOM para cada etapa do processo frigorífico."
+        eyebrow={t("Nossas Soluções")}
+        title={<>{t("Tecnologia industrial para alta performance")}</>}
+        subtitle={t("Conheça as linhas de atuação e os produtos CLEOM para cada etapa do processo frigorífico.")}
         image="https://images.unsplash.com/photo-1574739782594-db4ead022697?auto=format&fit=crop&w=1920&q=80"
       />
       <SolutionsGrid heading={false} />

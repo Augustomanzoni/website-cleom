@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/contato")({
   head: () => ({
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/contato")({
 });
 
 function ContatoPage() {
+  const { t } = useI18n();
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -41,18 +43,18 @@ function ContatoPage() {
   return (
     <>
       <PageHero
-        eyebrow="Contato"
-        title={<>VAMOS ENCONTRAR <br />SUA SOLUÇÃO JUNTOS</>}
-        subtitle="Nossa equipe está pronta para atender sua empresa!"
+        eyebrow={t("Contato")}
+        title={<>{t("VAMOS ENCONTRAR")} <br />{t("SUA SOLUÇÃO JUNTOS")}</>}
+        subtitle={t("Nossa equipe está pronta para atender sua empresa!")}
       />
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12">
           <div className="bg-card p-8 rounded-3xl border border-border shadow-sm">
-            <h2 className="text-2xl text-navy-deep mb-6">Envie sua mensagem</h2>
+            <h2 className="text-2xl text-navy-deep mb-6">{t("Envie sua mensagem")}</h2>
             {sent ? (
               <div className="p-6 rounded-2xl bg-secondary text-navy-deep">
-                ✓ Formulário registrado. O envio direto por e-mail está preparado, mas permanece desativado por enquanto.
+                {t("✓ Formulário registrado. O envio direto por e-mail está preparado, mas permanece desativado por enquanto.")}
               </div>
             ) : (
               <form
@@ -66,34 +68,34 @@ function ContatoPage() {
                   { label: "Empresa", type: "text", placeholder: "Razão social", name: "empresa", required: false },
                 ].map((f) => (
                   <div key={f.label}>
-                    <label className="block text-sm text-navy-deep mb-2">{f.label}</label>
+                    <label className="block text-sm text-navy-deep mb-2">{t(f.label)}</label>
                     <input
                       name={f.name}
                       required={f.required}
                       type={f.type}
-                      placeholder={f.placeholder}
+                      placeholder={t(f.placeholder)}
                       className="w-full px-4 py-3 border border-border rounded-xl bg-background focus:outline-none focus:ring-2 focus:ring-cyan-accent"
                     />
                   </div>
                 ))}
                 <div>
-                  <label className="block text-sm text-navy-deep mb-2">Mensagem</label>
-                  <textarea name="mensagem" required rows={5} placeholder="Descreva sua necessidade..."
+                  <label className="block text-sm text-navy-deep mb-2">{t("Mensagem")}</label>
+                  <textarea name="mensagem" required rows={5} placeholder={t("Descreva sua necessidade...")}
                     className="w-full px-4 py-3 border border-border rounded-xl bg-background focus:outline-none focus:ring-2 focus:ring-cyan-accent" />
                 </div>
                 <button
                   type="submit"
                   className="w-full bg-navy-deep text-white py-4 rounded-xl uppercase tracking-wider text-sm font-semibold hover:bg-white hover:text-navy-deep border border-navy-deep transition-colors"
-                >Enviar mensagem</button>
+                >{t("Enviar mensagem")}</button>
                 <p className="text-sm text-muted-foreground">
-                  O envio automático para o comercial ficará ativo assim que configurarmos a infraestrutura de envio direto.
+                  {t("O envio automático para o comercial ficará ativo assim que configurarmos a infraestrutura de envio direto.")}
                 </p>
               </form>
             )}
           </div>
 
           <div>
-            <h2 className="text-2xl text-navy-deep mb-6">Informações</h2>
+            <h2 className="text-2xl text-navy-deep mb-6">{t("Informações")}</h2>
             <div className="space-y-5">
               {[
                 { icon: Phone, title: "Telefone", lines: ["(00) 0000-0000"] },
@@ -106,8 +108,8 @@ function ContatoPage() {
                     <i.icon className="w-5 h-5 text-cyan-accent" />
                   </div>
                   <div>
-                    <h3 className="text-navy-deep mb-1">{i.title}</h3>
-                    {i.lines.map((l) => <p key={l} className="text-sm text-muted-foreground">{l}</p>)}
+                    <h3 className="text-navy-deep mb-1">{t(i.title)}</h3>
+                    {i.lines.map((l) => <p key={l} className="text-sm text-muted-foreground">{t(l)}</p>)}
                   </div>
                 </div>
               ))}
