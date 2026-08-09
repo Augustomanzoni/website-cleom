@@ -4,6 +4,8 @@ import { useState } from "react";
 import logo from "@/assets/cleom-logo.png.asset.json";
 import { ProductSearch } from "@/components/site/ProductSearch";
 import { solutions } from "@/lib/solutions";
+import { useI18n } from "@/lib/i18n";
+import { LanguageSelector } from "@/components/site/LanguageSelector";
 
 type NavLink = { to: "/" | "/sobre" | "/nossas-solucoes" | "/servicos" | "/contato"; label: string; hasMenu?: boolean };
 const navLinks: NavLink[] = [
@@ -16,6 +18,7 @@ const navLinks: NavLink[] = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { t } = useI18n();
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-navy-deep/95 backdrop-blur-md border-b border-white/5">
@@ -36,7 +39,7 @@ export function Header() {
                   activeProps={{ className: "text-cyan-accent" }}
                   activeOptions={{ exact: l.to === "/" }}
                 >
-                  {l.label}
+                  {t(l.label)}
                   {l.hasMenu && <ChevronDown className="w-3.5 h-3.5" />}
                 </Link>
                 {l.hasMenu && (
@@ -49,7 +52,7 @@ export function Header() {
                           params={{ categoria: s.slug }}
                           className="block px-4 py-3 text-sm uppercase tracking-wider text-navy hover:bg-secondary rounded-lg text-center"
                         >
-                          {s.title}
+                          {t(s.title)}
                         </Link>
                       ))}
                     </div>
@@ -57,6 +60,7 @@ export function Header() {
                 )}
               </div>
             ))}
+            <LanguageSelector />
             </nav>
           </div>
 
@@ -75,9 +79,10 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 className="px-3 py-3 uppercase tracking-wider text-chrome/80 hover:text-cyan-accent"
               >
-                {l.label}
+                {t(l.label)}
               </Link>
             ))}
+            <LanguageSelector mobile />
             <div className="mt-2 pl-4 border-l border-white/10 flex flex-col">
               {solutions.map((s) => (
                 <Link
@@ -87,7 +92,7 @@ export function Header() {
                   onClick={() => setOpen(false)}
                   className="px-3 py-2 text-sm text-chrome/70 hover:text-cyan-accent"
                 >
-                  › {s.title}
+                  › {t(s.title)}
                 </Link>
               ))}
             </div>
