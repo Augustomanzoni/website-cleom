@@ -9,8 +9,10 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { solutions } from "@/lib/solutions";
+import { useI18n } from "@/lib/i18n";
 
 export function CatalogDownloadSection() {
+  const { t } = useI18n();
   const [selectedCatalog, setSelectedCatalog] = useState<string | null>(null);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
 
@@ -22,7 +24,7 @@ export function CatalogDownloadSection() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setStatusMessage(
-      "O envio e o download automático de catálogos ainda estão desativados. Assim que você me enviar os PDFs e ativarmos o envio direto, essa etapa passa a funcionar sem abrir o app de e-mail.",
+      t("O envio e o download automático de catálogos ainda estão desativados. Assim que você me enviar os PDFs e ativarmos o envio direto, essa etapa passa a funcionar sem abrir o app de e-mail."),
     );
   };
 
@@ -31,10 +33,10 @@ export function CatalogDownloadSection() {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mb-10">
-            <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">Catálogos</p>
-            <h2 className="text-4xl md:text-5xl text-navy-deep mb-4">Solicite o catálogo da linha que deseja analisar</h2>
+            <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">{t("Catálogos")}</p>
+            <h2 className="text-4xl md:text-5xl text-navy-deep mb-4">{t("Solicite o catálogo da linha que deseja analisar")}</h2>
             <p className="text-muted-foreground text-lg">
-              Escolha uma categoria para deixar seus dados prontos. O download automático será ativado quando os catálogos finais forem enviados.
+              {t("Escolha uma categoria para deixar seus dados prontos. O download automático será ativado quando os catálogos finais forem enviados.")}
             </p>
           </div>
 
@@ -68,26 +70,26 @@ export function CatalogDownloadSection() {
       <Dialog open={Boolean(selectedCatalog)} onOpenChange={(open) => !open && setSelectedCatalog(null)}>
         <DialogContent className="sm:max-w-xl">
           <DialogHeader>
-            <DialogTitle>Solicitar catálogo {activeSolution?.title}</DialogTitle>
+            <DialogTitle>{t("Solicitar catálogo")} {activeSolution ? t(activeSolution.title) : ""}</DialogTitle>
             <DialogDescription>
-              Preencha seus dados para liberar este material quando o catálogo final estiver disponível.
+              {t("Preencha seus dados para liberar este material quando o catálogo final estiver disponível.")}
             </DialogDescription>
           </DialogHeader>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="catalogo-nome" className="block text-sm text-navy-deep mb-2">Nome completo</label>
+              <label htmlFor="catalogo-nome" className="block text-sm text-navy-deep mb-2">{t("Nome completo")}</label>
               <input
                 id="catalogo-nome"
                 name="nome"
                 required
-                placeholder="Seu nome"
+                placeholder={t("Seu nome")}
                 className="w-full rounded-xl border border-border bg-background px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-accent"
               />
             </div>
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="catalogo-email" className="block text-sm text-navy-deep mb-2">E-mail</label>
+                <label htmlFor="catalogo-email" className="block text-sm text-navy-deep mb-2">{t("E-mail")}</label>
                 <input
                   id="catalogo-email"
                   name="email"
@@ -98,7 +100,7 @@ export function CatalogDownloadSection() {
                 />
               </div>
               <div>
-                <label htmlFor="catalogo-telefone" className="block text-sm text-navy-deep mb-2">Telefone</label>
+                <label htmlFor="catalogo-telefone" className="block text-sm text-navy-deep mb-2">{t("Telefone")}</label>
                 <input
                   id="catalogo-telefone"
                   name="telefone"
@@ -113,9 +115,9 @@ export function CatalogDownloadSection() {
             <div className="rounded-2xl border border-border bg-secondary p-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2 text-navy-deep mb-2">
                 <FileText className="w-4 h-4 text-cyan-accent" />
-                <span className="font-medium">Catálogo selecionado</span>
+                <span className="font-medium">{t("Catálogo selecionado")}</span>
               </div>
-              {activeSolution?.title ?? "Catálogo CLEOM"}
+              {activeSolution ? t(activeSolution.title) : t("Catálogo CLEOM")}
             </div>
 
             {statusMessage && (
@@ -125,7 +127,7 @@ export function CatalogDownloadSection() {
             )}
 
             <Button type="submit" className="w-full h-12 rounded-xl uppercase tracking-wider">
-              Solicitar catálogo
+              {t("Solicitar catálogo")}
             </Button>
           </form>
         </DialogContent>
