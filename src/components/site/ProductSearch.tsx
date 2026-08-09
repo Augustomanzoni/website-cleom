@@ -10,6 +10,7 @@ import {
   CommandList,
 } from "@/components/ui/command";
 import { solutions } from "@/lib/solutions";
+import { useI18n, translate } from "@/lib/i18n";
 
 type ProductSearchProps = {
   mobile?: boolean;
@@ -59,7 +60,15 @@ const searchEntries: SearchEntry[] = solutions.flatMap((solution) => {
   return [categoryEntry, ...productEntries];
 });
 
+function translateSubtitle(subtitle: string, t: (s: string) => string) {
+  if (subtitle.startsWith("Categoria • ")) {
+    return `${t("Categoria")} • ${t(subtitle.replace("Categoria • ", ""))}`;
+  }
+  return t(subtitle);
+}
+
 export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps) {
+  const { t, lang } = useI18n();
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -77,9 +86,14 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
     }
 
     return searchEntries
-      .filter((entry) => entry.searchText.includes(normalized))
+      .filter(
+        (entry) =>
+          entry.searchText.includes(normalized) ||
+          translate(entry.label, lang).toLowerCase().includes(normalized) ||
+          translate(entry.subtitle, lang).toLowerCase().includes(normalized),
+      )
       .slice(0, 10);
-  }, [query]);
+  }, [query, lang]);
 
   const wrapperClass = mobile
     ? "w-full rounded-xl border border-white/10 bg-white/5"
@@ -94,13 +108,13 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
         <CommandInput
           value={query}
           onValueChange={setQuery}
-          placeholder="Buscar produtos, categorias ou palavras-chave"
+          placeholder={t("Buscar produtos, categorias ou palavras-chave")}
           className="placeholder:text-chrome/45"
         />
         {(query.trim().length > 0 || mobile) && (
           <CommandList className="max-h-72 rounded-2xl bg-card text-card-foreground shadow-2xl">
-            <CommandEmpty className="text-muted-foreground">Nenhum resultado encontrado.</CommandEmpty>
-            <CommandGroup heading="Resultados" className="text-card-foreground [&_[cmdk-group-heading]]:text-muted-foreground">
+            <CommandEmpty className="text-muted-foreground">{t("Nenhum resultado encontrado.")}</CommandEmpty>
+            <CommandGroup heading={t("Resultados")} className="text-card-foreground [&_[cmdk-group-heading]]:text-muted-foreground">
               {results.map((entry) => (
                 <CommandItem
                   key={entry.id}
@@ -114,8 +128,8 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
                 >
                   <Search className="text-cyan-accent" />
                   <div className="min-w-0">
-                    <p className="truncate text-sm uppercase tracking-wide">{entry.label}</p>
-                    <p className="truncate text-xs text-muted-foreground">{entry.subtitle}</p>
+                    <p className="truncate text-sm uppercase tracking-wide">{t(entry.label)}</p>
+                    <p className="truncate text-xs text-muted-foreground">{translateSubtitle(entry.subtitle, t)}</p>
                   </div>
                 </CommandItem>
               ))}

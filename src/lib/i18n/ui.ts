@@ -243,6 +243,7 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
 
   // Catálogos
   "Catálogos": { en: "Catalogs", es: "Catálogos" },
+  "Catálogo": { en: "Catalog", es: "Catálogo" },
   "Solicite o catálogo da linha que deseja analisar": {
     en: "Request the catalog of the line you want to review",
     es: "Solicita el catálogo de la línea que deseas analizar",

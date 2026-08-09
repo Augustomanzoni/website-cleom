@@ -47,9 +47,9 @@ export function CatalogDownloadSection() {
                 className="flex items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5"
               >
                 <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-[0.3em] text-cyan-accent mb-2">Catálogo</p>
-                  <h3 className="text-2xl text-navy-deep uppercase leading-none mb-2">{solution.title}</h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">{solution.tagline}</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-cyan-accent mb-2">{t("Catálogo")}</p>
+                  <h3 className="text-2xl text-navy-deep uppercase leading-none mb-2">{t(solution.title)}</h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2">{t(solution.tagline)}</p>
                 </div>
                 <Button
                   type="button"
