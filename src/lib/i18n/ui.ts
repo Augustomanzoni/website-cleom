@@ -39,29 +39,29 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
   "Solicitar orçamento": { en: "Request a quote", es: "Solicitar presupuesto" },
   "Anos de mercado": { en: "Years in the market", es: "Años en el mercado" },
   "Projetos entregues": { en: "Projects delivered", es: "Proyectos entregados" },
-  "Economia energética": { en: "Energy savings", es: "Ahorro energético" },
+  "EM GANHO DE PRODUTIVIDADE": { en: "IN PRODUCTIVITY GAIN", es: "EN GANANCIA DE PRODUCTIVIDAD" },
   "Suporte técnico": { en: "Technical support", es: "Soporte técnico" },
   "Diferenciais": { en: "Why us", es: "Diferenciales" },
   "Por que escolher a CLEOM": { en: "Why choose CLEOM", es: "Por qué elegir CLEOM" },
   "Tecnologia Frigorífica": { en: "Refrigeration Technology", es: "Tecnología Frigorífica" },
-  "Sistemas modernos com controle preciso de temperatura.": {
-    en: "Modern systems with precise temperature control.",
-    es: "Sistemas modernos con control preciso de temperatura.",
+  "Sistemas modernos com soluções personalizadas": {
+    en: "Modern systems with customized solutions",
+    es: "Sistemas modernos con soluciones personalizadas",
   },
-  "Eficiência Energética": { en: "Energy Efficiency", es: "Eficiencia Energética" },
-  "Equipamentos que reduzem o consumo em até 40%.": {
-    en: "Equipment that reduces consumption by up to 40%.",
-    es: "Equipos que reducen el consumo hasta un 40%.",
+  "Ganho de produtividade": { en: "Productivity Gain", es: "Ganancia de Productividad" },
+  "Soluções pensadas para gerar aumento de produtividade": {
+    en: "Solutions designed to generate increased productivity",
+    es: "Soluciones diseñadas para generar aumento de productividad",
   },
-  "Padrão Sanitário": { en: "Sanitary Standard", es: "Estándar Sanitario" },
-  "Aço inox 304/316 e conformidade com normas do MAPA.": {
-    en: "304/316 stainless steel and compliance with MAPA standards.",
-    es: "Acero inoxidable 304/316 y conformidad con las normas del MAPA.",
+  "Padrão Sanitário e Segurança": { en: "Sanitary Standard and Safety", es: "Estándar Sanitario y Seguridad" },
+  "Aço inox e conformidade com normas de segurança": {
+    en: "Stainless steel and compliance with safety standards",
+    es: "Acero inoxidable y conformidad con las normas de seguridad",
   },
   "Suporte 24h": { en: "24h Support", es: "Soporte 24h" },
-  "Assistência técnica especializada quando você precisar.": {
-    en: "Specialized technical assistance whenever you need it.",
-    es: "Asistencia técnica especializada cuando la necesites.",
+  "Assistência técnica especializada quando você precisar": {
+    en: "Specialized technical assistance whenever you need it",
+    es: "Asistencia técnica especializada cuando la necesites",
   },
   "PRONTO PARA ENCONTRAR SUA SOLUÇÃO?": {
     en: "READY TO FIND YOUR SOLUTION?",
@@ -76,9 +76,9 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
   // Solutions grid
   "Tecnologia industrial para": { en: "Industrial technology for", es: "Tecnología industrial para" },
   "equipamentos de alta performance": { en: "high-performance equipment", es: "equipos de alto rendimiento" },
-  "Conheça as linhas de atuação e nossos produtos desenvolvidos para a indústria frigorífica.": {
-    en: "Discover our product lines developed for the meat processing industry.",
-    es: "Conoce nuestras líneas y productos desarrollados para la industria frigorífica.",
+  "Conheça as linhas de atuação e nossos produtos desenvolvidos para a indústria frigorífica!": {
+    en: "Discover our product lines developed for the meat processing industry!",
+    es: "¡Conoce nuestras líneas y productos desarrollados para la industria frigorífica!",
   },
   "Ver linha": { en: "View line", es: "Ver línea" },
   "Ver mais": { en: "See more", es: "Ver más" },
