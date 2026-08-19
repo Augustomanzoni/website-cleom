@@ -48,12 +48,12 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "Modern systems with customized solutions",
     es: "Sistemas modernos con soluciones personalizadas",
   },
-  "Ganho de produtividade": { en: "Productivity Gain", es: "Ganancia de Productividad" },
-  "Soluções pensadas para gerar aumento de produtividade": {
-    en: "Solutions designed to generate increased productivity",
-    es: "Soluciones diseñadas para generar aumento de productividad",
+  "Eficiência Produtiva": { en: "Production Efficiency", es: "Eficiencia Productiva" },
+  "Soluções que visam o ganho de performance e produtividade": {
+    en: "Solutions aimed at performance and productivity gains",
+    es: "Soluciones que apuntan al aumento de rendimiento y productividad",
   },
-  "Padrão Sanitário e Segurança": { en: "Sanitary Standard and Safety", es: "Estándar Sanitario y Seguridad" },
+  "Padrão Sanitário/Segurança": { en: "Sanitary/Safety Standard", es: "Estándar Sanitario/Seguridad" },
   "Aço inox e conformidade com normas de segurança": {
     en: "Stainless steel and compliance with safety standards",
     es: "Acero inoxidable y conformidad con las normas de seguridad",
