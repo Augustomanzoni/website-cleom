@@ -15,7 +15,7 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
               {t("Tecnologia industrial para")} <span className="text-cyan-accent">{t("equipamentos de alta performance")}</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              {t("Conheça as linhas de atuação e nossos produtos desenvolvidos para a indústria frigorífica.")}
+              {t("Conheça as linhas de atuação e nossos produtos desenvolvidos para a indústria frigorífica!")}
             </p>
           </div>
         )}

@@ -61,9 +61,9 @@ function HomePage() {
       <section className="bg-navy text-white py-16">
         <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { v: "20+", l: "Anos de mercado" },
+            { v: "10+", l: "Anos de mercado" },
             { v: "500+", l: "Projetos entregues" },
-            { v: "40%", l: "Economia energética" },
+            { v: "100%", l: "EM GANHO DE PRODUTIVIDADE" },
             { v: "24h", l: "Suporte técnico" },
           ].map((s) => (
             <div key={s.l}>
@@ -85,10 +85,10 @@ function HomePage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Snowflake, title: "Tecnologia Frigorífica", desc: "Sistemas modernos com controle preciso de temperatura." },
-              { icon: Zap, title: "Eficiência Energética", desc: "Equipamentos que reduzem o consumo em até 40%." },
-              { icon: Shield, title: "Padrão Sanitário", desc: "Aço inox 304/316 e conformidade com normas do MAPA." },
-              { icon: Headphones, title: "Suporte 24h", desc: "Assistência técnica especializada quando você precisar." },
+              { icon: Snowflake, title: "Tecnologia Frigorífica", desc: "Sistemas modernos com soluções personalizadas" },
+              { icon: Zap, title: "Ganho de produtividade", desc: "Soluções pensadas para gerar aumento de produtividade" },
+              { icon: Shield, title: "Padrão Sanitário e Segurança", desc: "Aço inox e conformidade com normas de segurança" },
+              { icon: Headphones, title: "Suporte 24h", desc: "Assistência técnica especializada quando você precisar" },
             ].map((b) => (
               <div key={b.title} className="bg-card p-6 rounded-2xl border border-border hover:border-cyan-accent transition-colors">
                 <div className="w-12 h-12 rounded-xl navy-gradient flex items-center justify-center mb-4">
