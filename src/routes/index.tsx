@@ -86,8 +86,8 @@ function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: Snowflake, title: "Tecnologia Frigorífica", desc: "Sistemas modernos com soluções personalizadas" },
-              { icon: Zap, title: "Ganho de produtividade", desc: "Soluções pensadas para gerar aumento de produtividade" },
-              { icon: Shield, title: "Padrão Sanitário e Segurança", desc: "Aço inox e conformidade com normas de segurança" },
+              { icon: Zap, title: "Eficiência Produtiva", desc: "Soluções que visam o ganho de performance e produtividade" },
+              { icon: Shield, title: "Padrão Sanitário/Segurança", desc: "Aço inox e conformidade com normas de segurança" },
               { icon: Headphones, title: "Suporte 24h", desc: "Assistência técnica especializada quando você precisar" },
             ].map((b) => (
               <div key={b.title} className="bg-card p-6 rounded-2xl border border-border hover:border-cyan-accent transition-colors">
