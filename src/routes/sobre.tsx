@@ -46,13 +46,13 @@ function SobrePage() {
             <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">{t("Nossa missão")}</p>
             <h2 className="text-4xl text-navy-deep mb-6">{t("Engenharia que move a indústria frigorífica")}</h2>
             <p className="text-muted-foreground mb-4">
-              {t("Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência energética das nossas indústrias parceiras.")}
+              {t("Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência das nossas indústrias parceiras.")}
             </p>
             <p className="text-muted-foreground mb-4">
               {t("Trabalhamos com equipamentos de última geração e mantemos parcerias com os principais fabricantes mundiais de sistemas de refrigeração industrial.")}
             </p>
             <p className="text-muted-foreground">
-              {t("Nossa equipe técnica especializada desenvolve projetos sob medida, desde câmaras frigoríficas até linhas completas de processamento.")}
+              {t("\n")}
             </p>
           </div>
         </div>
