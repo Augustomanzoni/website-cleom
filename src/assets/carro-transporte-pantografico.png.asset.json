@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "34b284b2-1ea1-4bcd-a57b-d9acced417f2",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/34b284b2-1ea1-4bcd-a57b-d9acced417f2/carro-transporte-pantografico.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/34b284b2-1ea1-4bcd-a57b-d9acced417f2/carro-transporte-pantografico.png",
-  "original_filename": "carro-transporte-pantografico.png",
-  "size": 1649165,
   "content_type": "image/png",
-  "created_at": "2026-08-04T14:13:42Z"
+  "created_at": "2026-08-04T14:13:42Z",
+  "original_filename": "carro-transporte-pantografico.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/34b284b2-1ea1-4bcd-a57b-d9acced417f2/carro-transporte-pantografico.png",
+  "size": 1649165,
+  "url": "/__l5e/assets-v1/34b284b2-1ea1-4bcd-a57b-d9acced417f2/carro-transporte-pantografico.png",
+  "version": 1
 }

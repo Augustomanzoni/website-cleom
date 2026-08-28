@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "83e8c7c5-b667-4cf5-9c5f-0af18138d241",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/83e8c7c5-b667-4cf5-9c5f-0af18138d241/transferidor-hidraulico-pallet.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/83e8c7c5-b667-4cf5-9c5f-0af18138d241/transferidor-hidraulico-pallet.png",
-  "original_filename": "transferidor-hidraulico-pallet.png",
-  "size": 966781,
   "content_type": "image/png",
-  "created_at": "2026-08-03T21:17:20Z"
+  "created_at": "2026-08-03T21:17:20Z",
+  "original_filename": "transferidor-hidraulico-pallet.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/83e8c7c5-b667-4cf5-9c5f-0af18138d241/transferidor-hidraulico-pallet.png",
+  "size": 966781,
+  "url": "/__l5e/assets-v1/83e8c7c5-b667-4cf5-9c5f-0af18138d241/transferidor-hidraulico-pallet.png",
+  "version": 1
 }

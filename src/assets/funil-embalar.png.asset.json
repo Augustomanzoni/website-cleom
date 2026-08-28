@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "42848ec7-8ff0-4bc0-a8f7-7d436ec248f6",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/42848ec7-8ff0-4bc0-a8f7-7d436ec248f6/funil-embalar.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/42848ec7-8ff0-4bc0-a8f7-7d436ec248f6/funil-embalar.png",
-  "original_filename": "funil-embalar.png",
-  "size": 906794,
   "content_type": "image/png",
-  "created_at": "2026-08-05T11:58:11Z"
+  "created_at": "2026-08-05T11:58:11Z",
+  "original_filename": "funil-embalar.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/42848ec7-8ff0-4bc0-a8f7-7d436ec248f6/funil-embalar.png",
+  "size": 906794,
+  "url": "/__l5e/assets-v1/42848ec7-8ff0-4bc0-a8f7-7d436ec248f6/funil-embalar.png",
+  "version": 1
 }

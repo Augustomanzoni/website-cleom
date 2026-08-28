@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "0beb7fd5-0534-41c0-be65-75e9d2f4c74f",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/0beb7fd5-0534-41c0-be65-75e9d2f4c74f/aves-calha-plataforma-evisceracao.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/0beb7fd5-0534-41c0-be65-75e9d2f4c74f/aves-calha-plataforma-evisceracao.png",
-  "original_filename": "aves-calha-plataforma-evisceracao.png",
-  "size": 1134179,
   "content_type": "image/png",
-  "created_at": "2026-08-04T14:14:02Z"
+  "created_at": "2026-08-04T14:14:02Z",
+  "original_filename": "aves-calha-plataforma-evisceracao.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/0beb7fd5-0534-41c0-be65-75e9d2f4c74f/aves-calha-plataforma-evisceracao.png",
+  "size": 1134179,
+  "url": "/__l5e/assets-v1/0beb7fd5-0534-41c0-be65-75e9d2f4c74f/aves-calha-plataforma-evisceracao.png",
+  "version": 1
 }

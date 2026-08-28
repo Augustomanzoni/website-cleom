@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "6c5abbb8-055c-41c6-8583-a748ceb54210",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/6c5abbb8-055c-41c6-8583-a748ceb54210/aves-esteira-acumuladora-gaiolas.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/6c5abbb8-055c-41c6-8583-a748ceb54210/aves-esteira-acumuladora-gaiolas.png",
-  "original_filename": "aves-esteira-acumuladora-gaiolas.png",
-  "size": 1409643,
   "content_type": "image/png",
-  "created_at": "2026-08-04T14:13:54Z"
+  "created_at": "2026-08-04T14:13:54Z",
+  "original_filename": "aves-esteira-acumuladora-gaiolas.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/6c5abbb8-055c-41c6-8583-a748ceb54210/aves-esteira-acumuladora-gaiolas.png",
+  "size": 1409643,
+  "url": "/__l5e/assets-v1/6c5abbb8-055c-41c6-8583-a748ceb54210/aves-esteira-acumuladora-gaiolas.png",
+  "version": 1
 }

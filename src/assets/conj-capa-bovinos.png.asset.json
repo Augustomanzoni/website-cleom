@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "fa772a9d-9022-4e85-bec7-c2289867bdbe",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/fa772a9d-9022-4e85-bec7-c2289867bdbe/conj-capa-bovinos.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/fa772a9d-9022-4e85-bec7-c2289867bdbe/conj-capa-bovinos.png",
-  "original_filename": "conj-capa-bovinos.png",
-  "size": 965644,
   "content_type": "image/png",
-  "created_at": "2026-08-07T19:14:43Z"
+  "created_at": "2026-08-07T19:14:43Z",
+  "original_filename": "conj-capa-bovinos.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/fa772a9d-9022-4e85-bec7-c2289867bdbe/conj-capa-bovinos.png",
+  "size": 965644,
+  "url": "/__l5e/assets-v1/fa772a9d-9022-4e85-bec7-c2289867bdbe/conj-capa-bovinos.png",
+  "version": 1
 }

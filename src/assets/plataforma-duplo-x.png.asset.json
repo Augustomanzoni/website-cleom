@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "4e33f983-b36c-4f8e-ae8f-6d8463d40100",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/4e33f983-b36c-4f8e-ae8f-6d8463d40100/plataforma-duplo-x.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/4e33f983-b36c-4f8e-ae8f-6d8463d40100/plataforma-duplo-x.png",
-  "original_filename": "plataforma-duplo-x.png",
-  "size": 857697,
   "content_type": "image/png",
-  "created_at": "2026-08-05T11:58:19Z"
+  "created_at": "2026-08-05T11:58:19Z",
+  "original_filename": "plataforma-duplo-x.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/4e33f983-b36c-4f8e-ae8f-6d8463d40100/plataforma-duplo-x.png",
+  "size": 857697,
+  "url": "/__l5e/assets-v1/4e33f983-b36c-4f8e-ae8f-6d8463d40100/plataforma-duplo-x.png",
+  "version": 1
 }

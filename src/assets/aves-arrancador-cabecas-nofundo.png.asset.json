@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "7e1d7daf-bdee-484a-b44b-ae8d86ed84a2",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/7e1d7daf-bdee-484a-b44b-ae8d86ed84a2/aves-arrancador-cabecas-nofundo.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/7e1d7daf-bdee-484a-b44b-ae8d86ed84a2/aves-arrancador-cabecas-nofundo.png",
-  "original_filename": "aves-arrancador-cabecas-nofundo.png",
-  "size": 1057898,
   "content_type": "image/png",
-  "created_at": "2026-08-04T14:13:58Z"
+  "created_at": "2026-08-04T14:13:58Z",
+  "original_filename": "aves-arrancador-cabecas-nofundo.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/7e1d7daf-bdee-484a-b44b-ae8d86ed84a2/aves-arrancador-cabecas-nofundo.png",
+  "size": 1057898,
+  "url": "/__l5e/assets-v1/7e1d7daf-bdee-484a-b44b-ae8d86ed84a2/aves-arrancador-cabecas-nofundo.png",
+  "version": 1
 }

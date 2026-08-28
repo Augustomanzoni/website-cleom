@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "a8a22d00-f509-4f6f-a4f8-f7495c9c7910",
-  "project_id": "2ac4484d-fe5f-4ab6-8223-e1cff1d3c968",
-  "url": "/__l5e/assets-v1/a8a22d00-f509-4f6f-a4f8-f7495c9c7910/aves-virador-caixa-gaiola.png",
-  "r2_key": "a/v1/2ac4484d-fe5f-4ab6-8223-e1cff1d3c968/a8a22d00-f509-4f6f-a4f8-f7495c9c7910/aves-virador-caixa-gaiola.png",
-  "original_filename": "aves-virador-caixa-gaiola.png",
-  "size": 1166132,
   "content_type": "image/png",
-  "created_at": "2026-08-06T12:33:06Z"
+  "created_at": "2026-08-06T12:33:06Z",
+  "original_filename": "aves-virador-caixa-gaiola.png",
+  "project_id": "ce39cd49-e8e3-44eb-9af6-680ad937bc45",
+  "r2_key": "a/v1/ce39cd49-e8e3-44eb-9af6-680ad937bc45/a8a22d00-f509-4f6f-a4f8-f7495c9c7910/aves-virador-caixa-gaiola.png",
+  "size": 1166132,
+  "url": "/__l5e/assets-v1/a8a22d00-f509-4f6f-a4f8-f7495c9c7910/aves-virador-caixa-gaiola.png",
+  "version": 1
 }
