@@ -5,7 +5,7 @@ import avesTrilhoT from "@/assets/aves-trilho-t.png.asset.json";
 import avesTunelSangriaRaspador from "@/assets/aves-tunel-sangria-raspador.png.asset.json";
 import avesViradorCaixaGaiola from "@/assets/aves-virador-caixa-gaiola.png.asset.json";
 import avesCurvas from "@/assets/aves-curva-45-90-180.png.asset.json";
-import avesTanqueEscaldagemBorbulho from "@/assets/aves-tanque-escaldagem-borbulho.png.asset.json";
+
 import avesTanquePulmao from "@/assets/aves-tanque-pulmao.png.asset.json";
 import avesEsteiraDescarregamento from "@/assets/aves-esteira-descarregamento.png";
 import avesGuinchoArraste from "@/assets/aves-guincho-arraste.png";
@@ -216,36 +216,6 @@ const sharedCrossCategoryProducts: Product[] = [
     ],
   },
   {
-    slug: "fatiadora-de-partes-automatica",
-    name: "Fatiadora de Partes Automática",
-    description: "Fatiadora automática para cortes repetitivos com alto desempenho, segurança operacional e padronização final.",
-    image: fatiadoraPartesAutomatica.url,
-    longDescription:
-      "Equipamento desenvolvido para automatizar cortes e separações em processos contínuos, reduzindo variações operacionais e ampliando a produtividade da planta. Sua construção robusta em inox e o sistema de alimentação favorecem desempenho elevado, segurança e padronização do produto final.",
-    applications: [
-      "Corte automático de partes em alta cadência",
-      "Padronização dimensional do produto final",
-      "Redução de interferência manual em etapas críticas",
-      "Aumento de produtividade com repetibilidade de processo",
-      "Integração com linhas contínuas de processamento",
-    ],
-  },
-  {
-    slug: "fatiadora-de-partes-manual",
-    name: "Fatiadora de Partes Manual",
-    description: "Fatiadora compacta para operações controladas de corte com ergonomia, higiene e excelente acabamento.",
-    image: fatiadoraPartesManual.url,
-    longDescription:
-      "Modelo indicado para etapas que exigem maior controle operacional e flexibilidade de uso, mantendo segurança, ergonomia e padrão sanitário. Sua configuração compacta facilita integração em diferentes layouts e dá suporte a linhas que precisam de ajuste manual em cortes específicos.",
-    applications: [
-      "Cortes controlados em operações de menor volume",
-      "Apoio a processos que exigem maior flexibilidade",
-      "Padronização manual com segurança operacional",
-      "Integração com áreas de acabamento e seleção",
-      "Plantas que combinam etapas automáticas e assistidas",
-    ],
-  },
-  {
     slug: "formatadora-de-pacotes",
     name: "Formatadora de Pacotes",
     description: "Equipamento para conformação e organização de pacotes com alimentação contínua e excelente apresentação final.",
@@ -262,21 +232,6 @@ const sharedCrossCategoryProducts: Product[] = [
   },
 ];
 
-const estiradoraDeCarneProduct: Product = {
-  slug: "estiradora-de-carne",
-  name: "Estiradora de Carne",
-  description: "Equipamento para abertura e estiramento uniforme de cortes, com alimentação contínua e ótimo controle operacional.",
-  image: estiradoraCarne,
-  longDescription:
-    "Solução desenvolvida para estirar e abrir cortes de forma padronizada, favorecendo uniformidade, ganho de apresentação e repetibilidade nas etapas seguintes do processo. Sua estrutura protegida, com componentes sanitários e esteira de alimentação, entrega segurança, produtividade e integração simples à linha industrial.",
-  applications: [
-    "Estiramento padronizado de cortes cárneos",
-    "Melhoria da apresentação para etapas seguintes",
-    "Operação contínua com alimentação por esteira",
-    "Redução de variação manual no processo",
-    "Integração com linhas de preparo e embalagem",
-  ],
-};
 
 const avesSuinosProducts: Product[] = [
   {
@@ -514,21 +469,6 @@ const industriaProducts: Product[] = [
       "Abastecimento de linhas de corte e embalagem",
       "Transporte entre câmaras frias e áreas de produção",
       "Operações com carga variável e alto giro",
-    ],
-  },
-  {
-    slug: "transferidor-hidraulico-horizontal-para-pallet",
-    name: "Transferidor Hidráulico Horizontal para Pallet",
-    description: "Transferidor hidráulico para troca horizontal de pallets sem desmontar a carga paletizada.",
-    image: transferidorHidraulicoPallet.url,
-    longDescription:
-      "Equipamento hidráulico que transfere a carga paletizada de um pallet para outro no sentido horizontal, sem necessidade de remontar caixas ou volumes. Muito utilizado na troca de pallet de madeira por pallet plástico ou higienizado na entrada de áreas limpas, o conjunto conta com prensa de contenção lateral, mesa de apoio e unidade hidráulica com comando elétrico. O ciclo rápido elimina esforço manual, reduz avarias na carga e protege a área de processamento contra contaminantes trazidos por pallets externos.",
-    applications: [
-      "Troca de pallet de madeira por pallet plástico",
-      "Barreira sanitária na entrada de áreas limpas",
-      "Movimentação de cargas paletizadas sem remontagem",
-      "Redução de avarias e de esforço manual",
-      "Expedição, recebimento e câmaras frias",
     ],
   },
   {
