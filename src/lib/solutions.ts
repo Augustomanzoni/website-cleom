@@ -5,7 +5,7 @@ import avesTrilhoT from "@/assets/aves-trilho-t.png.asset.json";
 import avesTunelSangriaRaspador from "@/assets/aves-tunel-sangria-raspador.png.asset.json";
 import avesViradorCaixaGaiola from "@/assets/aves-virador-caixa-gaiola.png.asset.json";
 import avesCurvas from "@/assets/aves-curva-45-90-180.png.asset.json";
-import avesTanqueEscaldagemBorbulho from "@/assets/aves-tanque-escaldagem-borbulho.png.asset.json";
+
 import avesTanquePulmao from "@/assets/aves-tanque-pulmao.png.asset.json";
 import avesEsteiraDescarregamento from "@/assets/aves-esteira-descarregamento.png";
 import avesGuinchoArraste from "@/assets/aves-guincho-arraste.png";
@@ -216,36 +216,6 @@ const sharedCrossCategoryProducts: Product[] = [
     ],
   },
   {
-    slug: "fatiadora-de-partes-automatica",
-    name: "Fatiadora de Partes Automática",
-    description: "Fatiadora automática para cortes repetitivos com alto desempenho, segurança operacional e padronização final.",
-    image: fatiadoraPartesAutomatica.url,
-    longDescription:
-      "Equipamento desenvolvido para automatizar cortes e separações em processos contínuos, reduzindo variações operacionais e ampliando a produtividade da planta. Sua construção robusta em inox e o sistema de alimentação favorecem desempenho elevado, segurança e padronização do produto final.",
-    applications: [
-      "Corte automático de partes em alta cadência",
-      "Padronização dimensional do produto final",
-      "Redução de interferência manual em etapas críticas",
-      "Aumento de produtividade com repetibilidade de processo",
-      "Integração com linhas contínuas de processamento",
-    ],
-  },
-  {
-    slug: "fatiadora-de-partes-manual",
-    name: "Fatiadora de Partes Manual",
-    description: "Fatiadora compacta para operações controladas de corte com ergonomia, higiene e excelente acabamento.",
-    image: fatiadoraPartesManual.url,
-    longDescription:
-      "Modelo indicado para etapas que exigem maior controle operacional e flexibilidade de uso, mantendo segurança, ergonomia e padrão sanitário. Sua configuração compacta facilita integração em diferentes layouts e dá suporte a linhas que precisam de ajuste manual em cortes específicos.",
-    applications: [
-      "Cortes controlados em operações de menor volume",
-      "Apoio a processos que exigem maior flexibilidade",
-      "Padronização manual com segurança operacional",
-      "Integração com áreas de acabamento e seleção",
-      "Plantas que combinam etapas automáticas e assistidas",
-    ],
-  },
-  {
     slug: "formatadora-de-pacotes",
     name: "Formatadora de Pacotes",
     description: "Equipamento para conformação e organização de pacotes com alimentação contínua e excelente apresentação final.",
@@ -262,21 +232,6 @@ const sharedCrossCategoryProducts: Product[] = [
   },
 ];
 
-const estiradoraDeCarneProduct: Product = {
-  slug: "estiradora-de-carne",
-  name: "Estiradora de Carne",
-  description: "Equipamento para abertura e estiramento uniforme de cortes, com alimentação contínua e ótimo controle operacional.",
-  image: estiradoraCarne,
-  longDescription:
-    "Solução desenvolvida para estirar e abrir cortes de forma padronizada, favorecendo uniformidade, ganho de apresentação e repetibilidade nas etapas seguintes do processo. Sua estrutura protegida, com componentes sanitários e esteira de alimentação, entrega segurança, produtividade e integração simples à linha industrial.",
-  applications: [
-    "Estiramento padronizado de cortes cárneos",
-    "Melhoria da apresentação para etapas seguintes",
-    "Operação contínua com alimentação por esteira",
-    "Redução de variação manual no processo",
-    "Integração com linhas de preparo e embalagem",
-  ],
-};
 
 const avesSuinosProducts: Product[] = [
   {
@@ -514,21 +469,6 @@ const industriaProducts: Product[] = [
       "Abastecimento de linhas de corte e embalagem",
       "Transporte entre câmaras frias e áreas de produção",
       "Operações com carga variável e alto giro",
-    ],
-  },
-  {
-    slug: "transferidor-hidraulico-horizontal-para-pallet",
-    name: "Transferidor Hidráulico Horizontal para Pallet",
-    description: "Transferidor hidráulico para troca horizontal de pallets sem desmontar a carga paletizada.",
-    image: transferidorHidraulicoPallet.url,
-    longDescription:
-      "Equipamento hidráulico que transfere a carga paletizada de um pallet para outro no sentido horizontal, sem necessidade de remontar caixas ou volumes. Muito utilizado na troca de pallet de madeira por pallet plástico ou higienizado na entrada de áreas limpas, o conjunto conta com prensa de contenção lateral, mesa de apoio e unidade hidráulica com comando elétrico. O ciclo rápido elimina esforço manual, reduz avarias na carga e protege a área de processamento contra contaminantes trazidos por pallets externos.",
-    applications: [
-      "Troca de pallet de madeira por pallet plástico",
-      "Barreira sanitária na entrada de áreas limpas",
-      "Movimentação de cargas paletizadas sem remontagem",
-      "Redução de avarias e de esforço manual",
-      "Expedição, recebimento e câmaras frias",
     ],
   },
   {
@@ -1038,9 +978,6 @@ export const solutions: Solution[] = [
       { slug: "arrancador-pena-sambiquira", name: "Arrancador de Pena e Sambiquira", description: "Equipamento combinado para arrancar penas remanescentes e a glândula sambiquira.", image: avesArrancadorPenaSambiquira.url,
         longDescription: "Equipamento combinado em aço inox que remove penas remanescentes e realiza a extração da glândula uropigiana em uma única estação. Reduz espaço de layout e mão de obra na linha.",
         applications: ["Remoção de penas residuais e sambiquira", "Consolidação de etapas em um único equipamento", "Redução de layout ocupado na linha", "Plantas com espaço restrito", "Aumento da produtividade com menor mão de obra"] },
-      { slug: "cortador-patas", name: "Cortador de Patas", description: "Cortador de patas em aço inox para separação automática após depenagem.", image: avesCortadorPatas.url,
-        longDescription: "Cortador de patas em aço inox instalado na nória aérea, com faca circular de precisão e guias de posicionamento. Separa as patas da carcaça em cadência sincronizada com a linha.",
-        applications: ["Separação automatizada de patas na linha", "Aproveitamento comercial das patas (exportação)", "Sincronização com nória de abate", "Redução de mão de obra manual", "Frigoríficos de aves com alto volume"] },
       { slug: "cortador-patas-180", name: "Cortador de Patas 180°", description: "Cortador de patas com giro de 180° para transferência da carcaça para linha de evisceração.", image: avesCortadorPatas180.url,
         longDescription: "Versão do cortador de patas com sistema de giro de 180°, que corta as patas e reposiciona a carcaça para a linha de evisceração, eliminando a necessidade de estação de transferência separada.",
         applications: ["Corte de patas com transferência automática", "Passagem direta para linha de evisceração", "Eliminação de estação intermediária", "Layouts otimizados e compactos", "Aumento de produtividade sem retrabalho"] },
@@ -1059,9 +996,6 @@ export const solutions: Solution[] = [
       { slug: "depilador-de-patas", name: "Depilador de Patas", description: "Depilador específico para acabamento das patas com operação estável e estrutura sanitária em inox.", image: avesDepiladorPatas.url,
         longDescription: "Equipamento desenvolvido para o acabamento de patas após o aquecimento, removendo resíduos superficiais de forma precisa e uniforme. Seu desenho estrutural favorece estabilidade operacional, fácil higienização e rápida incorporação à linha existente.",
         applications: ["Acabamento final de patas após aquecimento", "Melhoria do padrão visual do produto", "Redução de retrabalhos manuais", "Processamento contínuo em frigoríficos avícolas", "Integração com seleção e embalagem"] },
-      { slug: "desviador-de-fluxo", name: "Desviador de Fluxo", description: "Desviador pneumático para distribuição controlada de produto entre diferentes saídas da linha.", image: avesDesviadorFluxo.url,
-        longDescription: "Módulo de desvio de fluxo com acionamento pneumático e caixa de comando integrada, projetado para direcionar produtos ou subprodutos entre diferentes destinos da linha. Garante agilidade operacional, repetibilidade e controle preciso em ambientes sanitários.",
-        applications: ["Separação de fluxo entre linhas paralelas", "Direcionamento de subprodutos para diferentes processos", "Automação de distribuição em pontos estratégicos", "Integração com sensores e comandos pneumáticos", "Otimização de layouts industriais compactos"] },
       { slug: "afiador-de-discos", name: "Afiador de Discos", description: "Afiador industrial para manutenção precisa de discos de corte com ajuste fino e operação segura.", image: avesAfiadorDiscos.url,
         longDescription: "Sistema de afiação dedicado à recuperação de discos de corte utilizados na planta industrial. O equipamento oferece ajuste fino, estabilidade e proteção operacional, prolongando a vida útil dos discos e assegurando cortes mais consistentes na linha.",
         applications: ["Afiação periódica de discos industriais", "Redução de perda de desempenho em cortes", "Padronização da manutenção preventiva", "Aumento da vida útil dos componentes de corte", "Suporte a equipes internas de manutenção"] },
@@ -1098,18 +1032,12 @@ export const solutions: Solution[] = [
       { slug: "lavador-de-frangos-com-bomba", name: "Lavador de Frangos com Bomba", description: "Lavador com conjunto de bombeamento integrado para maior pressão e eficiência de limpeza.", image: avesLavadorFrangosBomba.url,
         longDescription: "Versão com bombeamento integrado, indicada para operações que demandam pressão adicional e controle de recirculação. A solução combina lavagem uniforme, estrutura sanitária fechada e desempenho consistente em plantas com cadência elevada.",
         applications: ["Lavagem pressurizada de carcaças", "Recirculação controlada de água de processo", "Etapas com maior exigência de remoção superficial", "Linhas avícolas de média e alta produção", "Integração com sistemas sanitários automatizados"] },
-      { slug: "cortadora-de-pele-de-pescoco", name: "Cortadora de Pele de Pescoço", description: "Equipamento para corte preciso da pele do pescoço com posicionamento estável da carcaça.", image: avesCortadoraPelePescoco.url,
-        longDescription: "Cortadora de pele de pescoço desenvolvida para executar cortes padronizados com segurança e repetibilidade ao longo da linha. Sua configuração em inox favorece ajuste fino, limpeza sanitária e integração com etapas subsequentes de evisceração.",
-        applications: ["Corte técnico da pele do pescoço", "Preparação para etapas de evisceração", "Padronização do acabamento da carcaça", "Redução de retrabalho manual", "Processos contínuos com foco em qualidade"] },
       { slug: "lavador-de-ganchos", name: "Lavador de Ganchos", description: "Sistema de lavagem contínua para ganchos com retorno limpo à linha aérea.", image: avesLavadorGanchos.url,
         longDescription: "Equipamento dedicado à higienização de ganchos e componentes suspensos, utilizando fluxo contínuo para remover resíduos antes do retorno ao circuito produtivo. A solução contribui para biossegurança, organização operacional e menor contaminação cruzada entre etapas.",
         applications: ["Lavagem contínua de ganchos da nória", "Redução de contaminação cruzada", "Retorno higienizado de componentes à linha", "Apoio a programas de biossegurança", "Integração com transportadores e linhas aéreas"] },
       { slug: "bomba-para-transporte-de-miudos", name: "Bomba para Transporte de Miúdos", description: "Bomba industrial para transporte sanitário de miúdos com fluxo controlado e operação robusta.", image: avesBombaMiudos.url,
         longDescription: "Sistema de bombeamento projetado para movimentação de miúdos com cuidado ao produto e estabilidade operacional. A construção em inox, o conjunto de comando e o traçado sanitário favorecem limpeza, controle de vazão e integração com linhas de aproveitamento de subprodutos.",
         applications: ["Transporte de miúdos entre setores", "Alimentação de linhas de seleção e processamento", "Movimentação sanitária de subprodutos", "Redução de manuseio manual", "Operação contínua em áreas úmidas"] },
-      { slug: "bomba-para-transporte-de-produtos", name: "Bomba para Transporte de Produtos", description: "Bomba elevatória para transferência higiênica de produtos com alimentação contínua.", image: avesBombaProdutos.url,
-        longDescription: "Equipamento indicado para transporte vertical ou inclinado de produtos em ambientes frigoríficos, combinando alimentação contínua e desenho sanitário. Sua arquitetura facilita instalação em layouts compactos e melhora a logística interna entre etapas do processo.",
-        applications: ["Transferência de produtos entre níveis", "Alimentação contínua de linhas subsequentes", "Aproveitamento de layouts compactos", "Redução de esforço manual no transporte", "Integração com sistemas de recebimento e dosagem"] },
       { slug: "bomba-transporte-de-produto", name: "Bomba Transporte de Produto com Painel", description: "Bomba com painel de comando integrado para transferência precisa e controle operacional do produto.", image: avesBombaTransporteProduto.url,
         longDescription: "Modelo com painel integrado, ideal para plantas que demandam ajuste operacional simples, segurança de acionamento e repetibilidade na transferência de produto. O conjunto oferece robustez mecânica, boa acessibilidade para manutenção e excelente adaptação a linhas sanitárias.",
         applications: ["Transferência controlada de produtos alimentícios", "Operação com painel local de comando", "Integração com sensores e automação", "Processos que exigem regulagem operacional", "Linhas industriais com foco em confiabilidade"] },
@@ -1146,9 +1074,6 @@ export const solutions: Solution[] = [
       { slug: "esteira-ascendente-descendente", name: "Esteira Ascendente-Descendente", description: "Esteira em cavalete com tela sanitária e inclinação ajustável para transferência vertical de produtos.", image: avesEsteiraAscendenteDescendente.url,
         longDescription: "Esteira com estrutura em cavalete (A-frame) e tapete de tela metálica sanitária, projetada para elevar ou baixar produtos entre diferentes níveis da planta. A inclinação é ajustável, o acionamento por motoredutor permite velocidade variável e o painel de comando local facilita a operação. A construção em aço inox com pés reguláveis e proteções laterais garante drenagem, higiene e segurança.",
         applications: ["Transferência de produtos entre níveis", "Alimentação de chillers, mesas e embaladoras", "Layouts com desnível entre setores", "Transporte de miúdos, cortes e subprodutos", "Integração com linhas contínuas de processamento"] },
-      { slug: "misturador-a-vacuo", name: "Misturador a Vácuo", description: "Misturador industrial a vácuo em inox para homogeneização eficiente de carnes, temperos e ingredientes.", image: misturadorVacuo.url,
-        longDescription: "Misturador robusto com cuba fechada e sistema de vácuo que remove o ar durante a mistura, favorecendo absorção uniforme de temperos, melhor liga e padronização do produto. A tampa selada, o monitoramento de pressão, os comandos locais e as proteções mecânicas oferecem controle e segurança para ciclos repetitivos em ambiente industrial.",
-        applications: ["Mistura a vácuo de carnes e massas alimentícias", "Incorporação uniforme de salmoura e temperos", "Preparação de embutidos e produtos processados", "Redução de bolsas de ar na formulação", "Linhas avícolas de industrializados e cortes temperados"] },
       { slug: "misturador-convencional", name: "Misturador Convencional", description: "Misturador horizontal em aço inox para homogeneização de carnes, condimentos e formulações industriais.", image: misturadorConvencional.url,
         longDescription: "Misturador convencional de cuba horizontal com acionamento lateral protegido, desenvolvido para distribuir ingredientes de forma homogênea e preservar a textura do produto. A estrutura reforçada, as proteções de segurança e o desenho sanitário permitem operação confiável, descarga eficiente e higienização completa entre formulações.",
         applications: ["Mistura de carnes de aves e ingredientes", "Preparação de hambúrgueres, empanados e embutidos", "Homogeneização de temperos e aditivos", "Produção em bateladas com descarga controlada", "Salas de industrializados e processamento"] },
@@ -1167,9 +1092,6 @@ export const solutions: Solution[] = [
       { slug: "tunel-sangria-com-raspador", name: "Túnel de Sangria com Raspador", description: "Túnel de sangria fechado em inox com raspador automático e coleta de sangue.", image: avesTunelSangriaRaspador.url,
         longDescription: "Túnel de sangria totalmente em aço inox, com calha profunda, raspador automático de fundo e sistema de coleta e bombeamento do sangue. O fechamento lateral evita respingos na área, enquanto o raspador mantém a calha limpa em operação contínua, viabilizando o aproveitamento do sangue e reduzindo drasticamente a mão de obra de limpeza.",
         applications: ["Sangria contínua após insensibilização", "Coleta e aproveitamento industrial do sangue", "Contenção de respingos e odores na área de sangria", "Redução de mão de obra em limpeza", "Conformidade sanitária com MAPA/SIF"] },
-      { slug: "tanque-escaldagem-com-borbulho", name: "Tanque de Escaldagem com Borbulho", description: "Tanque de escaldagem com sopradores de borbulho e controle de temperatura.", image: avesTanqueEscaldagemBorbulho.url,
-        longDescription: "Tanque de escaldagem em aço inox equipado com sopradores que geram borbulho intenso em toda a extensão do banho, substituindo as pás mecânicas. A turbulência do ar promove penetração uniforme da água quente nas penas, com aquecimento a vapor, controle automático de temperatura, tampas de inspeção e dreno sanitário para higienização completa ao fim do turno.",
-        applications: ["Escaldagem uniforme antes da depenagem", "Melhoria de rendimento e qualidade da pele", "Redução de manutenção frente a sistemas com pás", "Controle preciso de temperatura do banho", "Linhas de abate contínuas de médio e grande porte"] },
       { slug: "tanque-pulmao", name: "Tanque Pulmão", description: "Conjunto de tanques pulmão em inox com barrilete de válvulas e base estrutural.", image: avesTanquePulmao.url,
         longDescription: "Conjunto de tanques pulmão em aço inox montados sobre base estrutural, interligados por barrilete com válvulas esfera sanitárias e respiros. Armazenam e estabilizam o volume de água, salmoura ou soluções de processo, garantindo pressão e vazão constantes para os equipamentos da linha mesmo em picos de consumo.",
         applications: ["Reserva e estabilização de água de processo", "Alimentação de lavadores, chillers e aspersores", "Preparo e armazenagem de salmoura e soluções", "Compensação de picos de consumo na linha", "Sistemas de recirculação e reaproveitamento"] },
