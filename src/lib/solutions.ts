@@ -123,7 +123,6 @@ import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
 import catBovinos from "@/assets/cat-bovinos.jpg.asset.json";
 import catSuinos from "@/assets/cat-suinos.jpg.asset.json";
-import catPisceos from "@/assets/cat-pisceos.jpg.asset.json";
 import conjCapaAves from "@/assets/conj-capa-aves.png.asset.json";
 import conjCapaBovinos from "@/assets/conj-capa-bovinos.png.asset.json";
 import conjBaseMotorizadaBov from "@/assets/conj-base-motorizada-bov.png.asset.json";
@@ -1096,7 +1095,6 @@ export const solutions: Solution[] = [
         longDescription: "Conjunto de tanques pulmão em aço inox montados sobre base estrutural, interligados por barrilete com válvulas esfera sanitárias e respiros. Armazenam e estabilizam o volume de água, salmoura ou soluções de processo, garantindo pressão e vazão constantes para os equipamentos da linha mesmo em picos de consumo.",
         applications: ["Reserva e estabilização de água de processo", "Alimentação de lavadores, chillers e aspersores", "Preparo e armazenagem de salmoura e soluções", "Compensação de picos de consumo na linha", "Sistemas de recirculação e reaproveitamento"] },
       ...sharedCrossCategoryProducts.map(cloneProduct),
-      cloneProduct(estiradoraDeCarneProduct),
       ...avesSuinosProducts.map(cloneProduct),
       ...avesBovinosProducts.map(cloneProduct),
     ],
@@ -1108,7 +1106,7 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesBovinosProducts.map(cloneProduct), ...bovinosProducts.map(cloneProduct)],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), ...avesBovinosProducts.map(cloneProduct), ...bovinosProducts.map(cloneProduct)],
   },
   {
     slug: "suinos",
@@ -1117,16 +1115,7 @@ export const solutions: Solution[] = [
     description:
       "Linhas completas para o processamento suíno, do abate à sala de cortes, com foco em rendimento e biossegurança.",
     image: catSuinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), cloneProduct(estiradoraDeCarneProduct), ...avesSuinosProducts.map(cloneProduct)],
-  },
-  {
-    slug: "pisceos",
-    title: "Písceos",
-    tagline: "Soluções\u00a0para processamento de pescados.",
-    description:
-      "Soluções que preservam a qualidade e integridade do pescado do recebimento à expedição.",
-    image: catPisceos.url,
-    products: [],
+    products: [...sharedCrossCategoryProducts.map(cloneProduct), ...avesSuinosProducts.map(cloneProduct)],
   },
   {
     slug: "industria",
