@@ -1119,16 +1119,6 @@ export const solutions: Solution[] = [
     products: [...sharedCrossCategoryProducts.map(cloneProduct), ...avesSuinosProducts.map(cloneProduct)],
   },
   {
-    hidden: true,
-    slug: "pisceos",
-    title: "Písceos",
-    tagline: "Soluções\u00a0para processamento de pescados.",
-    description:
-      "Soluções que preservam a qualidade e integridade do pescado do recebimento à expedição.",
-    image: catPisceos.url,
-    products: [],
-  },
-  {
     slug: "industria",
     title: "Utilidades",
     tagline: "Equipamentos, máquinas e componentes para plantas industriais.",
