@@ -123,7 +123,6 @@ import armario from "@/assets/armario.png";
 import catAves from "@/assets/cat-aves.jpg.asset.json";
 import catBovinos from "@/assets/cat-bovinos.jpg.asset.json";
 import catSuinos from "@/assets/cat-suinos.jpg.asset.json";
-import catPisceos from "@/assets/cat-pisceos.jpg.asset.json";
 import conjCapaAves from "@/assets/conj-capa-aves.png.asset.json";
 import conjCapaBovinos from "@/assets/conj-capa-bovinos.png.asset.json";
 import conjBaseMotorizadaBov from "@/assets/conj-base-motorizada-bov.png.asset.json";
