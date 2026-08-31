@@ -70,7 +70,6 @@ import tanqueSalmoura from "@/assets/tanque-salmoura.png.asset.json";
 import fatiadoraPartesAutomatica from "@/assets/fatiadora-partes-automatica.png.asset.json";
 import fatiadoraPartesManual from "@/assets/fatiadora-partes-manual.png.asset.json";
 import formatadoraPacotes from "@/assets/formatadora-pacotes.png.asset.json";
-import estiradoraCarne from "@/assets/estiradora-carne.png";
 import elevadorTombadorCarrinho1 from "@/assets/elevador-tombador-carrinho-1.png";
 import elevadorTombadorCarrinho2 from "@/assets/elevador-tombador-carrinho-2.png";
 import carrinho from "@/assets/carrinho.png";
