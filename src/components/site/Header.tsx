@@ -55,6 +55,12 @@ export function Header() {
                           {t(s.title)}
                         </Link>
                       ))}
+                      <Link
+                        to="/nossas-solucoes/pecas-de-reposicao"
+                        className="block px-4 py-3 text-sm uppercase tracking-wider text-navy hover:bg-secondary rounded-lg text-center"
+                      >
+                        {t("Peças de Reposição")}
+                      </Link>
                     </div>
                   </div>
                 )}
