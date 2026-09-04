@@ -43,6 +43,26 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
               </div>
             </Link>
           ))}
+          <Link
+            to="/nossas-solucoes/pecas-de-reposicao"
+            className="group relative overflow-hidden rounded-3xl aspect-[3/4] block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
+              alt={t("Peças de Reposição")}
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20 group-hover:from-navy-deep group-hover:via-navy-deep/40 transition-colors" />
+            <div className="relative h-full flex flex-col justify-end p-6 text-white">
+              <h3 className="text-2xl uppercase tracking-wide mb-1">{t("Peças de Reposição")}</h3>
+              <p className="text-chrome/80 text-sm mb-3 line-clamp-2">
+                {t("Componentes originais e sob medida para manter sua linha em operação.")}
+              </p>
+              <span className="inline-flex items-center gap-1 text-cyan-accent text-sm font-medium uppercase tracking-wider">
+                {t("Ver linha")} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

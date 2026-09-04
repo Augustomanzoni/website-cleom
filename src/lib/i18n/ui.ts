@@ -271,4 +271,177 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     es: "La página que buscas no existe o fue movida.",
   },
   "Voltar ao início": { en: "Back to home", es: "Volver al inicio" },
+
+  // Sobre — Quem somos / Missão / Visão / Valores / Propósito
+  "Quem somos": { en: "Who we are", es: "Quiénes somos" },
+  "A CLEOM Soluções Frigoríficas atua no desenvolvimento e fornecimento de soluções para o setor frigorífico e para a indústria de alimentos, oferecendo alternativas que aliam qualidade, tecnologia, eficiência e conhecimento técnico.": {
+    en: "CLEOM Soluções Frigoríficas develops and supplies solutions for the meat processing sector and the food industry, offering alternatives that combine quality, technology, efficiency and technical expertise.",
+    es: "CLEOM Soluções Frigoríficas desarrolla y suministra soluciones para el sector frigorífico y la industria alimentaria, ofreciendo alternativas que combinan calidad, tecnología, eficiencia y conocimiento técnico.",
+  },
+  "Com uma visão voltada às necessidades de cada operação, desenvolvemos soluções personalizadas para diferentes desafios da indústria, buscando contribuir para a produtividade, segurança, eficiência e evolução dos processos de nossos clientes.": {
+    en: "With a focus on the needs of each operation, we develop customized solutions for different industry challenges, contributing to our clients' productivity, safety, efficiency and process evolution.",
+    es: "Con una visión orientada a las necesidades de cada operación, desarrollamos soluciones personalizadas para los distintos desafíos de la industria, contribuyendo a la productividad, seguridad, eficiencia y evolución de los procesos de nuestros clientes.",
+  },
+  "Nossa atuação é construída a partir da experiência, do aprimoramento contínuo e da proximidade com o mercado. Mais do que oferecer produtos e soluções, buscamos compreender a realidade de cada cliente para entregar aquilo que realmente faz sentido para sua operação.": {
+    en: "Our work is built on experience, continuous improvement and closeness to the market. More than offering products and solutions, we seek to understand each client's reality to deliver what truly makes sense for their operation.",
+    es: "Nuestra actuación se construye a partir de la experiencia, la mejora continua y la cercanía con el mercado. Más que ofrecer productos y soluciones, buscamos comprender la realidad de cada cliente para entregar lo que realmente tiene sentido para su operación.",
+  },
+  "Na CLEOM, acreditamos que cada indústria possui necessidades únicas. Por isso, trabalhamos para transformar desafios em soluções inteligentes, estabelecendo relações de confiança e parcerias duradouras.": {
+    en: "At CLEOM, we believe every industry has unique needs. That is why we work to turn challenges into intelligent solutions, building trusting relationships and lasting partnerships.",
+    es: "En CLEOM creemos que cada industria tiene necesidades únicas. Por eso trabajamos para transformar desafíos en soluciones inteligentes, estableciendo relaciones de confianza y alianzas duraderas.",
+  },
+  "Missão": { en: "Mission", es: "Misión" },
+  "Desenvolver e oferecer soluções para o setor frigorífico que unam qualidade, tecnologia e eficiência, contribuindo para a evolução dos processos, a produtividade e os resultados de nossos clientes.": {
+    en: "To develop and offer solutions for the meat processing sector that combine quality, technology and efficiency, contributing to process evolution, productivity and our clients' results.",
+    es: "Desarrollar y ofrecer soluciones para el sector frigorífico que unan calidad, tecnología y eficiencia, contribuyendo a la evolución de los procesos, la productividad y los resultados de nuestros clientes.",
+  },
+  "Visão": { en: "Vision", es: "Visión" },
+  "Ser reconhecida como referência em soluções para o setor frigorífico, destacando-se pela qualidade, inovação, excelência e capacidade de compreender e atender às necessidades de cada cliente.": {
+    en: "To be recognized as a benchmark in solutions for the meat processing sector, standing out for quality, innovation, excellence and the ability to understand and meet each client's needs.",
+    es: "Ser reconocida como referencia en soluciones para el sector frigorífico, destacándose por la calidad, innovación, excelencia y capacidad de comprender y atender las necesidades de cada cliente.",
+  },
+  "Valores": { en: "Values", es: "Valores" },
+  "O que nos guia": { en: "What guides us", es: "Lo que nos guía" },
+  "Compromisso": { en: "Commitment", es: "Compromiso" },
+  "Assumimos cada desafio com responsabilidade e dedicação, buscando entregar soluções que gerem resultados.": {
+    en: "We take on every challenge with responsibility and dedication, seeking to deliver solutions that generate results.",
+    es: "Asumimos cada desafío con responsabilidad y dedicación, buscando entregar soluciones que generen resultados.",
+  },
+  "Qualidade": { en: "Quality", es: "Calidad" },
+  "Buscamos excelência em tudo o que fazemos, desde a escolha das soluções até o atendimento ao cliente.": {
+    en: "We pursue excellence in everything we do, from choosing solutions to customer service.",
+    es: "Buscamos excelencia en todo lo que hacemos, desde la elección de las soluciones hasta la atención al cliente.",
+  },
+  "Transparência": { en: "Transparency", es: "Transparencia" },
+  "Construímos relações baseadas em clareza, ética, respeito e confiança.": {
+    en: "We build relationships based on clarity, ethics, respect and trust.",
+    es: "Construimos relaciones basadas en claridad, ética, respeto y confianza.",
+  },
+  "Inovação": { en: "Innovation", es: "Innovación" },
+  "Buscamos novas tecnologias, ideias e formas de solucionar os desafios da indústria.": {
+    en: "We seek new technologies, ideas and ways to solve industry challenges.",
+    es: "Buscamos nuevas tecnologías, ideas y formas de resolver los desafíos de la industria.",
+  },
+  "Excelência": { en: "Excellence", es: "Excelencia" },
+  "Estamos em constante evolução para aprimorar nossos conhecimentos, processos e soluções.": {
+    en: "We are constantly evolving to improve our knowledge, processes and solutions.",
+    es: "Estamos en constante evolución para mejorar nuestros conocimientos, procesos y soluciones.",
+  },
+  "Confiabilidade": { en: "Reliability", es: "Confiabilidad" },
+  "Valorizamos relações sólidas e duradouras, construídas através de resultados e credibilidade.": {
+    en: "We value solid, lasting relationships built on results and credibility.",
+    es: "Valoramos relaciones sólidas y duraderas, construidas a través de resultados y credibilidad.",
+  },
+  "Foco no cliente": { en: "Customer focus", es: "Foco en el cliente" },
+  "Entendemos as necessidades de cada operação para oferecer soluções adequadas, eficientes e personalizadas.": {
+    en: "We understand the needs of each operation to offer suitable, efficient and customized solutions.",
+    es: "Entendemos las necesidades de cada operación para ofrecer soluciones adecuadas, eficientes y personalizadas.",
+  },
+  "Nosso propósito": { en: "Our purpose", es: "Nuestro propósito" },
+  "Criar soluções que impulsionem a indústria frigorífica, transformando necessidades e desafios em eficiência, qualidade e resultados.": {
+    en: "To create solutions that drive the meat processing industry, turning needs and challenges into efficiency, quality and results.",
+    es: "Crear soluciones que impulsen la industria frigorífica, transformando necesidades y desafíos en eficiencia, calidad y resultados.",
+  },
+
+  // Sobre — Depoimentos
+  "O que os clientes estão falando?": { en: "What our clients are saying", es: "¿Qué dicen nuestros clientes?" },
+  "Conhecimento técnico e compromisso": { en: "Technical expertise and commitment", es: "Conocimiento técnico y compromiso" },
+  "A experiência com a CLEOM foi muito positiva. O que mais nos chamou atenção foi a capacidade da equipe de compreender as particularidades da nossa operação e apresentar soluções adequadas às nossas necessidades. O conhecimento técnico, a agilidade e o compromisso em cada etapa fazem da CLEOM uma empresa que podemos recomendar com confiança.": {
+    en: "The experience with CLEOM was very positive. What stood out most was the team's ability to understand the particularities of our operation and present solutions suited to our needs. The technical expertise, agility and commitment at every stage make CLEOM a company we can confidently recommend.",
+    es: "La experiencia con CLEOM fue muy positiva. Lo que más nos llamó la atención fue la capacidad del equipo de comprender las particularidades de nuestra operación y presentar soluciones adecuadas a nuestras necesidades. El conocimiento técnico, la agilidad y el compromiso en cada etapa hacen de CLEOM una empresa que podemos recomendar con confianza.",
+  },
+  "Soluções que realmente fazem a diferença": { en: "Solutions that truly make a difference", es: "Soluciones que realmente marcan la diferencia" },
+  "Trabalhar com a CLEOM é contar com uma equipe que entende os desafios da indústria frigorífica. A empresa demonstra profissionalismo, conhecimento e atenção aos detalhes, sempre buscando soluções eficientes e de qualidade. É uma parceria que agrega valor à operação e transmite segurança na tomada de decisões.": {
+    en: "Working with CLEOM means having a team that understands the challenges of the meat processing industry. The company shows professionalism, knowledge and attention to detail, always seeking efficient, high-quality solutions. It is a partnership that adds value to the operation and brings confidence to decision-making.",
+    es: "Trabajar con CLEOM es contar con un equipo que entiende los desafíos de la industria frigorífica. La empresa demuestra profesionalismo, conocimiento y atención a los detalles, siempre buscando soluciones eficientes y de calidad. Es una alianza que agrega valor a la operación y transmite seguridad en la toma de decisiones.",
+  },
+  "Engenheiro de Produção": { en: "Production Engineer", es: "Ingeniero de Producción" },
+  "Engenheira Mecânica": { en: "Mechanical Engineer", es: "Ingeniera Mecánica" },
+
+  // Peças de reposição
+  "Peças de Reposição": { en: "Spare Parts", es: "Repuestos" },
+  "Componentes originais e sob medida para manter sua linha de produção em pleno funcionamento.": {
+    en: "Original and custom-made components to keep your production line fully running.",
+    es: "Componentes originales y a medida para mantener su línea de producción en pleno funcionamiento.",
+  },
+  "Componentes originais e sob medida para manter sua linha em operação.": {
+    en: "Original and custom-made components to keep your line running.",
+    es: "Componentes originales y a medida para mantener su línea en operación.",
+  },
+  "A CLEOM fornece peças de reposição para equipamentos e linhas de processamento frigorífico, garantindo a continuidade da operação, a segurança dos processos e a preservação do padrão sanitário da sua planta.": {
+    en: "CLEOM supplies spare parts for meat processing equipment and lines, ensuring operational continuity, process safety and the sanitary standard of your plant.",
+    es: "CLEOM suministra repuestos para equipos y líneas de procesamiento frigorífico, garantizando la continuidad de la operación, la seguridad de los procesos y el estándar sanitario de su planta.",
+  },
+  "Trabalhamos com componentes originais e também com peças fabricadas sob medida a partir de desenho, amostra ou levantamento técnico realizado em campo, atendendo equipamentos CLEOM e de outros fabricantes.": {
+    en: "We work with original components as well as parts manufactured to order from drawings, samples or on-site technical surveys, serving both CLEOM and third-party equipment.",
+    es: "Trabajamos con componentes originales y también con piezas fabricadas a medida a partir de planos, muestras o relevamientos técnicos en campo, atendiendo equipos CLEOM y de otros fabricantes.",
+  },
+  "Todas as peças são produzidas em materiais adequados ao contato com alimentos, como aço inox AISI 304 e 316, polímeros técnicos de grau alimentício e componentes de marcas reconhecidas no mercado industrial.": {
+    en: "All parts are produced in food-contact suitable materials such as AISI 304 and 316 stainless steel, food-grade technical polymers and components from recognized industrial brands.",
+    es: "Todas las piezas se producen en materiales aptos para contacto con alimentos, como acero inoxidable AISI 304 y 316, polímeros técnicos de grado alimentario y componentes de marcas reconocidas en el mercado industrial.",
+  },
+  "O que fornecemos": { en: "What we supply", es: "Qué suministramos" },
+  "Ganchos, carretilhas, roldanas e componentes de nória": {
+    en: "Hooks, trolleys, rollers and overhead conveyor components",
+    es: "Ganchos, carretillas, roldanas y componentes de noria",
+  },
+  "Trilhos, curvas, chaves desviadoras e acessórios de trilhagem": {
+    en: "Rails, curves, switches and rail system accessories",
+    es: "Rieles, curvas, desviadores y accesorios de rielería",
+  },
+  "Correntes, esteiras modulares, taliscas e guias": {
+    en: "Chains, modular belts, flights and guides",
+    es: "Cadenas, bandas modulares, paletas y guías",
+  },
+  "Dedos de depenadeira, discos, lâminas e facas industriais": {
+    en: "Plucker fingers, discs, blades and industrial knives",
+    es: "Dedos de desplumadora, discos, cuchillas y cuchillos industriales",
+  },
+  "Motorredutores, mancais, rolamentos e conjuntos de tração": {
+    en: "Gearmotors, bearing housings, bearings and drive assemblies",
+    es: "Motorreductores, soportes, rodamientos y conjuntos de tracción",
+  },
+  "Bicos aspersores, bombas, válvulas, tubulações e conexões sanitárias": {
+    en: "Spray nozzles, pumps, valves, piping and sanitary fittings",
+    es: "Boquillas aspersoras, bombas, válvulas, tuberías y conexiones sanitarias",
+  },
+  "Componentes pneumáticos, elétricos e de automação": {
+    en: "Pneumatic, electrical and automation components",
+    es: "Componentes neumáticos, eléctricos y de automatización",
+  },
+  "Peças especiais usinadas sob desenho ou amostra": {
+    en: "Special machined parts made from drawings or samples",
+    es: "Piezas especiales mecanizadas según plano o muestra",
+  },
+  "Por que comprar com a CLEOM": { en: "Why buy from CLEOM", es: "Por qué comprar en CLEOM" },
+  "Compatibilidade garantida": { en: "Guaranteed compatibility", es: "Compatibilidad garantizada" },
+  "Identificação técnica da peça correta para o seu equipamento, evitando erros de aplicação e retrabalho.": {
+    en: "Technical identification of the right part for your equipment, avoiding application errors and rework.",
+    es: "Identificación técnica de la pieza correcta para su equipo, evitando errores de aplicación y retrabajo.",
+  },
+  "Padrão sanitário": { en: "Sanitary standard", es: "Estándar sanitario" },
+  "Materiais e acabamentos adequados às normas de higiene da indústria de alimentos.": {
+    en: "Materials and finishes compliant with food industry hygiene standards.",
+    es: "Materiales y acabados conformes a las normas de higiene de la industria alimentaria.",
+  },
+  "Agilidade no atendimento": { en: "Fast service", es: "Agilidad en la atención" },
+  "Itens de maior giro com pronta entrega e prazos reduzidos para peças sob medida.": {
+    en: "High-turnover items ready for immediate delivery and short lead times for custom parts.",
+    es: "Ítems de mayor rotación con entrega inmediata y plazos reducidos para piezas a medida.",
+  },
+  "Suporte técnico": { en: "Technical support", es: "Soporte técnico" },
+  "Nossa equipe auxilia na identificação, na substituição e no plano de manutenção preventiva.": {
+    en: "Our team helps with identification, replacement and preventive maintenance planning.",
+    es: "Nuestro equipo ayuda en la identificación, la sustitución y el plan de mantenimiento preventivo.",
+  },
+  "Como solicitar": { en: "How to order", es: "Cómo solicitar" },
+  "Envie o modelo do equipamento, o código ou uma foto da peça desejada. Nossa equipe técnica identifica o item, confirma a compatibilidade e envia o orçamento com prazo de entrega.": {
+    en: "Send the equipment model, the part code or a photo of the part. Our technical team identifies the item, confirms compatibility and sends a quote with delivery time.",
+    es: "Envíe el modelo del equipo, el código o una foto de la pieza. Nuestro equipo técnico identifica el ítem, confirma la compatibilidad y envía el presupuesto con plazo de entrega.",
+  },
+  "Atendimento": { en: "Service", es: "Atención" },
+  "Atendemos frigoríficos de aves, bovinos e suínos em todo o Brasil, com suporte técnico especializado para manutenção preventiva e corretiva.": {
+    en: "We serve poultry, beef and pork processing plants throughout Brazil, with specialized technical support for preventive and corrective maintenance.",
+    es: "Atendemos frigoríficos de aves, bovinos y porcinos en todo Brasil, con soporte técnico especializado para mantenimiento preventivo y correctivo.",
+  },
 };

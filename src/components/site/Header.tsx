@@ -55,6 +55,12 @@ export function Header() {
                           {t(s.title)}
                         </Link>
                       ))}
+                      <Link
+                        to="/nossas-solucoes/pecas-de-reposicao"
+                        className="block px-4 py-3 text-sm uppercase tracking-wider text-navy hover:bg-secondary rounded-lg text-center"
+                      >
+                        {t("Peças de Reposição")}
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -95,6 +101,13 @@ export function Header() {
                   › {t(s.title)}
                 </Link>
               ))}
+              <Link
+                to="/nossas-solucoes/pecas-de-reposicao"
+                onClick={() => setOpen(false)}
+                className="px-3 py-2 text-sm text-chrome/70 hover:text-cyan-accent"
+              >
+                › {t("Peças de Reposição")}
+              </Link>
             </div>
           </nav>
         )}
