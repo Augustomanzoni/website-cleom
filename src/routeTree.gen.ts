@@ -14,6 +14,7 @@ import { Route as ServicosRouteImport } from './routes/servicos'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NossasSolucoesIndexRouteImport } from './routes/nossas-solucoes.index'
+import { Route as NossasSolucoesPecasDeReposicaoRouteImport } from './routes/nossas-solucoes.pecas-de-reposicao'
 import { Route as NossasSolucoesCategoriaIndexRouteImport } from './routes/nossas-solucoes.$categoria.index'
 import { Route as NossasSolucoesCategoriaProdutoRouteImport } from './routes/nossas-solucoes.$categoria.$produto'
 
@@ -42,6 +43,12 @@ const NossasSolucoesIndexRoute = NossasSolucoesIndexRouteImport.update({
   path: '/nossas-solucoes/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NossasSolucoesPecasDeReposicaoRoute =
+  NossasSolucoesPecasDeReposicaoRouteImport.update({
+    id: '/nossas-solucoes/pecas-de-reposicao',
+    path: '/nossas-solucoes/pecas-de-reposicao',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const NossasSolucoesCategoriaIndexRoute =
   NossasSolucoesCategoriaIndexRouteImport.update({
     id: '/nossas-solucoes/$categoria/',
@@ -60,6 +67,7 @@ export interface FileRoutesByFullPath {
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
+  '/nossas-solucoes/pecas-de-reposicao': typeof NossasSolucoesPecasDeReposicaoRoute
   '/nossas-solucoes/': typeof NossasSolucoesIndexRoute
   '/nossas-solucoes/$categoria/$produto': typeof NossasSolucoesCategoriaProdutoRoute
   '/nossas-solucoes/$categoria/': typeof NossasSolucoesCategoriaIndexRoute
@@ -69,6 +77,7 @@ export interface FileRoutesByTo {
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
+  '/nossas-solucoes/pecas-de-reposicao': typeof NossasSolucoesPecasDeReposicaoRoute
   '/nossas-solucoes': typeof NossasSolucoesIndexRoute
   '/nossas-solucoes/$categoria/$produto': typeof NossasSolucoesCategoriaProdutoRoute
   '/nossas-solucoes/$categoria': typeof NossasSolucoesCategoriaIndexRoute
@@ -79,6 +88,7 @@ export interface FileRoutesById {
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
+  '/nossas-solucoes/pecas-de-reposicao': typeof NossasSolucoesPecasDeReposicaoRoute
   '/nossas-solucoes/': typeof NossasSolucoesIndexRoute
   '/nossas-solucoes/$categoria/$produto': typeof NossasSolucoesCategoriaProdutoRoute
   '/nossas-solucoes/$categoria/': typeof NossasSolucoesCategoriaIndexRoute
@@ -90,6 +100,7 @@ export interface FileRouteTypes {
     | '/contato'
     | '/servicos'
     | '/sobre'
+    | '/nossas-solucoes/pecas-de-reposicao'
     | '/nossas-solucoes/'
     | '/nossas-solucoes/$categoria/$produto'
     | '/nossas-solucoes/$categoria/'
@@ -99,6 +110,7 @@ export interface FileRouteTypes {
     | '/contato'
     | '/servicos'
     | '/sobre'
+    | '/nossas-solucoes/pecas-de-reposicao'
     | '/nossas-solucoes'
     | '/nossas-solucoes/$categoria/$produto'
     | '/nossas-solucoes/$categoria'
@@ -108,6 +120,7 @@ export interface FileRouteTypes {
     | '/contato'
     | '/servicos'
     | '/sobre'
+    | '/nossas-solucoes/pecas-de-reposicao'
     | '/nossas-solucoes/'
     | '/nossas-solucoes/$categoria/$produto'
     | '/nossas-solucoes/$categoria/'
@@ -118,6 +131,7 @@ export interface RootRouteChildren {
   ContatoRoute: typeof ContatoRoute
   ServicosRoute: typeof ServicosRoute
   SobreRoute: typeof SobreRoute
+  NossasSolucoesPecasDeReposicaoRoute: typeof NossasSolucoesPecasDeReposicaoRoute
   NossasSolucoesIndexRoute: typeof NossasSolucoesIndexRoute
   NossasSolucoesCategoriaProdutoRoute: typeof NossasSolucoesCategoriaProdutoRoute
   NossasSolucoesCategoriaIndexRoute: typeof NossasSolucoesCategoriaIndexRoute
@@ -160,6 +174,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NossasSolucoesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nossas-solucoes/pecas-de-reposicao': {
+      id: '/nossas-solucoes/pecas-de-reposicao'
+      path: '/nossas-solucoes/pecas-de-reposicao'
+      fullPath: '/nossas-solucoes/pecas-de-reposicao'
+      preLoaderRoute: typeof NossasSolucoesPecasDeReposicaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/nossas-solucoes/$categoria/': {
       id: '/nossas-solucoes/$categoria/'
       path: '/nossas-solucoes/$categoria'
@@ -182,6 +203,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContatoRoute: ContatoRoute,
   ServicosRoute: ServicosRoute,
   SobreRoute: SobreRoute,
+  NossasSolucoesPecasDeReposicaoRoute: NossasSolucoesPecasDeReposicaoRoute,
   NossasSolucoesIndexRoute: NossasSolucoesIndexRoute,
   NossasSolucoesCategoriaProdutoRoute: NossasSolucoesCategoriaProdutoRoute,
   NossasSolucoesCategoriaIndexRoute: NossasSolucoesCategoriaIndexRoute,
