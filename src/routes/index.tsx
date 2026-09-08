@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Snowflake, Zap, Shield, Headphones } from "lucide-react";
 import { SolutionsGrid } from "@/components/site/SolutionsGrid";
+import heroFrigorifico from "@/assets/hero-frigorifico.jpg";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -22,24 +23,24 @@ function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[88vh] flex items-center navy-gradient text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+      <section className="relative min-h-[62vh] md:min-h-[68vh] flex items-center navy-gradient text-white overflow-hidden">
+        <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1565017225399-58c1b80e63bd?auto=format&fit=crop&w=1920&q=80"
+            src={heroFrigorifico}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-35"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/85 to-navy-deep/60" />
         </div>
-        <div className="relative container mx-auto px-4 py-20">
-          <p className="text-cyan-accent uppercase tracking-[0.35em] mb-5 text-base">{t("ENTREGAMOS\u00a0")}</p>
-          <h1 className="text-4xl md:text-6xl uppercase chrome-text leading-[1.2] pb-2 max-w-4xl">
+        <div className="relative container mx-auto px-4 py-14">
+          <p className="text-cyan-accent uppercase tracking-[0.35em] mb-4 text-sm">{t("ENTREGAMOS\u00a0")}</p>
+          <h1 className="text-3xl md:text-5xl uppercase chrome-text leading-[1.2] pb-2 max-w-4xl">
             {t("SOLUÇÕES FRIGORÍFICAS INDUSTRIAIS DE ALTA PERFORMANCE")}
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-chrome/80 max-w-2xl">
+          <p className="mt-5 text-base md:text-lg text-chrome/80 max-w-2xl">
             {t("Projetamos, fabricamos e instalamos equipamentos industriais para frigoríficos com foco em produtividade, eficiência e segurança!")}
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
               to="/nossas-solucoes"
               className="group bg-white text-navy-deep px-7 py-4 rounded-full uppercase tracking-wider text-sm font-semibold inline-flex items-center gap-2 hover:bg-chrome hover:text-navy-deep transition-colors"
