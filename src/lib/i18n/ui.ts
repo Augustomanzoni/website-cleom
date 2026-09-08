@@ -176,9 +176,9 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "Engineering that drives the meat processing industry",
     es: "Ingeniería que mueve la industria frigorífica",
   },
-  "Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência energética das nossas indústrias parceiras.": {
-    en: "To provide industrial refrigeration solutions that preserve products, reduce operating costs and raise the energy efficiency of our partner industries.",
-    es: "Brindar soluciones frigoríficas industriales que garanticen la preservación de los productos, reduzcan costos operativos y eleven la eficiencia energética de nuestras industrias asociadas.",
+  "Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência em produtividade das nossas indústrias parceiras.": {
+    en: "To provide industrial refrigeration solutions that preserve products, reduce operating costs and raise the productivity efficiency of our partner industries.",
+    es: "Brindar soluciones frigoríficas industriales que garanticen la preservación de los productos, reduzcan costos operativos y eleven la eficiencia en productividad de nuestras industrias asociadas.",
   },
   "Trabalhamos com equipamentos de última geração e mantemos parcerias com os principais fabricantes mundiais de sistemas de refrigeração industrial.": {
     en: "We work with state-of-the-art equipment and maintain partnerships with the world's leading manufacturers of industrial refrigeration systems.",
@@ -429,7 +429,6 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "High-turnover items ready for immediate delivery and short lead times for custom parts.",
     es: "Ítems de mayor rotación con entrega inmediata y plazos reducidos para piezas a medida.",
   },
-  "Suporte técnico": { en: "Technical support", es: "Soporte técnico" },
   "Nossa equipe auxilia na identificação, na substituição e no plano de manutenção preventiva.": {
     en: "Our team helps with identification, replacement and preventive maintenance planning.",
     es: "Nuestro equipo ayuda en la identificación, la sustitución y el plan de mantenimiento preventivo.",
@@ -439,9 +438,19 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "Send the equipment model, the part code or a photo of the part. Our technical team identifies the item, confirms compatibility and sends a quote with delivery time.",
     es: "Envíe el modelo del equipo, el código o una foto de la pieza. Nuestro equipo técnico identifica el ítem, confirma la compatibilidad y envía el presupuesto con plazo de entrega.",
   },
-  "Atendimento": { en: "Service", es: "Atención" },
   "Atendemos frigoríficos de aves, bovinos e suínos em todo o Brasil, com suporte técnico especializado para manutenção preventiva e corretiva.": {
     en: "We serve poultry, beef and pork processing plants throughout Brazil, with specialized technical support for preventive and corrective maintenance.",
     es: "Atendemos frigoríficos de aves, bovinos y porcinos en todo Brasil, con soporte técnico especializado para mantenimiento preventivo y correctivo.",
   },
+  "Segurança Operacional": { en: "Operational Safety", es: "Seguridad Operacional" },
+  "Priorizamos soluções que protejam pessoas, processos e produtos em todas as etapas da operação.": {
+    en: "We prioritize solutions that protect people, processes and products at every stage of the operation.",
+    es: "Priorizamos soluciones que protejan a las personas, los procesos y los productos en todas las etapas de la operación.",
+  },
+  "Parceria": { en: "Partnership", es: "Alianza" },
+  "Caminhamos junto do cliente antes, durante e depois da entrega, sustentando resultados de longo prazo.": {
+    en: "We walk alongside the customer before, during and after delivery, sustaining long-term results.",
+    es: "Caminamos junto al cliente antes, durante y después de la entrega, sosteniendo resultados a largo plazo.",
+  },
+
 };

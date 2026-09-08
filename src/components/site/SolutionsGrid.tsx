@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { solutions } from "@/lib/solutions";
+import pecasReposicao from "@/assets/pecas-reposicao.jpg";
 import { useI18n } from "@/lib/i18n";
 
 export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
@@ -20,13 +21,13 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
           </div>
         )}
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-6">
           {solutions.map((s) => (
             <Link
               key={s.slug}
               to="/nossas-solucoes/$categoria"
               params={{ categoria: s.slug }}
-              className="group relative overflow-hidden rounded-3xl aspect-[3/4] block"
+              className="group relative overflow-hidden rounded-3xl aspect-[3/4] block lg:col-span-2"
             >
               <img
                 src={s.image}
@@ -34,9 +35,9 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20 group-hover:from-navy-deep group-hover:via-navy-deep/40 transition-colors" />
-              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+              <div className="relative h-full flex flex-col justify-end p-5 text-white">
                 <h3 className="text-2xl uppercase tracking-wide mb-1">{t(s.title)}</h3>
-                <p className="text-chrome/80 text-sm mb-3 line-clamp-2">{t(s.tagline)}</p>
+                <p className="text-chrome/80 text-xs mb-3 truncate">{t(s.tagline)}</p>
                 <span className="inline-flex items-center gap-1 text-cyan-accent text-sm font-medium uppercase tracking-wider">
                   {t("Ver linha")} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -45,17 +46,17 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
           ))}
           <Link
             to="/nossas-solucoes/pecas-de-reposicao"
-            className="group relative overflow-hidden rounded-3xl aspect-[3/4] block"
+            className="group relative overflow-hidden rounded-3xl aspect-[3/4] sm:aspect-[16/9] lg:aspect-auto lg:min-h-[22rem] block lg:col-span-3"
           >
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
+              src={pecasReposicao}
               alt={t("Peças de Reposição")}
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/70 to-navy-deep/20 group-hover:from-navy-deep group-hover:via-navy-deep/40 transition-colors" />
-            <div className="relative h-full flex flex-col justify-end p-6 text-white">
+            <div className="relative h-full flex flex-col justify-end p-5 text-white">
               <h3 className="text-2xl uppercase tracking-wide mb-1">{t("Peças de Reposição")}</h3>
-              <p className="text-chrome/80 text-sm mb-3 line-clamp-2">
+              <p className="text-chrome/80 text-xs mb-3 truncate">
                 {t("Componentes originais e sob medida para manter sua linha em operação.")}
               </p>
               <span className="inline-flex items-center gap-1 text-cyan-accent text-sm font-medium uppercase tracking-wider">
@@ -64,6 +65,7 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
             </div>
           </Link>
         </div>
+
       </div>
     </section>
   );

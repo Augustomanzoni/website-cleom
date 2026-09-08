@@ -39,6 +39,8 @@ const valores = [
   { title: "Excelência", desc: "Estamos em constante evolução para aprimorar nossos conhecimentos, processos e soluções." },
   { title: "Confiabilidade", desc: "Valorizamos relações sólidas e duradouras, construídas através de resultados e credibilidade." },
   { title: "Foco no cliente", desc: "Entendemos as necessidades de cada operação para oferecer soluções adequadas, eficientes e personalizadas." },
+  { title: "Segurança Operacional", desc: "Priorizamos soluções que protejam pessoas, processos e produtos em todas as etapas da operação." },
+  { title: "Parceria", desc: "Caminhamos junto do cliente antes, durante e depois da entrega, sustentando resultados de longo prazo." },
 ];
 
 const depoimentos = [
