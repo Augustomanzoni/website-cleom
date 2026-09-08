@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
+import pecasReposicao from "@/assets/pecas-reposicao.jpg";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/nossas-solucoes/pecas-de-reposicao")({
