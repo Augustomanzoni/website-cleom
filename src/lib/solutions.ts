@@ -913,7 +913,7 @@ export const solutions: Solution[] = [
     title: "Aves",
     tagline: "Soluções\u00a0para abate e processamento de aves.",
     description:
-      "Linha industrial para máxima produtividade no processamento avícola, com foco em higiene, rendimento e eficiência energética.",
+      "Linha industrial para máxima produtividade no processamento avícola, com foco em higiene, rendimento e eficiência em produtividade.",
     image: catAves.url,
     products: [
       { slug: "esteira-descarregamento-gaiolas", name: "Esteira para Descarregamento de Gaiolas", description: "Sistema de descarregamento automatizado com gradil de proteção e cuba sanitária.", image: avesEsteiraDescarregamento,

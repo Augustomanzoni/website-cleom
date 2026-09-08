@@ -176,9 +176,9 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "Engineering that drives the meat processing industry",
     es: "Ingeniería que mueve la industria frigorífica",
   },
-  "Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência energética das nossas indústrias parceiras.": {
-    en: "To provide industrial refrigeration solutions that preserve products, reduce operating costs and raise the energy efficiency of our partner industries.",
-    es: "Brindar soluciones frigoríficas industriales que garanticen la preservación de los productos, reduzcan costos operativos y eleven la eficiencia energética de nuestras industrias asociadas.",
+  "Fornecer soluções frigoríficas industriais que garantam a preservação dos produtos, reduzam custos operacionais e elevem a eficiência em produtividade das nossas indústrias parceiras.": {
+    en: "To provide industrial refrigeration solutions that preserve products, reduce operating costs and raise the productivity efficiency of our partner industries.",
+    es: "Brindar soluciones frigoríficas industriales que garanticen la preservación de los productos, reduzcan costos operativos y eleven la eficiencia en productividad de nuestras industrias asociadas.",
   },
   "Trabalhamos com equipamentos de última geração e mantemos parcerias com os principais fabricantes mundiais de sistemas de refrigeração industrial.": {
     en: "We work with state-of-the-art equipment and maintain partnerships with the world's leading manufacturers of industrial refrigeration systems.",
