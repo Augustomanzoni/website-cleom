@@ -50,7 +50,7 @@ function PecasReposicaoPage() {
         eyebrow={t("Nossa Linha")}
         title={t("Peças de Reposição")}
         subtitle={t("Componentes originais e sob medida para manter sua linha de produção em pleno funcionamento.")}
-        image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80"
+        image={pecasReposicao}
         titleClassName="text-5xl md:text-7xl"
       >
         <Link
