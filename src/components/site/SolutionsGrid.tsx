@@ -28,7 +28,9 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
               to="/nossas-solucoes/$categoria"
               params={{ categoria: s.slug }}
               className={`group relative overflow-hidden rounded-3xl aspect-[3/4] block ${
-                s.slug === "industria" ? "lg:col-span-3" : "lg:col-span-2"
+                s.slug === "industria"
+                  ? "lg:col-span-3 lg:aspect-[9/8]"
+                  : "lg:col-span-2"
               }`}
             >
               <img
@@ -48,7 +50,7 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
           ))}
           <Link
             to="/nossas-solucoes/pecas-de-reposicao"
-            className="group relative overflow-hidden rounded-3xl aspect-[3/4] sm:aspect-[16/9] lg:aspect-auto lg:min-h-[22rem] block lg:col-span-3"
+            className="group relative overflow-hidden rounded-3xl aspect-[3/4] sm:aspect-[16/9] lg:aspect-[9/8] block lg:col-span-3"
           >
             <img
               src={pecasReposicao}
