@@ -27,7 +27,9 @@ export function SolutionsGrid({ heading = true }: { heading?: boolean }) {
               key={s.slug}
               to="/nossas-solucoes/$categoria"
               params={{ categoria: s.slug }}
-              className="group relative overflow-hidden rounded-3xl aspect-[3/4] block lg:col-span-2"
+              className={`group relative overflow-hidden rounded-3xl aspect-[3/4] block ${
+                s.slug === "industria" ? "lg:col-span-3" : "lg:col-span-2"
+              }`}
             >
               <img
                 src={s.image}
