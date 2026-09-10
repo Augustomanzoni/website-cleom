@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <h4 className="text-cyan-accent uppercase tracking-wider text-sm mb-4">{t("Contato")}</h4>
             <ul className="space-y-3 text-sm text-chrome/70">
-              <li className="flex gap-2"><Phone className="w-4 h-4 mt-0.5 text-cyan-accent" />(49) 9978-3926</li>
+              <li className="flex gap-2"><Phone className="w-4 h-4 mt-0.5 text-cyan-accent" />+55 49 9971-3240</li>
               <li className="flex gap-2"><Mail className="w-4 h-4 mt-0.5 text-cyan-accent" />comercial@cleom.ind.br</li>
               <li className="flex gap-2"><MapPin className="w-4 h-4 mt-0.5 text-cyan-accent" />Rua Camaquã, 780 - D, Bairro Líder - Q. 4027, Chapecó - SC - CEP 89805-250</li>
             </ul>
