@@ -218,6 +218,37 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     es: "¡Nuestro equipo está listo para atender a tu empresa!",
   },
   "Envie sua mensagem": { en: "Send your message", es: "Envía tu mensaje" },
+  "✓ Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.": {
+    en: "✓ Message sent successfully! Our team will contact you shortly.",
+    es: "✓ ¡Mensaje enviado con éxito! Nuestro equipo se pondrá en contacto pronto.",
+  },
+  "Não foi possível enviar sua mensagem. Tente novamente ou fale conosco pelo WhatsApp.": {
+    en: "We couldn't send your message. Please try again or reach us on WhatsApp.",
+    es: "No fue posible enviar tu mensaje. Inténtalo de nuevo o contáctanos por WhatsApp.",
+  },
+  "Não foi possível enviar sua solicitação. Tente novamente ou fale conosco pelo WhatsApp.": {
+    en: "We couldn't send your request. Please try again or reach us on WhatsApp.",
+    es: "No fue posible enviar tu solicitud. Inténtalo de nuevo o contáctanos por WhatsApp.",
+  },
+  "✓ Solicitação enviada! Em breve nossa equipe encaminhará o catálogo para o seu e-mail.": {
+    en: "✓ Request sent! Our team will send the catalog to your e-mail shortly.",
+    es: "✓ ¡Solicitud enviada! Nuestro equipo enviará el catálogo a tu correo en breve.",
+  },
+  "Enviando...": { en: "Sending...", es: "Enviando..." },
+  "Responderemos o mais breve possível no e-mail informado.": {
+    en: "We will reply as soon as possible to the e-mail provided.",
+    es: "Responderemos lo antes posible al correo indicado.",
+  },
+  "Adm/Financeiro": { en: "Admin/Finance", es: "Adm/Finanzas" },
+  "Escolha uma categoria e informe seus dados. Enviaremos o catálogo solicitado para o seu e-mail.": {
+    en: "Choose a category and fill in your details. We will send the requested catalog to your e-mail.",
+    es: "Elige una categoría e ingresa tus datos. Enviaremos el catálogo solicitado a tu correo.",
+  },
+  "Preencha seus dados e enviaremos este catálogo para o seu e-mail.": {
+    en: "Fill in your details and we will send this catalog to your e-mail.",
+    es: "Completa tus datos y enviaremos este catálogo a tu correo.",
+  },
+  "Comercial": { en: "Sales", es: "Comercial" },
   "✓ Formulário registrado. O envio direto por e-mail está preparado, mas permanece desativado por enquanto.": {
     en: "✓ Form registered. Direct e-mail sending is ready but still disabled for now.",
     es: "✓ Formulario registrado. El envío directo por correo está listo, pero permanece desactivado por ahora.",
