@@ -239,7 +239,15 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
     en: "We will reply as soon as possible to the e-mail provided.",
     es: "Responderemos lo antes posible al correo indicado.",
   },
-  "Adm/Financeiro": { en: "Admin/Finance", es: "Adm/Финanzas" },
+  "Adm/Financeiro": { en: "Admin/Finance", es: "Adm/Finanzas" },
+  "Escolha uma categoria e informe seus dados. Enviaremos o catálogo solicitado para o seu e-mail.": {
+    en: "Choose a category and fill in your details. We will send the requested catalog to your e-mail.",
+    es: "Elige una categoría e ingresa tus datos. Enviaremos el catálogo solicitado a tu correo.",
+  },
+  "Preencha seus dados e enviaremos este catálogo para o seu e-mail.": {
+    en: "Fill in your details and we will send this catalog to your e-mail.",
+    es: "Completa tus datos y enviaremos este catálogo a tu correo.",
+  },
   "Comercial": { en: "Sales", es: "Comercial" },
   "✓ Formulário registrado. O envio direto por e-mail está preparado, mas permanece desativado por enquanto.": {
     en: "✓ Form registered. Direct e-mail sending is ready but still disabled for now.",

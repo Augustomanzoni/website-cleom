@@ -65,7 +65,7 @@ export function CatalogDownloadSection() {
             <p className="text-cyan-accent uppercase tracking-[0.3em] text-sm mb-3">{t("Catálogos")}</p>
             <h2 className="text-4xl md:text-5xl text-navy-deep mb-4">{t("Solicite o catálogo da linha que deseja analisar")}</h2>
             <p className="text-muted-foreground text-lg">
-              {t("Escolha uma categoria para deixar seus dados prontos. O download automático será ativado quando os catálogos finais forem enviados.")}
+              {t("Escolha uma categoria e informe seus dados. Enviaremos o catálogo solicitado para o seu e-mail.")}
             </p>
           </div>
 
@@ -155,8 +155,8 @@ export function CatalogDownloadSection() {
               </div>
             )}
 
-            <Button type="submit" className="w-full h-12 rounded-xl uppercase tracking-wider">
-              {t("Solicitar catálogo")}
+            <Button type="submit" disabled={sending} className="w-full h-12 rounded-xl uppercase tracking-wider">
+              {sending ? t("Enviando...") : t("Solicitar catálogo")}
             </Button>
           </form>
         </DialogContent>
