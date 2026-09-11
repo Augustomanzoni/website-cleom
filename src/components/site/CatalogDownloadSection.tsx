@@ -101,7 +101,7 @@ export function CatalogDownloadSection() {
           <DialogHeader>
             <DialogTitle>{t("Solicitar catálogo")} {activeSolution ? t(activeSolution.title) : ""}</DialogTitle>
             <DialogDescription>
-              {t("Preencha seus dados para liberar este material quando o catálogo final estiver disponível.")}
+              {t("Preencha seus dados e enviaremos este catálogo para o seu e-mail.")}
             </DialogDescription>
           </DialogHeader>
 
