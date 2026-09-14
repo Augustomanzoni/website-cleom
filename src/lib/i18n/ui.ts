@@ -121,6 +121,20 @@ export const uiDictionary: Record<string, { en: string; es: string }> = {
   "Nenhum resultado encontrado.": { en: "No results found.", es: "No se encontraron resultados." },
   "Resultados": { en: "Results", es: "Resultados" },
   "Categoria": { en: "Category", es: "Categoría" },
+  "Busca": { en: "Search", es: "Búsqueda" },
+  "Buscar produtos": { en: "Search products", es: "Buscar productos" },
+  "produto encontrado": { en: "product found", es: "producto encontrado" },
+  "produtos encontrados": { en: "products found", es: "productos encontrados" },
+  "Digite uma palavra-chave na barra de pesquisa e pressione Enter.": {
+    en: "Type a keyword in the search bar and press Enter.",
+    es: "Escribe una palabra clave en la barra de búsqueda y presiona Enter.",
+  },
+  "Nenhum produto encontrado para sua busca.": {
+    en: "No products found for your search.",
+    es: "No se encontraron productos para tu búsqueda.",
+  },
+  "Nenhuma palavra pesquisada.": { en: "No search term entered.", es: "Ninguna palabra buscada." },
+  "Ver todos os resultados para": { en: "View all results for", es: "Ver todos los resultados para" },
 
   // Serviços
   "Projetos sob medida": { en: "Tailor-made projects", es: "Proyectos a medida" },
