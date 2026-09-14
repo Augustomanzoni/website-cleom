@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ServicosRouteImport } from './routes/servicos'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as BuscaRouteImport } from './routes/busca'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NossasSolucoesIndexRouteImport } from './routes/nossas-solucoes.index'
 import { Route as NossasSolucoesPecasDeReposicaoRouteImport } from './routes/nossas-solucoes.pecas-de-reposicao'
@@ -31,6 +32,11 @@ const ServicosRoute = ServicosRouteImport.update({
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuscaRoute = BuscaRouteImport.update({
+  id: '/busca',
+  path: '/busca',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -64,6 +70,7 @@ const NossasSolucoesCategoriaProdutoRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/busca': typeof BuscaRoute
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/busca': typeof BuscaRoute
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -85,6 +93,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/busca': typeof BuscaRoute
   '/contato': typeof ContatoRoute
   '/servicos': typeof ServicosRoute
   '/sobre': typeof SobreRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/busca'
     | '/contato'
     | '/servicos'
     | '/sobre'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/busca'
     | '/contato'
     | '/servicos'
     | '/sobre'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/busca'
     | '/contato'
     | '/servicos'
     | '/sobre'
@@ -128,6 +140,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BuscaRoute: typeof BuscaRoute
   ContatoRoute: typeof ContatoRoute
   ServicosRoute: typeof ServicosRoute
   SobreRoute: typeof SobreRoute
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/busca': {
+      id: '/busca'
+      path: '/busca'
+      fullPath: '/busca'
+      preLoaderRoute: typeof BuscaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -200,6 +220,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BuscaRoute: BuscaRoute,
   ContatoRoute: ContatoRoute,
   ServicosRoute: ServicosRoute,
   SobreRoute: SobreRoute,

@@ -108,12 +108,42 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
         <CommandInput
           value={query}
           onValueChange={setQuery}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              const term = query.trim();
+              if (!term) return;
+              event.preventDefault();
+              event.stopPropagation();
+              onNavigate?.();
+              setQuery("");
+              navigate({ to: "/busca", search: { q: term } });
+            }
+          }}
           placeholder={t("Buscar produtos, categorias ou palavras-chave")}
           className="placeholder:text-chrome/45"
         />
         {(query.trim().length > 0 || mobile) && (
           <CommandList className="max-h-72 rounded-2xl bg-card text-card-foreground shadow-2xl">
             <CommandEmpty className="text-muted-foreground">{t("Nenhum resultado encontrado.")}</CommandEmpty>
+            {query.trim().length > 0 && (
+              <CommandGroup className="text-card-foreground">
+                <CommandItem
+                  value="__see-all__"
+                  onSelect={() => {
+                    const term = query.trim();
+                    onNavigate?.();
+                    setQuery("");
+                    navigate({ to: "/busca", search: { q: term } });
+                  }}
+                  className="cursor-pointer text-card-foreground data-[selected=true]:bg-secondary data-[selected=true]:text-card-foreground"
+                >
+                  <Search className="text-cyan-accent" />
+                  <span className="truncate text-sm uppercase tracking-wide">
+                    {t("Ver todos os resultados para")} “{query.trim()}”
+                  </span>
+                </CommandItem>
+              </CommandGroup>
+            )}
             <CommandGroup heading={t("Resultados")} className="text-card-foreground [&_[cmdk-group-heading]]:text-muted-foreground">
               {results.map((entry) => (
                 <CommandItem
