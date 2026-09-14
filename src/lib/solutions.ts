@@ -612,8 +612,8 @@ const industriaProducts: Product[] = [
   },
   {
     slug: "carrinho-para-congelamento",
-    name: "Carrinho para Congelamento",
-    description: "Carrinho em inox com múltiplas prateleiras vazadas para congelamento e movimentação de produtos.",
+    name: "Carrinho para Congelamento e Defumação",
+    description: "Carrinho em inox com múltiplas prateleiras vazadas para congelamento, defumação e movimentação de produtos.",
     image: carrinhoCongelamento.url,
     longDescription:
       "Carrinho industrial em aço inox com prateleiras gradeadas que favorecem a circulação de ar frio, ideal para operações de congelamento, resfriamento e movimentação interna. Estrutura robusta, rodagem estável e desenho sanitário para uso em túneis e câmaras frigoríficas.",
