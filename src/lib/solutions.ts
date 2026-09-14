@@ -640,6 +640,51 @@ const industriaProducts: Product[] = [
       "Rotinas com foco em higiene e produtividade",
     ],
   },
+  {
+    slug: "carrinho-industrial",
+    name: "Carrinho",
+    description: "Carrinho industrial em inox para movimentação sanitária de produtos e apoio logístico dentro da planta.",
+    image: carrinho,
+    longDescription:
+      "Carrinho desenvolvido para transporte interno de produtos, matérias-primas e insumos em ambientes frigoríficos e alimentícios. Sua construção robusta em inox, com rodagem estável e desenho sanitário, contribui para organização do fluxo e agilidade nas rotinas operacionais.",
+    applications: [
+      "Movimentação interna de produtos e insumos",
+      "Apoio logístico entre setores da planta",
+      "Transporte sanitário em áreas úmidas",
+      "Redução de manuseio manual de cargas",
+      "Operações com foco em organização e agilidade",
+    ],
+  },
+];
+
+const bovinosSuinosSharedProducts: Product[] = [
+  {
+    slug: "plataforma-pantografica-duplo-x",
+    name: "Plataforma Pantográfica Duplo X",
+    description: "Mesa elevatória pantográfica de duplo X com unidade hidráulica independente e proteção sanfonada.",
+    image: plataformaDuploX.url,
+    longDescription:
+      "Plataforma elevatória em aço inox com mecanismo pantográfico duplo X para vencer maiores cursos de elevação com estabilidade e precisão. Possui tampo com contenção lateral, fole de proteção do mecanismo, base de fixação e central hidráulica independente com motor, bomba, reservatório e manômetro. O conjunto permite posicionar cargas na altura ergonômica ideal e integrar níveis distintos da produção.",
+    applications: ["Elevação de cargas entre diferentes níveis", "Abastecimento ergonômico de linhas e equipamentos", "Posicionamento de caixas, pallets e recipientes", "Integração com esteiras e mesas de processo", "Operações industriais com grande curso vertical"],
+  },
+];
+
+const suinosProducts: Product[] = [
+  {
+    slug: "sistema-de-higienizacao-de-carretilhas",
+    name: "Sistema de Higienização de Carretilhas",
+    description: "Linha completa em inox para lavagem, escovação e sanitização de carretilhas da nória aérea.",
+    image: sistemaHigienizacaoCarretilhas.url,
+    longDescription:
+      "Sistema modular em aço inox para higienização automática das carretilhas e roldanas do transportador aéreo. As carretilhas percorrem trilho dedicado passando por estágios de pré-lavagem, escovação, aspersão com detergente e enxágue final, com bandeja coletora contínua e reaproveitamento de água. O acionamento por motoredutor mantém cadência constante, e a estrutura com pés reguláveis e guarda-corpo facilita manutenção e limpeza.",
+    applications: [
+      "Higienização automática de carretilhas da nória",
+      "Remoção de gordura e resíduos dos trilhos aéreos",
+      "Prevenção de contaminação cruzada na produção",
+      "Aumento da vida útil de rolamentos e roldanas",
+      "Programas de autocontrole e biosseguridade",
+    ],
+  },
 ];
 
 
