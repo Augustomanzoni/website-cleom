@@ -398,15 +398,6 @@ const industriaProducts: Product[] = [
     applications: ["Envase manual ou semiautomático de cortes e miúdos", "Direcionamento de produtos para sacos e embalagens", "Redução de perdas e derramamentos no posto", "Integração com bancadas e linhas de embalagem", "Áreas alimentícias com exigência sanitária"],
   },
   {
-    slug: "plataforma-pantografica-duplo-x",
-    name: "Plataforma Pantográfica Duplo X",
-    description: "Mesa elevatória pantográfica de duplo X com unidade hidráulica independente e proteção sanfonada.",
-    image: plataformaDuploX.url,
-    longDescription:
-      "Plataforma elevatória em aço inox com mecanismo pantográfico duplo X para vencer maiores cursos de elevação com estabilidade e precisão. Possui tampo com contenção lateral, fole de proteção do mecanismo, base de fixação e central hidráulica independente com motor, bomba, reservatório e manômetro. O conjunto permite posicionar cargas na altura ergonômica ideal e integrar níveis distintos da produção.",
-    applications: ["Elevação de cargas entre diferentes níveis", "Abastecimento ergonômico de linhas e equipamentos", "Posicionamento de caixas, pallets e recipientes", "Integração com esteiras e mesas de processo", "Operações industriais com grande curso vertical"],
-  },
-  {
     slug: "plataforma-pantografica-giratoria",
     name: "Plataforma Pantográfica Giratória",
     description: "Plataforma elevatória e giratória enclausurada para movimentação segura e ergonômica de cargas paletizadas.",
