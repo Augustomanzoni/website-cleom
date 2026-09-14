@@ -262,21 +262,6 @@ const avesSuinosProducts: Product[] = [
       "Processos contínuos com foco em produtividade",
     ],
   },
-  {
-    slug: "carrinho-industrial",
-    name: "Carrinho",
-    description: "Carrinho industrial em inox para movimentação sanitária de produtos e apoio logístico dentro da planta.",
-    image: carrinho,
-    longDescription:
-      "Carrinho desenvolvido para transporte interno de produtos, matérias-primas e insumos em ambientes frigoríficos e alimentícios. Sua construção robusta em inox, com rodagem estável e desenho sanitário, contribui para organização do fluxo e agilidade nas rotinas operacionais.",
-    applications: [
-      "Movimentação interna de produtos e insumos",
-      "Apoio logístico entre setores da planta",
-      "Transporte sanitário em áreas úmidas",
-      "Redução de manuseio manual de cargas",
-      "Operações com foco em organização e agilidade",
-    ],
-  },
 ];
 
 const industriaCleaningProducts: Product[] = [
