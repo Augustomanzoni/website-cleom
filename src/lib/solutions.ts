@@ -446,21 +446,6 @@ const industriaProducts: Product[] = [
     ],
   },
   {
-    slug: "sistema-de-higienizacao-de-carretilhas",
-    name: "Sistema de Higienização de Carretilhas",
-    description: "Linha completa em inox para lavagem, escovação e sanitização de carretilhas da nória aérea.",
-    image: sistemaHigienizacaoCarretilhas.url,
-    longDescription:
-      "Sistema modular em aço inox para higienização automática das carretilhas e roldanas do transportador aéreo. As carretilhas percorrem trilho dedicado passando por estágios de pré-lavagem, escovação, aspersão com detergente e enxágue final, com bandeja coletora contínua e reaproveitamento de água. O acionamento por motoredutor mantém cadência constante, e a estrutura com pés reguláveis e guarda-corpo facilita manutenção e limpeza.",
-    applications: [
-      "Higienização automática de carretilhas da nória",
-      "Remoção de gordura e resíduos dos trilhos aéreos",
-      "Prevenção de contaminação cruzada na produção",
-      "Aumento da vida útil de rolamentos e roldanas",
-      "Programas de autocontrole e biosseguridade",
-    ],
-  },
-  {
     slug: "tanque-de-lavagem-para-carretilha",
     name: "Tanque de Lavagem para Carretilha",
     description: "Tanque de imersão em inox para lavagem de carretilhas, com pés reguláveis e alça de manuseio.",
