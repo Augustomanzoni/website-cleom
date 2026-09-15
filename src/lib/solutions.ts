@@ -5,6 +5,16 @@ import avesTrilhoT from "@/assets/aves-trilho-t.png.asset.json";
 import avesTunelSangriaRaspador from "@/assets/aves-tunel-sangria-raspador.png.asset.json";
 import avesViradorCaixaGaiola from "@/assets/aves-virador-caixa-gaiola.png.asset.json";
 import avesCurvas from "@/assets/aves-curva-45-90-180.png.asset.json";
+import maquinaFlowPack from "@/assets/maquina-flow-pack.png.asset.json";
+import esteirasTransportadoras from "@/assets/esteiras-transportadoras.png.asset.json";
+import esteiraEvisceracaoSuinos from "@/assets/esteira-evisceracao-suinos.png.asset.json";
+import mesaParaBucho from "@/assets/mesa-para-bucho.png.asset.json";
+import serraFita from "@/assets/serra-fita.png.asset.json";
+import trituradorCarcacas from "@/assets/triturador-carcacas.png.asset.json";
+import depiladoraContinua from "@/assets/depiladora-continua.png.asset.json";
+import mesaSangria from "@/assets/mesa-sangria.png.asset.json";
+import gaiolaBaconPresunto from "@/assets/gaiola-bacon-presunto.png.asset.json";
+import misturadorVacuoNovo from "@/assets/misturador-vacuo-novo.png.asset.json";
 
 import avesTanquePulmao from "@/assets/aves-tanque-pulmao.png.asset.json";
 import avesEsteiraDescarregamento from "@/assets/aves-esteira-descarregamento.png";
@@ -226,6 +236,36 @@ const sharedCrossCategoryProducts: Product[] = [
       "Apoio a linhas com alta repetibilidade de saída",
       "Integração com esteiras e sistemas de embalagem",
       "Melhoria da apresentação para armazenamento e expedição",
+    ],
+  },
+  {
+    slug: "maquina-flow-pack",
+    name: "Máquina Flow Pack",
+    description: "Embaladora horizontal flow pack para selagem contínua de produtos em diferentes formatos e linhas.",
+    image: maquinaFlowPack.url,
+    longDescription:
+      "Linha de embaladoras horizontais flow pack construídas em aço inox sanitário, com alimentação por esteira, painel de controle digital, grupo de solda regulável e sistema de bobinas de fácil troca. A configuração é definida conforme o produto e a cadência desejada, o que permite aplicar o mesmo conceito de embalagem a cortes de aves, peças suínas, cortes bovinos, industrializados e subprodutos. O ajuste de comprimento de pacote, temperatura de solda e velocidade garante embalagem uniforme, boa apresentação final e integração com balanças, esteiras de saída e detectores.",
+    applications: [
+      "Embalagem de cortes de aves, suínos e bovinos",
+      "Selagem contínua de industrializados e subprodutos",
+      "Linhas com múltiplos formatos e trocas rápidas de produto",
+      "Integração com esteiras, balanças e sistemas de expedição",
+      "Operações que exigem padronização visual e alta cadência",
+    ],
+  },
+  {
+    slug: "esteiras-transportadoras",
+    name: "Esteiras",
+    description: "Esteiras transportadoras retas e inclinadas em inox para movimentação contínua de produtos na planta.",
+    image: esteirasTransportadoras.url,
+    longDescription:
+      "Família de esteiras transportadoras em aço inox sanitário, disponível em versões retas, ascendentes, descendentes e com taliscas, fabricadas sob medida conforme largura, comprimento e altura de descarga do projeto. Contam com motorredutor com velocidade regulável, lonas ou correias modulares de grau alimentício, bandeja coletora, pés reguláveis e estrutura aberta que facilita a higienização. Aplicam-se ao transporte de cortes, miúdos, embalagens e subprodutos em linhas de aves, suínos e bovinos.",
+    applications: [
+      "Transporte contínuo de cortes, miúdos e subprodutos",
+      "Elevação de produtos entre níveis e equipamentos",
+      "Interligação de mesas, moedores, misturadores e embaladoras",
+      "Redução do manuseio manual dentro da planta",
+      "Layouts sob medida para aves, suínos e bovinos",
     ],
   },
 ];
@@ -667,6 +707,51 @@ const bovinosSuinosSharedProducts: Product[] = [
       "Plataforma elevatória em aço inox com mecanismo pantográfico duplo X para vencer maiores cursos de elevação com estabilidade e precisão. Possui tampo com contenção lateral, fole de proteção do mecanismo, base de fixação e central hidráulica independente com motor, bomba, reservatório e manômetro. O conjunto permite posicionar cargas na altura ergonômica ideal e integrar níveis distintos da produção.",
     applications: ["Elevação de cargas entre diferentes níveis", "Abastecimento ergonômico de linhas e equipamentos", "Posicionamento de caixas, pallets e recipientes", "Integração com esteiras e mesas de processo", "Operações industriais com grande curso vertical"],
   },
+  {
+    slug: "esteira-de-evisceracao",
+    name: "Esteira de Evisceração",
+    description: "Esteira de evisceração em inox com bandejas individuais, gradil de proteção e acionamento sincronizado.",
+    image: esteiraEvisceracaoSuinos.url,
+    longDescription:
+      "Esteira de evisceração fabricada em aço inox sanitário, formada por bandejas individuais que acompanham a carcaça ao longo da linha e permitem a correlação entre víscera e animal exigida pela inspeção. O conjunto conta com gradil de proteção, motorredutor com velocidade regulável, estrutura com pés niveladores e superfícies de fácil escoamento, garantindo sincronismo com a nória aérea, higiene e rastreabilidade durante toda a etapa de evisceração.",
+    applications: [
+      "Evisceração sincronizada com a nória aérea",
+      "Correlação entre víscera e carcaça para inspeção",
+      "Linhas de abate de suínos e bovinos",
+      "Transporte higiênico de vísceras para mesas de inspeção",
+      "Programas de rastreabilidade e autocontrole",
+    ],
+  },
+  {
+    slug: "mesa-para-bucho",
+    name: "Mesa para Bucho",
+    description: "Mesa em inox para limpeza e esvaziamento de buchos, com grelha, cone de apoio e cuba de escoamento.",
+    image: mesaParaBucho.url,
+    longDescription:
+      "Mesa sanitária em aço inox desenvolvida para as operações de esvaziamento, lavagem e limpeza de buchos e estômagos. Reúne cuba com fundo inclinado, grelha de drenagem, cone de apoio para abertura da peça, área de trabalho ampla e saída canalizada para o conteúdo gástrico, evitando respingos e contaminação do piso. Cantos arredondados e pés reguláveis asseguram escoamento total e higienização rápida ao final do turno.",
+    applications: [
+      "Esvaziamento e limpeza de buchos e estômagos",
+      "Setores de triparia de suínos e bovinos",
+      "Encaminhamento organizado do conteúdo gástrico",
+      "Postos de trabalho ergonômicos e sanitários",
+      "Atendimento aos requisitos de inspeção",
+    ],
+  },
+  {
+    slug: "serra-fita",
+    name: "Serra Fita",
+    description: "Serra fita industrial em inox com esteira de alimentação, gabinete fechado e comandos de segurança.",
+    image: serraFita.url,
+    longDescription:
+      "Serra fita industrial em aço inox com gabinete totalmente fechado, esteira de alimentação, guias de corte reguláveis e painel com comandos de segurança e parada de emergência. Indicada para cortes precisos de peças com osso, blocos e porções padronizadas, oferece alta produtividade, baixo desperdício e excelente acabamento. As portas de acesso amplas, o sistema de tensionamento da lâmina e as rodas de deslocamento facilitam limpeza, troca de lâmina e manutenção.",
+    applications: [
+      "Corte de peças com osso em salas de cortes",
+      "Divisão de blocos e porções padronizadas",
+      "Linhas de desossa de suínos e bovinos",
+      "Preparação de cortes para embalagem",
+      "Operações que exigem precisão e segurança no corte",
+    ],
+  },
 ];
 
 const suinosProducts: Product[] = [
@@ -683,6 +768,96 @@ const suinosProducts: Product[] = [
       "Prevenção de contaminação cruzada na produção",
       "Aumento da vida útil de rolamentos e roldanas",
       "Programas de autocontrole e biosseguridade",
+    ],
+  },
+  {
+    slug: "triturador-de-carcaca",
+    name: "Triturador de Carcaça",
+    description: "Triturador em inox com funil de alimentação e rotor reforçado para redução de carcaças e ossos.",
+    image: trituradorCarcacas.url,
+    longDescription:
+      "Triturador industrial em aço inox projetado para reduzir carcaças, ossos e resíduos de abate a granulometria uniforme, facilitando o encaminhamento à graxaria e o aproveitamento de subprodutos. Possui funil amplo de alimentação, rotor com facas reforçadas, câmara de trituração blindada, base estrutural com pés niveladores e painel elétrico com proteções contra sobrecarga, garantindo operação contínua e segura.",
+    applications: [
+      "Trituração de carcaças e ossos de suínos",
+      "Preparação de material para graxaria",
+      "Aproveitamento de subprodutos e resíduos de abate",
+      "Redução de volume para transporte interno",
+      "Operações contínuas com foco em biossegurança",
+    ],
+  },
+  {
+    slug: "depiladora-continua",
+    name: "Depiladora Contínua",
+    description: "Depiladora contínua em inox com plataformas de acesso, calha de descarga e batedores reguláveis.",
+    image: depiladoraContinua.url,
+    longDescription:
+      "Depiladora contínua em aço inox para remoção automática das cerdas de suínos após a escaldagem, com rotores providos de batedores de borracha reguláveis, aspersão interna de água quente e calha de descarga que direciona a carcaça para a etapa seguinte. Acompanha plataformas de acesso, escadas, guarda-corpos e painel de comando, permitindo fluxo ininterrupto, excelente padrão de limpeza da pele e menor necessidade de repasse manual.",
+    applications: [
+      "Depilação contínua de suínos após escaldagem",
+      "Linhas de abate de média e alta cadência",
+      "Redução de repasse manual e de mão de obra",
+      "Melhoria do padrão visual da carcaça",
+      "Integração com chamuscador e lavadores de carcaça",
+    ],
+  },
+  {
+    slug: "mesa-de-sangria",
+    name: "Mesa de Sangria",
+    description: "Mesa de sangria em inox com roletes, contenção lateral e fundo inclinado para coleta do sangue.",
+    image: mesaSangria.url,
+    longDescription:
+      "Mesa de sangria em aço inox com leito de roletes que facilita o deslocamento do animal durante a etapa de sangria, contenção lateral elevada, fundo inclinado com funil de coleta e saída canalizada para o sangue. A construção sanitária, com cantos arredondados e pés reguláveis, garante escoamento completo, higienização rápida e conformidade com os requisitos de inspeção.",
+    applications: [
+      "Sangria horizontal de suínos",
+      "Coleta organizada e canalizada do sangue",
+      "Postos de trabalho seguros e ergonômicos",
+      "Integração com calhas e tanques de sangue",
+      "Plantas com foco em higiene e rastreabilidade",
+    ],
+  },
+  {
+    slug: "gaiola-para-bacon-e-presunto",
+    name: "Gaiola para Bacon e Presunto",
+    description: "Gaiola em inox com bandejas e prensa integrada para moldagem, cozimento e defumação de bacon e presunto.",
+    image: gaiolaBaconPresunto.url,
+    longDescription:
+      "Gaiola industrial em aço inox com conjunto de bandejas e sistema de prensagem integrado, utilizada na moldagem, cozimento e defumação de bacon, presunto e demais peças industrializadas. A estrutura empilhável sobre rodízios permite carregar diversas peças simultaneamente, mantendo formato uniforme e facilitando a movimentação entre câmaras, estufas e áreas de resfriamento.",
+    applications: [
+      "Moldagem e prensagem de bacon e presunto",
+      "Cozimento e defumação em estufas industriais",
+      "Movimentação de peças entre câmaras e setores",
+      "Padronização de formato e apresentação do produto",
+      "Linhas de industrializados de suínos",
+    ],
+  },
+  {
+    slug: "misturador-a-vacuo",
+    name: "Misturador a Vácuo",
+    description: "Misturador a vácuo em inox com pás duplas, tampa basculante e plataforma de acesso.",
+    image: misturadorVacuoNovo.url,
+    longDescription:
+      "Misturador industrial a vácuo em aço inox com pás duplas, tampa basculante hidráulica, painel digital com receitas programáveis e plataforma de acesso com escada e guarda-corpo. O sistema de vácuo elimina o ar da massa, melhorando a liga, a cor, a absorção de salmoura e a validade do produto final. A descarga por basculamento em carrinhos padronizados agiliza o fluxo e reduz o manuseio manual.",
+    applications: [
+      "Mistura de massas cárneas com absorção de salmoura",
+      "Produção de embutidos, hambúrgueres e industrializados",
+      "Homogeneização de temperos e aditivos",
+      "Melhoria de liga, cor e vida de prateleira",
+      "Linhas de industrializados de suínos",
+    ],
+  },
+  {
+    slug: "quebrador-de-blocos",
+    name: "Quebrador de Blocos",
+    description: "Equipamento em inox para fragmentação controlada de blocos congelados antes do processamento.",
+    image: quebradorBlocos.url,
+    longDescription:
+      "Máquina industrial desenvolvida para quebrar blocos congelados de carnes e matérias-primas em porções menores, facilitando a alimentação de moedores, misturadores e demais equipamentos. A calha inclinada, o sistema mecânico protegido, os comandos de segurança e o recipiente móvel de coleta proporcionam operação contínua, menor esforço manual e controle do produto.",
+    applications: [
+      "Fragmentação de blocos congelados de carne suína",
+      "Preparação de matéria-prima para moagem",
+      "Alimentação de misturadores e processadores",
+      "Redução de esforço e manuseio manual",
+      "Linhas de industrializados e aproveitamento de cortes",
     ],
   },
 ];
