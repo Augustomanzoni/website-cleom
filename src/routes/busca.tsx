@@ -64,9 +64,7 @@ function BuscaPage() {
 
   const results = terms.length
     ? allProducts.filter((p) => {
-        const searchable = normalize(
-          `${p.haystack} ${translate(p.name, lang)} ${translate(p.categoryTitle, lang)}`,
-        );
+        const searchable = normalize(`${p.haystack} ${translate(p.name, lang)}`);
         return terms.every((term) => searchable.includes(term));
       })
     : [];
