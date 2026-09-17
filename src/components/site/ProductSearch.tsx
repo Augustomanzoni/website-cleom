@@ -32,7 +32,7 @@ const searchEntries: SearchEntry[] = solutions.flatMap((solution) => {
     id: `category-${solution.slug}`,
     label: solution.title,
     subtitle: `Categoria • ${solution.tagline}`,
-    searchText: [solution.title, solution.tagline, solution.description].join(" ").toLowerCase(),
+    searchText: solution.title.toLowerCase(),
     route: { to: "/nossas-solucoes/$categoria", params: { categoria: solution.slug } },
   };
 
@@ -40,17 +40,7 @@ const searchEntries: SearchEntry[] = solutions.flatMap((solution) => {
     id: `${solution.slug}-${product.slug}`,
     label: product.name,
     subtitle: solution.title,
-    searchText: [
-      product.name,
-      product.description,
-      product.longDescription ?? "",
-      ...(product.applications ?? []),
-      solution.title,
-      solution.tagline,
-      solution.description,
-    ]
-      .join(" ")
-      .toLowerCase(),
+    searchText: product.name.toLowerCase(),
     route: {
       to: "/nossas-solucoes/$categoria/$produto",
       params: { categoria: solution.slug, produto: product.slug },
