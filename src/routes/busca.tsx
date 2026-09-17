@@ -46,18 +46,7 @@ const allProducts: Hit[] = solutions.flatMap((s) =>
     categoryTitle: s.title,
     categoriaSlug: s.slug,
     produtoSlug: p.slug,
-    haystack: [
-      p.name,
-      p.description,
-      p.longDescription ?? "",
-      ...(p.applications ?? []),
-      ...(p.gallery?.map((g) => `${g.name} ${g.description}`) ?? []),
-      s.title,
-      s.tagline,
-      s.description,
-    ]
-      .join(" ")
-      .toLowerCase(),
+    haystack: [p.name, ...(p.gallery?.map((g) => g.name) ?? [])].join(" ").toLowerCase(),
   })),
 );
 
@@ -75,9 +64,7 @@ function BuscaPage() {
 
   const results = terms.length
     ? allProducts.filter((p) => {
-        const searchable = normalize(
-          `${p.haystack} ${translate(p.name, lang)} ${translate(p.categoryTitle, lang)}`,
-        );
+        const searchable = normalize(`${p.haystack} ${translate(p.name, lang)}`);
         return terms.every((term) => searchable.includes(term));
       })
     : [];

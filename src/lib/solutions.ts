@@ -177,6 +177,11 @@ const cloneProduct = (product: Product): Product => ({
   applications: product.applications ? [...product.applications] : undefined,
 });
 
+const dedupeBySlug = (products: Product[]): Product[] => {
+  const seen = new Set<string>();
+  return products.filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
+};
+
 const sharedCrossCategoryProducts: Product[] = [
   {
     slug: "chiller-de-miudos",
@@ -1286,7 +1291,12 @@ export const solutions: Solution[] = [
     description:
       "Equipamentos em aço inox sanitário para todas as etapas do abate bovino, atendendo às normas do MAPA.",
     image: catBovinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), ...avesBovinosProducts.map(cloneProduct), ...bovinosProducts.map(cloneProduct)],
+    products: dedupeBySlug([
+      ...sharedCrossCategoryProducts.map(cloneProduct),
+      ...avesBovinosProducts.map(cloneProduct),
+      ...bovinosSuinosSharedProducts.map(cloneProduct),
+      ...bovinosProducts.map(cloneProduct),
+    ]),
   },
   {
     slug: "suinos",
@@ -1295,7 +1305,22 @@ export const solutions: Solution[] = [
     description:
       "Linhas completas para o processamento suíno, do abate à sala de cortes, com foco em rendimento e biossegurança.",
     image: catSuinos.url,
-    products: [...sharedCrossCategoryProducts.map(cloneProduct), ...avesSuinosProducts.map(cloneProduct)],
+    products: dedupeBySlug([
+      ...sharedCrossCategoryProducts.map(cloneProduct),
+      ...avesSuinosProducts.map(cloneProduct),
+      ...bovinosSuinosSharedProducts.map(cloneProduct),
+      ...suinosProducts.map(cloneProduct),
+      ...bovinosProducts
+        .filter((p) =>
+          [
+            "rosca-transportadora",
+            "elevador-e-tombador-de-combos",
+            "sistema-de-rejeito",
+            "moedor-de-ossos",
+          ].includes(p.slug),
+        )
+        .map(cloneProduct),
+    ]),
   },
   {
     slug: "industria",
