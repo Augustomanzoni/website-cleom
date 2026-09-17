@@ -177,6 +177,11 @@ const cloneProduct = (product: Product): Product => ({
   applications: product.applications ? [...product.applications] : undefined,
 });
 
+const dedupeBySlug = (products: Product[]): Product[] => {
+  const seen = new Set<string>();
+  return products.filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
+};
+
 const sharedCrossCategoryProducts: Product[] = [
   {
     slug: "chiller-de-miudos",
