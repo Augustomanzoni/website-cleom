@@ -117,7 +117,7 @@ function BuscaPage() {
                   </div>
                   <div className="p-5 flex flex-col flex-1">
                     <p className="text-xs uppercase tracking-[0.2em] text-cyan-accent mb-2">
-                      {t(p.categoryTitle)}
+                      {p.categoryTitles.map((c) => t(c)).join(" • ")}
                     </p>
                     <h2 className="text-lg text-navy-deep uppercase tracking-wide mb-4 flex-1">
                       {t(p.name)}
