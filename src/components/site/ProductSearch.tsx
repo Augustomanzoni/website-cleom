@@ -79,8 +79,7 @@ export function ProductSearch({ mobile = false, onNavigate }: ProductSearchProps
       .filter(
         (entry) =>
           entry.searchText.includes(normalized) ||
-          translate(entry.label, lang).toLowerCase().includes(normalized) ||
-          translate(entry.subtitle, lang).toLowerCase().includes(normalized),
+          translate(entry.label, lang).toLowerCase().includes(normalized),
       )
       .slice(0, 10);
   }, [query, lang]);
