@@ -32,23 +32,36 @@ type Hit = {
   key: string;
   name: string;
   image: string;
-  categoryTitle: string;
+  categoryTitles: string[];
   categoriaSlug: string;
   produtoSlug: string;
   haystack: string;
 };
 
-const allProducts: Hit[] = solutions.flatMap((s) =>
-  s.products.map((p) => ({
-    key: `${s.slug}-${p.slug}`,
-    name: p.name,
-    image: p.image,
-    categoryTitle: s.title,
-    categoriaSlug: s.slug,
-    produtoSlug: p.slug,
-    haystack: [p.name, ...(p.gallery?.map((g) => g.name) ?? [])].join(" ").toLowerCase(),
-  })),
-);
+const allProducts: Hit[] = (() => {
+  const byProduct = new Map<string, Hit>();
+
+  for (const s of solutions) {
+    for (const p of s.products) {
+      const existing = byProduct.get(p.slug);
+      if (existing) {
+        if (!existing.categoryTitles.includes(s.title)) existing.categoryTitles.push(s.title);
+        continue;
+      }
+      byProduct.set(p.slug, {
+        key: p.slug,
+        name: p.name,
+        image: p.image,
+        categoryTitles: [s.title],
+        categoriaSlug: s.slug,
+        produtoSlug: p.slug,
+        haystack: [p.name, ...(p.gallery?.map((g) => g.name) ?? [])].join(" ").toLowerCase(),
+      });
+    }
+  }
+
+  return [...byProduct.values()];
+})();
 
 const normalize = (value: string) =>
   value
@@ -104,7 +117,7 @@ function BuscaPage() {
                   </div>
                   <div className="p-5 flex flex-col flex-1">
                     <p className="text-xs uppercase tracking-[0.2em] text-cyan-accent mb-2">
-                      {t(p.categoryTitle)}
+                      {p.categoryTitles.map((c) => t(c)).join(" • ")}
                     </p>
                     <h2 className="text-lg text-navy-deep uppercase tracking-wide mb-4 flex-1">
                       {t(p.name)}
