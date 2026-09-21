@@ -141,6 +141,16 @@ import conjElevadorCarretilha from "@/assets/conj-elevador-carretilha.png.asset.
 import conjNoriaArraste from "@/assets/conj-noria-arraste.png.asset.json";
 import conjTrilhagem from "@/assets/conj-trilhagem.png.asset.json";
 import conjTrilhoNoria from "@/assets/conj-trilho-noria.png.asset.json";
+import suinosCapaTransportador from "@/assets/transportador-aereo-suinos.png.asset.json";
+import suinosArrasteNoria from "@/assets/arraste-noria-suinos.png.asset.json";
+import suinosManeia from "@/assets/maneia-suinos.png.asset.json";
+import suinosElevadorCarretilha from "@/assets/elevador-carretilha-suinos.png.asset.json";
+import suinosDosadorCarretilha from "@/assets/dosador-carretilha-suinos.png.asset.json";
+import suinosTensionadorNoria from "@/assets/tensionador-noria-suinos.png.asset.json";
+import suinosBalancim from "@/assets/balancim-suinos.png.asset.json";
+import suinosCarretilhas from "@/assets/carretilhas-suinos.png.asset.json";
+import suinosChavesDesviadoras from "@/assets/chaves-desviadoras-suinos.png.asset.json";
+import suinosBaseMotorizada from "@/assets/base-motorizada-suinos.png.asset.json";
 
 
 export type GalleryItem = {
@@ -760,6 +770,89 @@ const bovinosSuinosSharedProducts: Product[] = [
 ];
 
 const suinosProducts: Product[] = [
+  {
+    slug: "transportador-aereo-suinos",
+    name: "Transportador Aéreo de Suínos",
+    description: "Conjunto completo de transporte aéreo para suínos, com trilhagem, nória, carretilhas e acessórios fornecidos juntos ou separadamente.",
+    image: suinosCapaTransportador.url,
+    longDescription:
+      "Sistema completo de transporte aéreo para frigoríficos de suínos, projetado sob medida para movimentar carcaças com segurança e fluxo contínuo entre sangria, depilação, evisceração, inspeção, cortes e câmaras. O conjunto reúne trilhagem estrutural, nória de arraste, carretilhas, maneias, balancins, elevadores, dosadores, tensionadores, chaves desviadoras e acionamento motorizado. Todos os componentes são fabricados para operação intensa em ambiente sanitário e podem ser fornecidos como linha completa ou separadamente para ampliação, modernização e reposição.",
+    applications: [
+      "Movimentação contínua de carcaças suínas",
+      "Interligação entre as etapas de abate e processamento",
+      "Projetos completos de nória aérea sob medida",
+      "Ampliação e modernização de linhas existentes",
+      "Fornecimento separado de componentes para reposição",
+    ],
+    gallery: [
+      {
+        name: "Carretilhas",
+        image: suinosCarretilhas.url,
+        description: "Carretilhas em aço inox com roldana e rolamento vedado, dimensionadas para deslocamento suave e seguro das carcaças suínas ao longo do trilho aéreo.",
+        applications: ["Transporte de carcaças suínas", "Deslizamento contínuo em trilhos aéreos", "Reposição em nórias existentes", "Linhas de abate de diferentes capacidades"],
+      },
+      {
+        name: "Chaves Desviadoras para Suínos",
+        image: suinosChavesDesviadoras.url,
+        description: "Conjuntos de desvio em aço inox para direcionar carretilhas entre ramais da linha, com acionamento preciso e construção adequada à higienização intensiva.",
+        applications: ["Mudança de rota das carretilhas", "Separação para inspeção e retrabalho", "Distribuição entre câmaras", "Automação de circuitos aéreos"],
+      },
+      {
+        name: "Base Motorizada para Suínos",
+        image: suinosBaseMotorizada.url,
+        description: "Unidade motriz com motorredutor e conjunto de tração montados sobre base sanitária em inox, responsável pelo acionamento estável da corrente da nória.",
+        applications: ["Acionamento da nória aérea", "Controle da cadência da linha", "Modernização de transportadores", "Tração principal ou auxiliar"],
+      },
+      {
+        name: "Arraste de Nória",
+        image: suinosArrasteNoria.url,
+        description: "Sistema de corrente e elementos de arraste que conduz as carretilhas de forma sincronizada, mantendo ritmo e espaçamento regulares ao longo do processamento.",
+        applications: ["Condução sincronizada de carretilhas", "Controle de espaçamento entre carcaças", "Trechos retos e inclinados", "Linhas de média e alta cadência"],
+      },
+      {
+        name: "Maneia para Suínos",
+        image: suinosManeia.url,
+        description: "Maneia em aço inox com corrente e pontos de fixação reforçados para suspensão segura do suíno no início do circuito aéreo.",
+        applications: ["Suspensão após a sangria", "Fixação segura do membro", "Transferência para a nória aérea", "Reposição em linhas de suínos"],
+      },
+      {
+        name: "Elevador de Carretilha para Suínos",
+        image: suinosElevadorCarretilha.url,
+        description: "Equipamento para elevar e transferir carretilhas entre níveis distintos do circuito, reduzindo esforço manual e mantendo a continuidade da linha.",
+        applications: ["Elevação de carretilhas", "Transferência entre trilhos", "Automação da entrada da nória", "Adequação a desníveis de layout"],
+      },
+      {
+        name: "Dosador de Carretilha",
+        image: suinosDosadorCarretilha.url,
+        description: "Módulo que libera carretilhas individualmente e em intervalos regulares, sincronizando a alimentação do transportador aéreo com a capacidade da produção.",
+        applications: ["Dosagem unitária de carretilhas", "Controle do espaçamento da linha", "Sincronização com a produção", "Redução de acúmulos no circuito"],
+      },
+      {
+        name: "Tensionador para Nória",
+        image: suinosTensionadorNoria.url,
+        description: "Conjunto tensionador com regulagem mecânica e compensação por molas para manter a corrente da nória alinhada e na tensão correta durante a operação.",
+        applications: ["Tensionamento contínuo da corrente", "Compensação de desgaste e dilatação", "Redução de folgas e trancos", "Aumento da estabilidade operacional"],
+      },
+      {
+        name: "Balancim",
+        image: suinosBalancim.url,
+        description: "Linha de balancins em aço inox para sustentação e posicionamento das carcaças, disponível em diferentes geometrias conforme a etapa e o padrão da planta.",
+        applications: ["Sustentação de carcaças suínas", "Posicionamento em processamento aéreo", "Adequação a diferentes operações", "Reposição e padronização da linha"],
+      },
+      {
+        name: "Nória de Arraste",
+        image: conjNoriaArraste.url,
+        description: "Nória de arraste com corrente e taliscas em aço inox, acionada por motorredutor, que empurra as carretilhas de forma sincronizada ao longo do trilho, garantindo espaçamento constante entre carcaças.",
+        applications: ["Arraste sincronizado de carretilhas", "Manutenção de espaçamento entre carcaças", "Linhas de processamento com ritmo controlado", "Trechos inclinados e de alta cadência"],
+      },
+      {
+        name: "Trilhagem",
+        image: conjTrilhagem.url,
+        description: "Estrutura completa de trilhagem em aço inox, formada por colunas, vigas, travessas e contraventamentos, que sustenta toda a rede de trilhos aéreos da planta com rigidez e alinhamento preciso.",
+        applications: ["Sustentação estrutural da nória aérea", "Áreas de processamento e câmaras", "Projetos completos de layout frigorífico", "Ampliação de áreas de trilhagem existentes"],
+      },
+    ],
+  },
   {
     slug: "sistema-de-higienizacao-de-carretilhas",
     name: "Sistema de Higienização de Carretilhas",
