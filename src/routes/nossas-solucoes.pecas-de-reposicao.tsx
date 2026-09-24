@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import pecasReposicao from "@/assets/pecas-reposicao.jpg";
-import pecasReposicaoDetalhes from "@/assets/pecas-reposicao-detalhes.png.asset.json";
+import pecasReposicaoDetalhes from "@/assets/pecas-reposicao-detalhes.png";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/nossas-solucoes/pecas-de-reposicao")({
@@ -87,7 +87,7 @@ function PecasReposicaoPage() {
 
               <figure className="mt-14 overflow-hidden rounded-lg border border-border bg-card">
                 <img
-                  src={pecasReposicaoDetalhes.url}
+                  src={pecasReposicaoDetalhes}
                   alt={t("Equipamento frigorífico e detalhes de peças de reposição")}
                   className="aspect-[4/3] w-full object-cover"
                 />
