@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/cleom-logo.png.asset.json";
+import logo from "@/assets/cleom-logo.png";
 import { solutions } from "@/lib/solutions";
 import { useI18n } from "@/lib/i18n";
 
@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div>
-            <img src={logo.url} alt="CLEOM" className="h-16 mb-4" />
+            <img src={logo} alt="CLEOM" className="h-16 mb-4" />
             <p className="text-sm text-chrome/70 leading-relaxed">
               {t("Soluções frigoríficas industriais com tecnologia de ponta para o setor alimentício.")}
             </p>

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/cleom-logo.png.asset.json";
+import logo from "@/assets/cleom-logo.png";
 import { ProductSearch } from "@/components/site/ProductSearch";
 import { solutions } from "@/lib/solutions";
 import { useI18n } from "@/lib/i18n";
@@ -25,7 +25,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-4 min-h-20 py-3">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo.url} alt="CLEOM Soluções Frigoríficas Industriais" className="h-14 w-auto" />
+            <img src={logo} alt="CLEOM Soluções Frigoríficas Industriais" className="h-14 w-auto" />
           </Link>
 
           <div className="hidden lg:flex items-center gap-4 flex-1 justify-end">
